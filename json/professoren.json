@@ -1,0 +1,106 @@
+
+{
+    "professoren": 
+    {
+        "Professor1":
+        {
+            "profID": 1,
+            "name": "Ekaterina Auer",
+            "title": "Prof. Dr. rer. nat. habil",
+            "telNumber": "03841753-7322",
+            "email": "ekaterina.auer@hs-wismar.de",
+            "office": "Haus 17, Raum 305",
+            "teaching":[
+                "Mathematik für Ingenieure 1",
+                "Mathematik für Ingenieure 2"
+            ]
+        }, 
+        "Professor2":
+        {
+            "profID": 2,
+            "name": "Matthias Kreuseler",
+            "title": "Prof. Dr.-Ing.",
+            "telNumber": "03841 753–7319",
+            "email": "matthias.kreuseler@hs-wismar.de",
+            "office": "Haus 2, Raum 106",
+            "teaching":[
+                "Algorithmen und Datenstrukturen",
+                "Angewandte Softwareentwicklung",       
+                "Grundlagen der technischen Informatik",
+                "Programmierung mobiler Geräte",
+                "Programmierung 2",
+                "Projektseminar"
+            ]
+        },
+        "Professor3":
+        {
+            "profID": 3,
+            "name": "Antje Raab Düsterhöft",
+            "title": "Prof. Dr. rer. nat. habil",
+            "telNumber": "03841753-7322",
+            "email": "ekaterina.auer@hs-wismar.de",
+            "office": "Haus 17, Raum 305",
+            "teaching":[
+                "Mathematik für Ingenieure 1",
+                "Mathematik für Ingenieure 2"
+            ]
+        },
+        "Professor4":
+        {
+            "profID": 4,
+            "name": "Ernst Jonas",
+            "title": "Prof. Dr.-Ing.",
+            "telNumber": "03841 753–7230",
+            "email": "ernst.jonas@hs-wismar.de",
+            "office": "Haus 2, Raum 204b",
+            "teaching":[
+                "Betriebssysteme",
+                "Software Engineering",
+                "Systemnahe Programmierung",
+                "Projektseminar"
+            ]
+        },
+        "Professor5":
+        {
+            "profID": 5,
+            "name": "Herbert Litschke",
+            "title": "Prof. Dr. rer. nat.",
+            "telNumber": "03841 753–7306",
+            "email": "herbert.litschke@hs-wismar.de",
+            "office": "Haus 2, Raum 107",
+            "teaching":[
+                "Bildverarbeitung",
+                "Computergrafik",
+                "Programmierung 1",
+                "Technik Multimedialer Systeme",
+                "User Interfaces"
+            ]
+        }   
+    } ,
+    "dozenten":
+    {
+        "dozent1": {
+            "dozID": 1,
+            "name": "Lüskow",
+            "title": "",
+            "telNumber": "",
+            "email": "",
+            "office": "",
+            "teaching":[
+                
+            ]
+        },
+        "dozent2": {
+            "dozID": 2,
+            "name": "Stefan Tesch",
+            "title": "Dipl.-Soz.-Verw.",
+            "telNumber": "",
+            "email": "",
+            "office": "",
+            "teaching":[
+                
+            ]
+        }
+
+    }  
+}

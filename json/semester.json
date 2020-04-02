@@ -1,0 +1,136 @@
+{"semester": 
+    {
+        "semester 1" : 
+        {
+            "modul1": 
+            {
+                "name": "Mathematik für Ingenieure 1",
+                "profID": 1,
+                "hour": [
+                    "4 SWS Vorlesung",
+                    "4 SWS Übung"
+                ],
+                "exam": "120 Minuten schriftlich",
+                "credits": "8 Credits",
+                "content": [
+                    "Lineare Algebra",
+                    "Komplexe Zahlen",
+                    "Vektoren und Matrizen", 
+                    "Lineare Gleichungssysteme",
+                    "Analysis",
+                    "Funktionen",
+                    "Grenzwerte",
+                    "Differential- und Integralrechnung"
+                ]
+            },
+            "modul2": 
+            {
+                "name": "Grundlagen der Technischen Informatik",
+                "profID": 2,
+                "hour": [
+                    "2 SWS Vorlesung",
+                    "1 SWS Übung",
+                    "1 SWS Praktikum"
+                ],
+                "exam": "120 Minuten schriftlich",
+                "credits": "5 Credits",
+                "content": [
+                    "Zahlendarstellung und Codes",
+                    "Boolesche Algebra (Normalformen, Minimierung)",
+                    "einfache Grundschaltungen (FlipFlop, Multiplexer, Addierer) und Rechenwerke",
+                    "Speicher: Komponenten, Organisation, Cache",
+                    "Aufbau und Programmierung von Mikroprozessoren",
+                    "Rechnerarchitekturen: Klassifikation, Leistungsbewertung",
+                    "Ein-/Ausgabe-System, Schnittstellen, Interrupt-Verwaltung",
+                    "Übersetzungsvorgang bei imperativen Hochsprachen"
+                ]
+            },
+            "modul3":
+            { 
+                "name":"Fachenglisch",
+                "dozID": 1,
+                "hour": [
+                    "4 SWS Übung"   
+                ],
+                "exam": "20 Minuten mündlich",
+                "credits": "5 Credits",
+                "content": [
+                    "Principles of electricity; atomic model; conductors and insulators",
+                    "Electron tubes, oscilloscopes",
+                    "Electric current (d.c. and a.c.)and electrical circuits",
+                    "Electrical components: different types of resistors; capacitors; coils and transformers",
+                    "Diagrams, graphs (characteristic curves) and the language of developments and trends",
+                    "Diodes and bridge rectifiers (rectification)",
+                    "Electrochemistry(cells and batteries)",
+                    "Semiconductors (incl. doping)",
+                    "IC technology",
+                    "Telecommunications: radio waves; transmission lines; transmission technologies"
+                ]
+            },
+            "modul4": {
+                "name": "Betriebssysteme",
+                "profID": 4,
+                "hour": [
+                    "2 SWS Vorlesung",
+                    "1 SWS Übung",
+                    "1 SWS Praktikum" 
+                ],
+                "exam": "120 Minuten schriftlich",
+                "credits": "5 Credits",
+                "content": [
+                    "Rechnerarchitekturen, Fähigkeiten und Betriebsarten von Betriebssystemen",
+                    "Strukturierungsprinzipien, Betriebssystemmodelle",
+                    "Betriebssystemkern",
+                    "Scheduling, Synchronisation und Kommunikation",
+                    "Hauptspeicher- und Betriebsmittelverwaltung",
+                    "Handling und Management des Betriebssystem UNIX",
+                    "Shell-Programmierung"
+                ]
+            },
+            "modul5": {
+                "name": "Programmierung 1",
+                "profID": 5,
+                "hour": [
+                    "1 SWS Vorlesung",
+                    "1 SWS Übung",
+                    "2 SWS Praktikum" 
+                ],
+                "exam": "120 Minuten schriftlich",
+                "credits": "5 Credits",
+                "content": [
+                    "Einführung in die Programmiersprache C",
+                    "Grundelemente, Variablen, Datentypen",
+                    "Operatoren und Ausdrücke",
+                    "Kontrollstrukturen",
+                    "Funktionen",
+                    "Zeiger und Vektoren",
+                    "Datenstrukturen",
+                    "Speicherverwaltung",
+                    "Ein- und Ausgabe, Dateizugriff",
+                    "Die Windows-Grafikschnittstelle",
+                    "Objektorientierte Programmierung",
+                    "Windows-Programmierung mit MFC",
+                    "Multithreading"
+                ]
+            },
+            "modul6": {
+                "name": "Betriebswirtschaftslehre",
+                "dozID": 2,
+                "hour": [
+                    "4 SWS Vorlesung"
+                ],
+                "exam": "120 Minuten schriftlich",
+                "credits": "5 Credits",
+                "content": [
+                    "Rahmenbedingungen der BWL",
+                    "Betriebliche Funktionsbereiche",       
+                    "Leistungsprozess und Finanzwirtschaft",
+                    "Management als Aufgabe und Strategie",         
+                    "Werkzeuge der BWL",
+                    "Wertschöpfung und ihre Verteilung"
+                ]
+            }
+        }
+     
+    }
+}
