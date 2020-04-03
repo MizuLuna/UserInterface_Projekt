@@ -9,7 +9,10 @@
             "title": "Prof. Dr. rer. nat. habil",
             "telNumber": "03841753-7322",
             "email": "ekaterina.auer@hs-wismar.de",
-            "office": "Haus 17, Raum 305",
+            "office": {
+                "house" : 17,
+                "room": 305
+            },
             "teaching":[
                 "Mathematik für Ingenieure 1",
                 "Mathematik für Ingenieure 2"
@@ -22,7 +25,10 @@
             "title": "Prof. Dr.-Ing.",
             "telNumber": "03841 753–7319",
             "email": "matthias.kreuseler@hs-wismar.de",
-            "office": "Haus 2, Raum 106",
+            "office": {
+                "house" : 2,
+                "room": 106
+            },
             "teaching":[
                 "Algorithmen und Datenstrukturen",
                 "Angewandte Softwareentwicklung",       
@@ -36,13 +42,18 @@
         {
             "profID": 3,
             "name": "Antje Raab Düsterhöft",
-            "title": "Prof. Dr. rer. nat. habil",
-            "telNumber": "03841753-7322",
-            "email": "ekaterina.auer@hs-wismar.de",
-            "office": "Haus 17, Raum 305",
+            "title": "Prof. Dr.-Ing.",
+            "telNumber": "03841 753–7629",
+            "email": "antje.duesterhoeft@hs-wismar.de",
+            "office": {
+                "house" : 2,
+                "room": "204c"
+            },
             "teaching":[
-                "Mathematik für Ingenieure 1",
-                "Mathematik für Ingenieure 2"
+                "MMDB I: Datenbanken / Informationssysteme",
+                "Grundlagen der Sprachtechnologie ",
+                "Soft Skills 1: Kommunikation",
+                "Soft Skills 2: Kommunikation (Blockseminar)"
             ]
         },
         "Professor4":
@@ -52,7 +63,10 @@
             "title": "Prof. Dr.-Ing.",
             "telNumber": "03841 753–7230",
             "email": "ernst.jonas@hs-wismar.de",
-            "office": "Haus 2, Raum 204b",
+            "office":  {
+                "house" : 2,
+                "room": "204b"
+            },
             "teaching":[
                 "Betriebssysteme",
                 "Software Engineering",
@@ -67,7 +81,10 @@
             "title": "Prof. Dr. rer. nat.",
             "telNumber": "03841 753–7306",
             "email": "herbert.litschke@hs-wismar.de",
-            "office": "Haus 2, Raum 107",
+            "office":  {
+                "house" : 2,
+                "room": 107
+            },
             "teaching":[
                 "Bildverarbeitung",
                 "Computergrafik",
@@ -75,7 +92,58 @@
                 "Technik Multimedialer Systeme",
                 "User Interfaces"
             ]
-        }   
+        },
+        "Professor6":
+        {
+            "profID": 6,
+            "name": "Andreas Ahrens",
+            "title": "Prof. Dr.-Ing. habil",
+            "telNumber": "03841 753–7330",
+            "email": "andreas.ahrens@hs-wismar.de",
+            "office":  {
+                "house" : 16,
+                "room": 204
+            },
+            "teaching":[
+                "Kryptographie",
+                "Signale und Systeme",
+                "Nachrichtentechnik",
+                "Informationsübertragung"
+            ]
+        },
+        "Professor7":
+        {
+            "profID": 7,
+            "name": "Jüregen Cleve",
+            "title": "Prof. Dr. rer. nat.",
+            "telNumber": "03841 753–7527",
+            "email": "juergen.cleve@hs-wismar.de",
+            "office":  {
+                "house" : 19,
+                "room": 305
+            },
+            "teaching":[
+                "Theoretische Informatik",
+                "Künstliche Intelligenz",
+                "Data Mining"
+            ]
+        },
+        "Professor8":
+        {
+            "profID": 7,
+            "name": "Sven Pawletta",
+            "title": "Prof. Dr.-Ing.",
+            "telNumber": "03841 753–7417",
+            "email": "sven.pawletta@hs-wismar.de",
+            "office":  {
+                "house" : 17,
+                "room": 418
+            },
+            "teaching":[
+                "Anwendungsprogrammierung",
+                "Echtzeit- und Netzwerkprogrammierung"
+            ]
+        }         
     } ,
     "dozenten":
     {
@@ -94,6 +162,17 @@
             "dozID": 2,
             "name": "Stefan Tesch",
             "title": "Dipl.-Soz.-Verw.",
+            "telNumber": "",
+            "email": "",
+            "office": "",
+            "teaching":[
+                
+            ]
+        },
+        "dozent3": {
+            "dozID": 3,
+            "name": "Anke Carstensen",
+            "title": "",
             "telNumber": "",
             "email": "",
             "office": "",

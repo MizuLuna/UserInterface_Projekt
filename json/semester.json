@@ -5,13 +5,15 @@
             "modul1": 
             {
                 "name": "Mathematik für Ingenieure 1",
+                "modulID": "Mat1",
                 "profID": 1,
-                "hour": [
-                    "4 SWS Vorlesung",
-                    "4 SWS Übung"
-                ],
+                "hour": {
+                    "SWS Vorlesung": 4,
+                    "SWS Übung": 2,
+                    "SWS Praktikum": 0
+                },
                 "exam": "120 Minuten schriftlich",
-                "credits": "8 Credits",
+                "credits": 8,
                 "content": [
                     "Lineare Algebra",
                     "Komplexe Zahlen",
@@ -26,14 +28,15 @@
             "modul2": 
             {
                 "name": "Grundlagen der Technischen Informatik",
+                "modulID": "GTI",
                 "profID": 2,
-                "hour": [
-                    "2 SWS Vorlesung",
-                    "1 SWS Übung",
-                    "1 SWS Praktikum"
-                ],
+                "hour": {
+                    "SWS Vorlesung": 2,
+                    "SWS Übung": 1,
+                    "SWS Praktikum": 1
+                },
                 "exam": "120 Minuten schriftlich",
-                "credits": "5 Credits",
+                "credits": 5,
                 "content": [
                     "Zahlendarstellung und Codes",
                     "Boolesche Algebra (Normalformen, Minimierung)",
@@ -48,12 +51,15 @@
             "modul3":
             { 
                 "name":"Fachenglisch",
+                "modulID": "Eng",
                 "dozID": 1,
-                "hour": [
-                    "4 SWS Übung"   
-                ],
+                "hour": {
+                    "SWS Vorlesung": 0,
+                    "SWS Übung" : 4,                    
+                    "SWS Praktikum": 0  
+                },
                 "exam": "20 Minuten mündlich",
-                "credits": "5 Credits",
+                "credits": 5,
                 "content": [
                     "Principles of electricity; atomic model; conductors and insulators",
                     "Electron tubes, oscilloscopes",
@@ -69,14 +75,15 @@
             },
             "modul4": {
                 "name": "Betriebssysteme",
+                "modulID": "BS",
                 "profID": 4,
-                "hour": [
-                    "2 SWS Vorlesung",
-                    "1 SWS Übung",
-                    "1 SWS Praktikum" 
-                ],
+                "hour": {
+                    "SWS Vorlesung": 2,
+                    "SWS Übung": 1,
+                    "SWS Praktikum": 1 
+                },
                 "exam": "120 Minuten schriftlich",
-                "credits": "5 Credits",
+                "credits": 5,
                 "content": [
                     "Rechnerarchitekturen, Fähigkeiten und Betriebsarten von Betriebssystemen",
                     "Strukturierungsprinzipien, Betriebssystemmodelle",
@@ -89,14 +96,15 @@
             },
             "modul5": {
                 "name": "Programmierung 1",
+                "modulID": "Prog1",
                 "profID": 5,
-                "hour": [
-                    "1 SWS Vorlesung",
-                    "1 SWS Übung",
-                    "2 SWS Praktikum" 
-                ],
+                "hour": {
+                    "SWS Vorlesung": 1,
+                    "SWS Übung": 1,
+                    "SWS Praktikum" : 2
+                },
                 "exam": "120 Minuten schriftlich",
-                "credits": "5 Credits",
+                "credits": 5,
                 "content": [
                     "Einführung in die Programmiersprache C",
                     "Grundelemente, Variablen, Datentypen",
@@ -115,12 +123,15 @@
             },
             "modul6": {
                 "name": "Betriebswirtschaftslehre",
+                "modulID": "BWL",
                 "dozID": 2,
-                "hour": [
-                    "4 SWS Vorlesung"
-                ],
+                "hour": {
+                    "SWS Vorlesung": 4,
+                    "SWS Übung": 0,
+                    "SWS Praktikum": 0
+                },
                 "exam": "120 Minuten schriftlich",
-                "credits": "5 Credits",
+                "credits": 5,
                 "content": [
                     "Rahmenbedingungen der BWL",
                     "Betriebliche Funktionsbereiche",       
@@ -130,7 +141,256 @@
                     "Wertschöpfung und ihre Verteilung"
                 ]
             }
+        },
+        "semester 2" : 
+        {
+            "modul1": 
+            {
+                "name": "Mathematik für Ingenieure 2",
+                "modulID": "Mat2",
+                "profID": 1,
+                "hour": {
+                    "SWS Vorlesung": 4,
+                    "SWS Übung": 4,
+                    "SWS Praktikum": 0
+                },
+                "exam": "120 Minuten schriftlich",
+                "credits": 7,
+                "content": [
+                    "Analysis",
+                    "Zahlen- und Funktionenreihen",
+                    "Fourier-Reihen und Fourier-Transformationen",
+                    "Gewöhnliche Differenzialgleichungen und Laplace-Transformation",
+                    "Numerik",
+                    "Grundideen und numerische Effekte",
+                    "Interpolation",
+                    "Approximation",
+                    "Numerische Integration",
+                    "Numerische Lösung von Gleichungssystemen",
+                    "Numerische Lösung von Differentialgleichungen",
+                    "Stochastik",
+                    "Kombinatorik",
+                    "Klassische und bedingte Wahrscheinlichkeiten",
+                    "Verteilungen",
+                    "Beschreibende Statistik",
+                    "Konfidenzintervalle und Signifikanztests"
+                ]
+            },
+            "modul2": 
+            {
+                "name": "Algorithmen und Datenstrukturen",
+                "modulID": "ADS",
+                "profID": 2,
+                "hour": {
+                    "SWS Vorlesung": 2,
+                    "SWS Übung": 1,
+                    "SWS Praktikum": 1
+                },
+                "exam": "120 Minuten schriftlich",
+                "credits": 5,
+                "content": [
+                    "Algorithmenbegriff, Beschreibungsmöglichkeiten für A.",
+                    "einfache und zusammengesetzte Datenstrukturen: Feld, Stapel, Liste, Baum",
+                    "Sortieren (1): selection sort, bubble sort",
+                    "asymptotische Algorithmenanalyse: worst case, average case, Rechenzeitbedarf vs. Speicherbedarf",
+                    "Sortieren (2): quick sort, merge sort, heap sort Datenstrukturen und Algorithmen für Graphen: Traversierung, Backtracking, kürzeste Wege, Minimale Spannbäume",
+                    "Suche: lineare, binäre, Fibonacci und exponentielle Suche",
+                    "Binäre Suchbäume und Algorithmen auf binären Suchbäumen und Erweiterungen (AVL Bäume)",
+                    "Hashing"
+                ]
+            },
+            "modul3":
+            { 
+                "name":"Software Engineering",
+                "modulID": "SE",
+                "profID": 4,
+                "hour": {
+                    "SWS Vorlesung": 2,
+                    "SWS Übung" : 2,                    
+                    "SWS Praktikum": 0  
+                },
+                "exam": "20 Minuten mündlich",
+                "credits": 5,
+                "content": [
+                    "Allgemeine Grundlagen des Softwareentwicklungsprozesses",
+                    "Softwarekrise und Software-Engineering",
+                    "Softwareprozess und Softwareprozessmodelle",
+                    "Entwicklung, Wartung und Qualität von Softwareprodukten",
+                    "Allgemeine Prinzipien, Methoden und Konzepte der Softwareentwicklung",
+                    "Phasen der Softwareentwicklung",
+                    "Planung und Management von Softwareprojekten",
+                    "Spezifikation, Entwurf und Realisierung von Softwaresystemen",
+                    "Modellierung von Softwaresystemen",
+                    "Ausgewählte Werkzeuge und Methoden der Softwareentwicklung"
+                ]
+            },
+            "modul4": {
+                "name": "Programmierung 2",
+                "modulID": "Prog2",
+                "profID": 2,
+                "hour": {
+                    "SWS Vorlesung": 2,
+                    "SWS Übung": 0,
+                    "SWS Praktikum": 2 
+                },
+                "exam": "20 Minuten mündlich",
+                "credits": 5,
+                "content": [
+                    "Objektorientierung: Einführung, Abgrenzung, Grundlagen",
+                    "OO-Konzepte (1): Kapselung, Vererbung, Polymorphie",
+                    "OO-Konzepte (2): Ausnahmebehandlung, Operatoren",
+                    "Generische Programmierung (Einführung): Java Generics, C++ Templates.",
+                    "Generische Programmierung (C++ STL): Container, Iteratoren, Algorithmen. Boost, reguläre Ausdrücke",
+                    "Parallelprogrammierung: Threads und elementare Synchronisationsmechanismen in Java; Racing Conditions und Deadlock; threadsichere Container"
+                ]
+            },
+            "modul5": {
+                "name": "Datenbanksysteme",
+                "modulID": "DB",
+                "profID": 3,
+                "hour": {
+                    "SWS Vorlesung": 1,
+                    "SWS Übung": 2,
+                    "SWS Praktikum" : 1
+                },
+                "exam": "120 Minuten schriftlich",
+                "credits": 5,
+                "content": [
+                    "Entwicklung von Datenbanksystemen",
+                    "Entity-Relationship-Modell: Normalisierung,Datenintegrität",
+                    "Relationenmodell",
+                    "Relationenalgebra",
+                    "SQL: Datendefinition",
+                    "SQL: Anfragen, Join, Unteranfragen, Datenmanipulation",
+                    "Anwendungsprogrammierung: Grundlagen DB-Zugriffe mit Java, PHP",
+                    "Administration von Datenbanken",
+                    "Effiziente Speicherstrukturen",
+                    "Ausblick NoSQL-Datenbanken",
+                    "Praktika: PostgreSQL, Oracle, DB2"
+                ]
+            }
+        },
+        "semester 3" : 
+        {
+            "modul1": 
+            {
+                "name": "Kryptografie",
+                "modulID": "Krypto",
+                "profID": 6,
+                "hour": {
+                    "SWS Vorlesung": 1,
+                    "SWS Übung": 1,
+                    "SWS Praktikum": 2
+                },
+                "exam": "120 Minuten schriftlich",
+                "credits": 5,
+                "content": [
+                    "Einführung in die mathematischen Grundlagen und Konzepte der klassischen und modernen Kryptologie sowie in Grundwissen über deren Algorithmen, Protokolle und Verfahren",
+                    "Beschreibung und symmetrischer Verschlüsselungsverfahren und aktueller symmetrischer Algorithmen",
+                    "Behandlung wichtiger asymmetrischer Verfahren sowie digitaler Zertifikate"
+                ]
+            },
+            "modul2": 
+            {
+                "name": "Grundlagen der Theoretischen Informatik",
+                "modulID": "TI",
+                "profID": 7,
+                "hour": {
+                    "SWS Vorlesung": 2,
+                    "SWS Übung": 2,
+                    "SWS Praktikum": 0
+                },
+                "exam": "120 Minuten schriftlich",
+                "credits": 5,
+                "content": [
+                    "Mathematische Grundlagen (Mengen, Relationen, Funktionen, formale Sprachen)",
+                    "Endliche Automaten, Kellerautomaten, Turing-Maschinen; deterministische und indeterministische Automaten",
+                    "Komplexität; lösbare und unlösbare Probleme",
+                    "Logik (Aussagenlogik)"  
+                ]
+            },
+            "modul3":
+            { 
+                "name":"Technik Multimedialer Systeme",
+                "modulID": "TMS",
+                "profID": 5,
+                "hour": {
+                    "SWS Vorlesung": 1,
+                    "SWS Übung" : 1,                    
+                    "SWS Praktikum": 2  
+                },
+                "exam": "20 Minuten mündlich",
+                "credits": 5,
+                "content": [
+                    "Bussysteme",
+                    "Codierung, Kompression",
+                    "Signaltheoretische und physikalische Grundlagen der Digitalgrafik, Bild-File-Formate",
+                    "Optische Ein- und Ausgabegeräte",
+                    "Akustische Grundlagen, Datenformate zur Audio-Kompression, Audio-Hardware",
+                    "Analoge und digitale Videotechnik, Videokompression"
+                ]
+            },
+            "modul4": {
+                "name": "Web-Technologien",
+                "modulID": "Web",
+                "dozID": 3,
+                "hour": {
+                    "SWS Vorlesung": 1,
+                    "SWS Übung": 2,
+                    "SWS Praktikum": 1 
+                },
+                "exam": "20 Minuten mündlich",
+                "credits": 5,
+                "content": [
+                    "Teil I: Einführung in moderne WEB-Technologien",
+                    "XML, DTD, Schemata",
+                    "XHTML",
+                    "CSS",
+                    "SVG",
+                    "JavaScript",
+                    "JQuery",
+                    "PHP",
+                    "AJAX"
+                ]
+            },
+            "modul5": {
+                "name": "Angewandte Softwareentwicklung",
+                "modulID": "ASE",
+                "profID": 2,
+                "hour": {
+                    "SWS Vorlesung": 1,
+                    "SWS Übung": 1,
+                    "SWS Praktikum" : 2
+                },
+                "exam": "20 Minuten mündlich",
+                "credits": 5,
+                "content": [
+                    "Überblick über Softwarearchitekturen",
+                    "Technisches Management von Softwareprojekten durch Quellcodeverwaltung und Bugtrackingsysteme",
+                    "Einführung in die Software- und GUI-Entwicklung mit Java ",
+                    "Grundlalgen XML, Xpath und XSLT",
+                    "SOAP und REST Web-Services", 
+                    "Qualitätssicherung durch Softwaretests (Test-Driven und Behavior-Driven Development)", 
+                    "Kennenlernen von verschiedenen Software-Lizenzmodellen"
+                ]
+            },
+            "modul6": {
+                "name": "Anwendungprogrammierung",
+                "modulID": "AP",
+                "profID": 8,
+                "hour": {
+                    "SWS Vorlesung": 1,
+                    "SWS Übung": 1,
+                    "SWS Praktikum" : 2
+                },
+                "exam": "120 Minuten schriftlich",
+                "credits": 5,
+                "content": [
+                    "experimentelle und theoretische Modellbildung",
+                    "Systemsimulation",
+                    "praktische Anwendungsbeispiele unter Verwendung von SCEs (Matlab u.ä.)"
+                ]
+            }
         }
-     
     }
 }
