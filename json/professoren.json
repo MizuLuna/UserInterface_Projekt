@@ -52,7 +52,7 @@
             "teaching":[
                 "MMDB I: Datenbanken / Informationssysteme",
                 "Grundlagen der Sprachtechnologie ",
-                "Soft Skills 1: Kommunikation",
+                "Soft Skills 1: Präsentieren und Publizieren",
                 "Soft Skills 2: Kommunikation (Blockseminar)"
             ]
         },
@@ -130,7 +130,7 @@
         },
         "Professor8":
         {
-            "profID": 7,
+            "profID": 8,
             "name": "Sven Pawletta",
             "title": "Prof. Dr.-Ing.",
             "telNumber": "03841 753–7417",
@@ -143,19 +143,39 @@
                 "Anwendungsprogrammierung",
                 "Echtzeit- und Netzwerkprogrammierung"
             ]
-        }         
+        },
+        "Professor9":
+        {
+            "profID": 9,
+            "name": "Uwe Lochmann",
+            "title": "Prof. Dr.-Ing. habil.",
+            "telNumber": "03841 753–7249",
+            "email": "steffen.lochmann@hs-wismar.de",
+            "office":  {
+                "house" : 16,
+                "room": 212
+            },
+            "teaching":[
+                "Nachrichtentechnik",
+                "Kommunikationstechnik",
+                "Optische Kommunikationssysteme"
+            ]
+        }           
     } ,
     "dozenten":
     {
         "dozent1": {
             "dozID": 1,
-            "name": "Lüskow",
-            "title": "",
-            "telNumber": "",
-            "email": "",
-            "office": "",
+            "name": "Renée Lüskow",
+            "title": "Dr. phil.",
+            "telNumber": "03841 753–7238",
+            "email": "renee.lueskow@hs-wismar.de",
+            "office": {
+                "house" : 1,
+                "room": 311
+            },
             "teaching":[
-                
+                "Fachenglisch"
             ]
         },
         "dozent2": {
@@ -172,12 +192,79 @@
         "dozent3": {
             "dozID": 3,
             "name": "Anke Carstensen",
-            "title": "",
-            "telNumber": "",
-            "email": "",
-            "office": "",
+            "title": "Dipl.-Inf.",
+            "telNumber": "03841 753–7628",
+            "email": "anke.carstensen@hs-wismar.de",
+            "office":  {
+                "house" : 2,
+                "room": "204d"
+            },
             "teaching":[
-                
+                "WEB - Technologien",
+                "Datenschutz/ Datensicherheit"
+            ],
+            "Praktikumsbetreuung": [
+                "Algorithmen und Datenstrukturen, BAI 2.Semester",
+                "Angewandte Softwareentwicklung, BAI 3.Semester",
+                "Computergraphik, BAI 4.Semester",
+                "Multimedia-Datenbanken, BAI 3.Semester",
+                "Programmierung I BIET,BMEC, BSET 2.Semester",
+                "Programmierung II, BAI 2.Semester",
+                "Programmierung mobiler Geräte, BAI 4.Semester" 
+            ]
+        },
+        "dozent4": {
+            "dozID": 4,
+            "name": "Christoph Eigenstetter",
+            "title": "Dipl.-Inf. (FH)",
+            "telNumber": "03841 753–7592",
+            "email": "christoph.eigenstetter@hs-wismar.de",
+            "office":  {
+                "house" : 2,
+                "room": "204a"
+            },
+            "teaching":[
+                null
+            ],
+            "Praktikumsbetreuung": [
+                "Betriebssysteme",
+                "Systemnahe Programmierung", 
+                "Multimediadatenbanken"  
+                 
+            ]
+        },
+        "dozent5": {
+            "dozID": 5,
+            "name": "Robert Henning",
+            "title": null,
+            "telNumber": "03841 753–7750",
+            "email": "robert.henning@hs-wismar.de",
+            "office":  {
+                "house" : 2,
+                "room": "201a"
+            },
+            "teaching":[
+                null
+            ],
+            "Praktikumsbetreuung": [
+                "Grundlagen Sprachtechnologien"      
+            ]
+        },
+        "dozent6": {
+            "dozID": 6,
+            "name": "Carola Kadow",
+            "title": "Dipl.-Ing.",
+            "telNumber": "03841 753–7265",
+            "email": "carola.kadow@hs-wismar.de",
+            "office":  {
+                "house" : 2,
+                "room": "202"
+            },
+            "teaching":[
+                null
+            ],
+            "Praktikumsbetreuung": [
+                null      
             ]
         }
 
