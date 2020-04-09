@@ -9,6 +9,8 @@ class MyElement extends LitElement {
    *
    * You must provide an implementation of `render` for any element
    * that uses LitElement as a base class.
+   * 
+   * @returns {html} dynamic html 
    */
   render(){
     /**
