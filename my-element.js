@@ -1,29 +1,22 @@
 // Import the LitElement base class and html helper function
 import { LitElement, html } from 'lit-element';
+import { navigator } from 'lit-element-router';
+import './semesterview/overview/sem-overview';
 
 // Extend the LitElement base class
-class MyElement extends LitElement {
+class MyElement extends navigator(LitElement) {
+    render() {
+        return html`
+       <link rel="stylesheet" href="style.css">
+       <!-- template content -->
+      <p class="farbe">hello world</p>
+      <button @click="${this.clickHandler}">click</button>
+       `;
+    }
 
-  /**
-   * Implement `render` to define a template for your element.
-   *
-   * You must provide an implementation of `render` for any element
-   * that uses LitElement as a base class.
-   * 
-   * @returns {html} dynamic html 
-   */
-  render(){
-    /**
-     * `render` must return a lit-html `TemplateResult`.
-     *
-     * To create a `TemplateResult`, tag a JavaScript template literal
-     * with the `html` helper function:
-     */
-    return html`
-      <!-- template content -->
-      <p>hello world</p>
-    `;
-  }
+    clickHandler(e) {
+        this.navigate('/semesterview');
+    }
 }
 // Register the new element with the browser.
 customElements.define('my-element', MyElement);
