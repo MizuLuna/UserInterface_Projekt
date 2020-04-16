@@ -14,6 +14,7 @@ class MyApp extends router(LitElement) {
         };
     }
 
+
     static get routes() {
         return [{
             name: 'home',
