@@ -1,4 +1,6 @@
 # Visual Studio Data
 .vs/
 
+.DS_Store
+
 node_modules
