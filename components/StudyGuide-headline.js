@@ -1,10 +1,9 @@
-// Import the LitElement base class and html helper function
 import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 import './semesterview/overview/sem-overview';
 
-// Extend the LitElement base class
-class MyElement extends navigator(LitElement) {
+
+class Headline extends navigator(LitElement) {
     render() {
         return html`
        <link rel="stylesheet" href="style.css">
@@ -18,6 +17,5 @@ class MyElement extends navigator(LitElement) {
         this.navigate('/semesterview');
     }
 }
-// Register the new element with the browser.
-customElements.define('my-element', MyElement);
 
+customElements.define('studyguide-headline', Headline);

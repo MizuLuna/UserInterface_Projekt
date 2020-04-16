@@ -1,8 +1,10 @@
-{"semester": 
+﻿dataSem =
+{
+    "semester":
     {
-        "semester 1" : 
+        "semester 1":
         {
-            "modul1": 
+            "modul1":
             {
                 "name": "Mathematik für Ingenieure 1",
                 "modulID": "MA1",
@@ -17,7 +19,7 @@
                 "content": [
                     "Lineare Algebra",
                     "Komplexe Zahlen",
-                    "Vektoren und Matrizen", 
+                    "Vektoren und Matrizen",
                     "Lineare Gleichungssysteme",
                     "Analysis",
                     "Funktionen",
@@ -25,7 +27,7 @@
                     "Differential- und Integralrechnung"
                 ]
             },
-            "modul2": 
+            "modul2":
             {
                 "name": "Grundlagen der Technischen Informatik",
                 "modulID": "GTI",
@@ -49,14 +51,14 @@
                 ]
             },
             "modul3":
-            { 
-                "name":"Fachenglisch",
+            {
+                "name": "Fachenglisch",
                 "modulID": "FENG",
                 "dozID": 1,
                 "hour": {
                     "SWS Vorlesung": 0,
-                    "SWS Übung" : 4,                    
-                    "SWS Praktikum": 0  
+                    "SWS Übung": 4,
+                    "SWS Praktikum": 0
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -80,7 +82,7 @@
                 "hour": {
                     "SWS Vorlesung": 2,
                     "SWS Übung": 1,
-                    "SWS Praktikum": 1 
+                    "SWS Praktikum": 1
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -101,7 +103,7 @@
                 "hour": {
                     "SWS Vorlesung": 1,
                     "SWS Übung": 1,
-                    "SWS Praktikum" : 2
+                    "SWS Praktikum": 2
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -134,17 +136,17 @@
                 "credits": 5,
                 "content": [
                     "Rahmenbedingungen der BWL",
-                    "Betriebliche Funktionsbereiche",       
+                    "Betriebliche Funktionsbereiche",
                     "Leistungsprozess und Finanzwirtschaft",
-                    "Management als Aufgabe und Strategie",         
+                    "Management als Aufgabe und Strategie",
                     "Werkzeuge der BWL",
                     "Wertschöpfung und ihre Verteilung"
                 ]
             }
         },
-        "semester 2" : 
+        "semester 2":
         {
-            "modul1": 
+            "modul1":
             {
                 "name": "Mathematik für Ingenieure 2",
                 "modulID": "MA2",
@@ -176,7 +178,7 @@
                     "Konfidenzintervalle und Signifikanztests"
                 ]
             },
-            "modul2": 
+            "modul2":
             {
                 "name": "Algorithmen und Datenstrukturen",
                 "modulID": "ADS",
@@ -200,14 +202,14 @@
                 ]
             },
             "modul3":
-            { 
-                "name":"Software Engineering",
+            {
+                "name": "Software Engineering",
                 "modulID": "SE",
                 "profID": 4,
                 "hour": {
                     "SWS Vorlesung": 2,
-                    "SWS Übung" : 2,                    
-                    "SWS Praktikum": 0  
+                    "SWS Übung": 2,
+                    "SWS Praktikum": 0
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -231,7 +233,7 @@
                 "hour": {
                     "SWS Vorlesung": 2,
                     "SWS Übung": 0,
-                    "SWS Praktikum": 2 
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -251,7 +253,7 @@
                 "hour": {
                     "SWS Vorlesung": 1,
                     "SWS Übung": 2,
-                    "SWS Praktikum" : 1
+                    "SWS Praktikum": 1
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -270,9 +272,9 @@
                 ]
             }
         },
-        "semester 3" : 
+        "semester 3":
         {
-            "modul1": 
+            "modul1":
             {
                 "name": "Kryptografie",
                 "modulID": "KRYP",
@@ -290,7 +292,7 @@
                     "Behandlung wichtiger asymmetrischer Verfahren sowie digitaler Zertifikate"
                 ]
             },
-            "modul2": 
+            "modul2":
             {
                 "name": "Grundlagen der Theoretischen Informatik",
                 "modulID": "GTHI",
@@ -306,18 +308,18 @@
                     "Mathematische Grundlagen (Mengen, Relationen, Funktionen, formale Sprachen)",
                     "Endliche Automaten, Kellerautomaten, Turing-Maschinen; deterministische und indeterministische Automaten",
                     "Komplexität; lösbare und unlösbare Probleme",
-                    "Logik (Aussagenlogik)"  
+                    "Logik (Aussagenlogik)"
                 ]
             },
             "modul3":
-            { 
-                "name":"Technik Multimedialer Systeme",
+            {
+                "name": "Technik Multimedialer Systeme",
                 "modulID": "TMS",
                 "profID": 5,
                 "hour": {
                     "SWS Vorlesung": 1,
-                    "SWS Übung" : 1,                    
-                    "SWS Praktikum": 2  
+                    "SWS Übung": 1,
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -337,7 +339,7 @@
                 "hour": {
                     "SWS Vorlesung": 1,
                     "SWS Übung": 2,
-                    "SWS Praktikum": 1 
+                    "SWS Praktikum": 1
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -360,7 +362,7 @@
                 "hour": {
                     "SWS Vorlesung": 1,
                     "SWS Übung": 1,
-                    "SWS Praktikum" : 2
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -369,8 +371,8 @@
                     "Technisches Management von Softwareprojekten durch Quellcodeverwaltung und Bugtrackingsysteme",
                     "Einführung in die Software- und GUI-Entwicklung mit Java ",
                     "Grundlalgen XML, Xpath und XSLT",
-                    "SOAP und REST Web-Services", 
-                    "Qualitätssicherung durch Softwaretests (Test-Driven und Behavior-Driven Development)", 
+                    "SOAP und REST Web-Services",
+                    "Qualitätssicherung durch Softwaretests (Test-Driven und Behavior-Driven Development)",
                     "Kennenlernen von verschiedenen Software-Lizenzmodellen"
                 ]
             },
@@ -381,7 +383,7 @@
                 "hour": {
                     "SWS Vorlesung": 1,
                     "SWS Übung": 1,
-                    "SWS Praktikum" : 2
+                    "SWS Praktikum": 2
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -392,9 +394,9 @@
                 ]
             }
         },
-        "semester 4" : 
+        "semester 4":
         {
-            "modul1": 
+            "modul1":
             {
                 "name": "Kommunikationstechnik",
                 "modulID": "KoTe",
@@ -418,7 +420,7 @@
                     "PPPoE-Protokoll"
                 ]
             },
-            "modul2": 
+            "modul2":
             {
                 "name": "Systemnahe Programmierung",
                 "modulID": "SynPro",
@@ -441,14 +443,14 @@
                 ]
             },
             "modul3":
-            { 
-                "name":"Computergrafik",
+            {
+                "name": "Computergrafik",
                 "modulID": "CoGra",
                 "profID": 5,
                 "hour": {
                     "SWS Vorlesung": 2,
-                    "SWS Übung" : 0,                    
-                    "SWS Praktikum": 2  
+                    "SWS Übung": 0,
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -468,7 +470,7 @@
                 "hour": {
                     "SWS Vorlesung": 1,
                     "SWS Übung": 1,
-                    "SWS Praktikum": 2 
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -488,7 +490,7 @@
                 "hour": {
                     "SWS Vorlesung": 2,
                     "SWS Übung": 0,
-                    "SWS Praktikum" : 2
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -502,9 +504,9 @@
                 ]
             }
         },
-        "semester 6" : 
+        "semester 6":
         {
-            "modul1": 
+            "modul1":
             {
                 "name": "Echtzeit- und Netzwerkprogrammierung",
                 "modulID": "E-NWPRO",
@@ -524,7 +526,7 @@
                     "Client/Server-Applikationen"
                 ]
             },
-            "modul2": 
+            "modul2":
             {
                 "name": "Grundlagen Sprachtechnologien",
                 "modulID": "GST",
@@ -545,19 +547,19 @@
                     "Semantik: Semantische Strukturen in der natürlichen Sprache",
                     "Semantik: Prädikatenlogik zur Beschreibung von Semantik in der Sprache, Prolog",
                     "Pragmatik: Auswertung von natürlichsprachlichen Äußerungen im Kontext",
-                    "Architektur von Dialogsystemen", 
+                    "Architektur von Dialogsystemen",
                     "Psychologische Aspekte zur Gestaltung von natürlichsprachlichen Dialogsystemen"
                 ]
             },
             "modul3":
-            { 
-                "name":"Bildverarbeitung",
+            {
+                "name": "Bildverarbeitung",
                 "modulID": "BV",
                 "profID": 5,
                 "hour": {
                     "SWS Vorlesung": 1,
-                    "SWS Übung" : 1,                    
-                    "SWS Praktikum": 2  
+                    "SWS Übung": 1,
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -582,7 +584,7 @@
                 "hour": {
                     "SWS Vorlesung": 1,
                     "SWS Übung": 1,
-                    "SWS Praktikum": 2 
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -610,7 +612,7 @@
                 "hour": {
                     "SWS Vorlesung": 2,
                     "SWS Übung": 0,
-                    "SWS Praktikum" : 2
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -634,7 +636,7 @@
                     "hour": {
                         "SWS Vorlesung": 2,
                         "SWS Übung": 2,
-                        "SWS Praktikum" : 0
+                        "SWS Praktikum": 0
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
@@ -643,7 +645,7 @@
                         "Grundlagen des Vertragsrechts, Beschränkung des Haftungsrisikos für datenverarbeitende Berufe auf Grundlage des Zivilrechts, Urheberrechts, Patentrechts, Datenschutzrechts",
                         "Grundlagen des Werkvertragsrechts. Gewährleistungsansprüche und deren Beschränkung",
                         "Ausgewählte Themen aus dem Bereich e-commerce",
-                        "Umgang mit dem Rechtsinformationssystem juris" 
+                        "Umgang mit dem Rechtsinformationssystem juris"
                     ]
                 },
                 "Wahlpflichtmodul2": {
@@ -653,22 +655,22 @@
                     "hour": {
                         "SWS Vorlesung": 2,
                         "SWS Übung": 2,
-                        "SWS Praktikum" : 0
+                        "SWS Praktikum": 0
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
                     "content": [
-                        "Ideenfindung und Kreativitätstechniken", 
-                        "Checkliste Gründung und Vorgehensweise", 
-                        "Gründungskonzept und Businessplan", 
+                        "Ideenfindung und Kreativitätstechniken",
+                        "Checkliste Gründung und Vorgehensweise",
+                        "Gründungskonzept und Businessplan",
                         "Risikoanalyse",
-                        "Liquiditäts- und Rentabilitätsplanung", 
+                        "Liquiditäts- und Rentabilitätsplanung",
                         "Verkaufstraining",
-                        "Buchführung und Bilanzierung", 
-                        "Finanzierung und Finanzplanung", 
-                        "Fördermittel, Eigen- und Fremdkapital", 
+                        "Buchführung und Bilanzierung",
+                        "Finanzierung und Finanzplanung",
+                        "Fördermittel, Eigen- und Fremdkapital",
                         "Markt und Konkurrenz",
-                        "Marketing, Vertrieb und Kundenmanagement", 
+                        "Marketing, Vertrieb und Kundenmanagement",
                         "Führungskräftetraining – Gruppendynamische Prozesse"
                     ]
                 },
@@ -679,16 +681,16 @@
                     "hour": {
                         "SWS Vorlesung": 1,
                         "SWS Übung": 3,
-                        "SWS Praktikum" : 0
+                        "SWS Praktikum": 0
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
                     "content": [
-                        "Grundbegriffe der Statistik (Statistische Einheit und Masse, Merkmale und ihre Klassifizierung)", 
-                        "Datengewinnung, - erfassung und -aufbereitung", 
-                        "univariate Datenanalyse (eindimensionale Häufigkeitsverteilungen, Lage- und Streuungsparameter)", 
-                        "multivariate Datenanalyse (zweidimensionale Häufigkeitsverteilungen, Zusammenhang von Merkmalen)", 
-                        "Maß- und Indexzahlen; Bestands- und Bewegungsmassen; Zeitreihenanalyse (Aufgabe, Bewegungskomponenten, Methoden der Trendermittlung, Ermittlung der Saisonkomponente)"  
+                        "Grundbegriffe der Statistik (Statistische Einheit und Masse, Merkmale und ihre Klassifizierung)",
+                        "Datengewinnung, - erfassung und -aufbereitung",
+                        "univariate Datenanalyse (eindimensionale Häufigkeitsverteilungen, Lage- und Streuungsparameter)",
+                        "multivariate Datenanalyse (zweidimensionale Häufigkeitsverteilungen, Zusammenhang von Merkmalen)",
+                        "Maß- und Indexzahlen; Bestands- und Bewegungsmassen; Zeitreihenanalyse (Aufgabe, Bewegungskomponenten, Methoden der Trendermittlung, Ermittlung der Saisonkomponente)"
                     ]
                 },
                 "Wahlpflichtmodul4": {
@@ -698,19 +700,19 @@
                     "hour": {
                         "SWS Vorlesung": 1,
                         "SWS Übung": 1,
-                        "SWS Praktikum" : 2
+                        "SWS Praktikum": 2
                     },
                     "exam": "120 Minuten schriftich",
                     "credits": 5,
                     "content": [
-                        "Grundlagen der Softwaretechnik, Strategien", 
-                        "Vorgehens- modelle, Qualitätsmanagement", 
-                        "Geschäftsprozess- modellierung; Projektdefinition", 
-                        "strategische Informationssystemplanung", 
-                        "Aufwandsschätzung Analyse, Ist-Analyse", 
-                        "Requirements Engineering, Soll- Konzept", 
+                        "Grundlagen der Softwaretechnik, Strategien",
+                        "Vorgehens- modelle, Qualitätsmanagement",
+                        "Geschäftsprozess- modellierung; Projektdefinition",
+                        "strategische Informationssystemplanung",
+                        "Aufwandsschätzung Analyse, Ist-Analyse",
+                        "Requirements Engineering, Soll- Konzept",
                         "Systemspezifikation, Pflichtenheft",
-                        "Einsatz der Unified Modeling Language (UML) in der Systemanalyse" 
+                        "Einsatz der Unified Modeling Language (UML) in der Systemanalyse"
                     ]
                 },
                 "Wahlpflichtmodul5": {
@@ -720,21 +722,21 @@
                     "hour": {
                         "SWS Vorlesung": 2,
                         "SWS Übung": 2,
-                        "SWS Praktikum" : 0
+                        "SWS Praktikum": 0
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
                     "content": [
-                        "KI – Überblick und Einführung", 
-                        "Programmiersprache Prolog", 
-                        "Problemlösungsverfahren, Problembeschreibung und - charakteristika, Problemlösung als Suche", 
-                        "Suchstrategien, Heuristische Suche", 
-                        "Wissensrepräsentation und -verarbeitung", 
-                        "Arten von Wissen und Wissensrepräsentation", 
+                        "KI – Überblick und Einführung",
+                        "Programmiersprache Prolog",
+                        "Problemlösungsverfahren, Problembeschreibung und - charakteristika, Problemlösung als Suche",
+                        "Suchstrategien, Heuristische Suche",
+                        "Wissensrepräsentation und -verarbeitung",
+                        "Arten von Wissen und Wissensrepräsentation",
                         "Semantische Netze, Regel-Systeme,",
-                        "Frames, Logik (Prädikatenlogik 1. Stufe)", 
-                        "Automatisierung der Wissensverarbeitung", 
-                        "Fuzzy-Logik" 
+                        "Frames, Logik (Prädikatenlogik 1. Stufe)",
+                        "Automatisierung der Wissensverarbeitung",
+                        "Fuzzy-Logik"
                     ]
                 },
                 "Wahlpflichtmodul6": {
@@ -744,19 +746,19 @@
                     "hour": {
                         "SWS Vorlesung": 2,
                         "SWS Übung": 0,
-                        "SWS Praktikum" : 2
+                        "SWS Praktikum": 2
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
                     "content": [
-                        
+
                     ]
                 }
             }
         },
-        "semester 7" : 
+        "semester 7":
         {
-            "modul1": 
+            "modul1":
             {
                 "name": "Datenschutz/ Datensicherheit",
                 "modulID": "DD",
@@ -775,7 +777,7 @@
                     "Internet und Datensicherheit"
                 ]
             },
-            "modul2": 
+            "modul2":
             {
                 "name": "Grundlagen Sprachtechnologien",
                 "modulID": "GST",
@@ -796,19 +798,19 @@
                     "Semantik: Semantische Strukturen in der natürlichen Sprache",
                     "Semantik: Prädikatenlogik zur Beschreibung von Semantik in der Sprache, Prolog",
                     "Pragmatik: Auswertung von natürlichsprachlichen Äußerungen im Kontext",
-                    "Architektur von Dialogsystemen", 
+                    "Architektur von Dialogsystemen",
                     "Psychologische Aspekte zur Gestaltung von natürlichsprachlichen Dialogsystemen"
                 ]
             },
             "modul3":
-            { 
-                "name":"Bildverarbeitung",
+            {
+                "name": "Bildverarbeitung",
                 "modulID": "BV",
                 "profID": 5,
                 "hour": {
                     "SWS Vorlesung": 1,
-                    "SWS Übung" : 1,                    
-                    "SWS Praktikum": 2  
+                    "SWS Übung": 1,
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -833,7 +835,7 @@
                 "hour": {
                     "SWS Vorlesung": 1,
                     "SWS Übung": 1,
-                    "SWS Praktikum": 2 
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -861,7 +863,7 @@
                 "hour": {
                     "SWS Vorlesung": 2,
                     "SWS Übung": 0,
-                    "SWS Praktikum" : 2
+                    "SWS Praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -879,4 +881,5 @@
             }
         }
     }
-}
+};
+export default dataSem;

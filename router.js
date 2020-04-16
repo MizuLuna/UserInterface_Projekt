@@ -1,11 +1,11 @@
 import { LitElement, html } from 'lit-element';
 import { router } from 'lit-element-router';
 
-import './my-element';
-import './semesterview/overview/sem-overview';
+import './home';
+import './semesterview/semesterview';
 
 
-class MyApp extends router(LitElement) {
+class Router extends router(LitElement) {
     static get properties() {
         return {
             route: { type: String },
@@ -42,8 +42,8 @@ class MyApp extends router(LitElement) {
     render() {
         return html` 
       <app-main active-route=${this.route}>
-        <my-element route="home" ?hidden="${this.route !== 'home'}"></my-element>
-        <my-element2 route="semesterview" ?hidden="${this.route !== 'semesterview'}"></my-element2>
+        <studyguide-home route="home" ?hidden="${this.route !== 'home'}"></studyguide-home>
+        <studyguide-semesterview route="semesterview" ?hidden="${this.route !== 'semesterview'}"></studyguide-semesterview>
       </app-main>
     `;
     }
@@ -51,4 +51,4 @@ class MyApp extends router(LitElement) {
 
 }
 
-customElements.define('my-app', MyApp);
+customElements.define('studyguide-router', Router);

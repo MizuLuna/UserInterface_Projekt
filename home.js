@@ -1,12 +1,14 @@
+// Import the LitElement base class and html helper function
 import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 
-class Profview extends navigator(LitElement) {
+// Extend the LitElement base class
+class Home extends navigator(LitElement) {
     render() {
         return html`
        <link rel="stylesheet" href="style.css">
        <!-- template content -->
-      <p class="farbe">Semesterview</p>
+      <p class="farbe">hello world</p>
       <button @click="${this.clickHandler}">click</button>
        `;
     }
@@ -15,5 +17,6 @@ class Profview extends navigator(LitElement) {
         this.navigate('/semesterview');
     }
 }
+// Register the new element with the browser.
+customElements.define('studyguide-home', Home);
 
-customElements.define('studyguide-profview', Profview);

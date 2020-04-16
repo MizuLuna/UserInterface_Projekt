@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 
-class Profview extends navigator(LitElement) {
+class Semesterview extends navigator(LitElement) {
     render() {
         return html`
        <link rel="stylesheet" href="style.css">
@@ -16,4 +16,4 @@ class Profview extends navigator(LitElement) {
     }
 }
 
-customElements.define('studyguide-profview', Profview);
+customElements.define('studyguide-semesterview', Semesterview);
