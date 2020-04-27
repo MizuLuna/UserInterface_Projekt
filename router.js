@@ -60,10 +60,8 @@ class Router extends router(LitElement) {
     render() {
         return html` 
       <app-main active-route=${this.route}>
-        <studyguide-breadcrumb></studyguide-breadcrumb>
-        <studyguide-square></studyguide-square>        
+        <studyguide-breadcrumb></studyguide-breadcrumb>      
 
-        
         <studyguide-home route="home" ?hidden="${this.route !== 'home'}"></studyguide-home>
         <studyguide-semesterview route="semesterview" ?hidden="${this.route !== 'semesterview'}"></studyguide-semesterview>
         <studyguide-modul route="modules" ?hidden="${this.route !== 'modules'}"></studyguide-semesterview>
