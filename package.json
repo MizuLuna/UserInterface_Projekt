@@ -1,0 +1,25 @@
+{
+  "name": "user_interface_projekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "router.js",
+  "dependencies": {
+    "lit-element-router": "^2.0.1",
+    "lit-element": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MizuLuna/ui_projekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MizuLuna/ui_projekt/issues"
+  },
+  "homepage": "https://github.com/MizuLuna/ui_projekt#readme"
+}
