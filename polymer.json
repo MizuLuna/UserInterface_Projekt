@@ -1,10 +1,13 @@
 {
-  "shell": "src/router.js",
+  "shell": "router.js",
   "entrypoint": "index.html",
-  "fragments": ["src/components/studyguide-breadcrumb.js"],
+  "fragments": [ "src/components/studyguide-breadcrumb.js",
+      "src/components/studyguide-modul.js",
+      "home.js"
+  ],
   "npm": true,
   "moduleResolution": "node",
-  "sources": ["src/router.js", "manifest/**", "manifest.json", "package.json"],
+  "sources": ["router.js", "manifest/**", "manifest.json", "package.json"],
   "extraDependencies": [
     "robots.txt",
     "node_modules/@webcomponents/webcomponentsjs/**"

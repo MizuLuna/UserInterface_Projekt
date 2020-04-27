@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
-import dataSem from '../data/sem.js'
+//import dataSem from '../data/sem.js'
 
 class Modul extends navigator(LitElement) {
     render() {

@@ -8,7 +8,8 @@ import './home';
 //import './professorview/profview';
 //import './professorview/detailpage/prof-details';
 import './src/components/studyguide-breadcrumb';
-import './src/components/studyguide-square';
+//import './src/components/studyguide-square';
+import './src/components/studyguide-modul';
 
 
 class Router extends router(LitElement) {
@@ -61,13 +62,17 @@ class Router extends router(LitElement) {
         return html` 
       <app-main active-route=${this.route}>
         <studyguide-breadcrumb></studyguide-breadcrumb>      
-
+        <studyguide-modul></studyguide-modul>      
+        <!-- <studyguide-square></studyguide-square> -->
+     
         <studyguide-home route="home" ?hidden="${this.route !== 'home'}"></studyguide-home>
+        <!--
         <studyguide-semesterview route="semesterview" ?hidden="${this.route !== 'semesterview'}"></studyguide-semesterview>
         <studyguide-modul route="modules" ?hidden="${this.route !== 'modules'}"></studyguide-semesterview>
         <studyguide-moduldetails route="moduldetail" ?hidden="${this.route !== 'moduldetail'}"></studyguide-semesterview>
         <studyguide-profview route="profview" ?hidden="${this.route !== 'profview'}"></studyguide-semesterview>
         <studyguide-profdetails route="profdetail" ?hidden="${this.route !== 'profdetail'}"></studyguide-semesterview>
+        -->
       </app-main>
     `;
     }
