@@ -7,7 +7,7 @@ class Returnbutton extends navigator(LitElement) {
         return html`
        <link rel="stylesheet" href="returnBtn.css">
       
-       <button class="return-Btn" @click="${this.clickHandler}>Zurück zur Übersicht</button>
+       <button class="return-Btn" @click=${this.clickHandler}>Zurück zur Übersicht</button>
        `;
     }
 

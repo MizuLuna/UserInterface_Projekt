@@ -1,8 +1,8 @@
-﻿dataSem =
+﻿let dataSem =
 {
     "semester":
     {
-        "semester 1":
+        "semester1":
         {
             "modul1":
             {
@@ -144,7 +144,7 @@
                 ]
             }
         },
-        "semester 2":
+        "semester2":
         {
             "modul1":
             {
@@ -272,7 +272,7 @@
                 ]
             }
         },
-        "semester 3":
+        "semester3":
         {
             "modul1":
             {
@@ -394,7 +394,7 @@
                 ]
             }
         },
-        "semester 4":
+        "semester4":
         {
             "modul1":
             {
@@ -504,7 +504,7 @@
                 ]
             }
         },
-        "semester 6":
+        "semester6":
         {
             "modul1":
             {
@@ -756,7 +756,7 @@
                 }
             }
         },
-        "semester 7":
+        "semester7":
         {
             "modul1":
             {

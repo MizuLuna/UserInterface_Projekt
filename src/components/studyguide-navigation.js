@@ -8,8 +8,8 @@ class Navigation extends navigator(LitElement) {
        <link rel="stylesheet" href="navigation.css">
       
        <div class="nav-bottom">
-       <div class="item-sem item-pos" ${this.clickHandler}>Semesterübersicht</div>
-       <div class="item-prof item-pos" ${this.clickHandler}>Professoren und Mitarbeiter</div>
+       <div class="item-sem item-pos" @click=${this.clickHandler}>Semesterübersicht</div>
+       <div class="item-prof item-pos" @click=${this.clickHandler}>Professoren und Mitarbeiter</div>
      </div>
        `;
     }
