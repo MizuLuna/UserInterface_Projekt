@@ -20,13 +20,29 @@ class Home extends navigator(LitElement) {
     render() {
         return html`
        <!-- template content -->
-            <p class="farbe">hello world</p>
-            <button @click="${this.clickHandler}">click</button>
+            <p class="farbe">Welche Seite möchten sie sehen?</p>
+            <button @click="${this.clickHandler}">Semesteruebersicht</button>
+            <button @click="${this.prof}">Profuebersicht</button>
+            <button @click="${this.profdetail}">Profdetails</button>
+            <button @click="${this.moduldetail}">moduldetails</button>
+            <button @click="${this.modul}">module</button>
        `;
     }
 
     clickHandler(e) {
         this.navigate('/semesteruebersicht');
+    }
+    prof(e) {
+        this.navigate('/professor_und_mitarbeiter');
+    }
+    profdetail(e) {
+        this.navigate('/professor_und_mitarbeiter/1');
+    }
+    moduldetail(e) {
+        this.navigate('/semesteruebersicht/semester/1/modul/1');
+    }
+    modul(e) {
+        this.navigate('/semesteruebersicht/semester/1/modul');
     }
 }
 // Register the new element with the browser.

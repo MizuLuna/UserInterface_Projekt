@@ -5,10 +5,10 @@ import dataSem from '../data/prof.js'
 class Contact extends navigator(LitElement) {
     render() {
         return html`
-       <link rel="stylesheet" href="style.css">
+
        <!-- template content -->
-      <p class="farbe">hello world</p>
-      <button @click="${this.clickHandler}">click</button>
+      <p class="farbe">CONTACT</p>
+
        `;
     }
 

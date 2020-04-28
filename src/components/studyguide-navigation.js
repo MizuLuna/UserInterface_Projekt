@@ -5,7 +5,7 @@ import { navigator } from 'lit-element-router';
 class Navigation extends navigator(LitElement) {
     render() {
         return html`
-       <link rel="stylesheet" href="navigation.css">
+       <link rel="stylesheet" href="../src/styles/navigation.css">
       
        <div class="nav-bottom">
        <div class="item-sem item-pos" @click=${this.clickHandler}>Semesterübersicht</div>

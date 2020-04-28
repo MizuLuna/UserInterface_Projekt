@@ -1,4 +1,4 @@
-dataProf =
+let dataProf =
 {
     "professoren":
     {

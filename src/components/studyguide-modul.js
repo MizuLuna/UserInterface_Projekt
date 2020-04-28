@@ -6,7 +6,7 @@ import dataSem from '../data/sem.js'
 class Modul extends navigator(LitElement) {
     render() {
         return html`
-       <link rel="stylesheet" href="../styles/modul.css">
+       <link rel="stylesheet" href="../src/styles/modul.css">
         <div class="modul-view">
             <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul1.name}</div>
             <div class="modul" @click=${this.clickHandler}>Modul 2</div> 

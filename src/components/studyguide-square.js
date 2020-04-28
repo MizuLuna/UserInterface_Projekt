@@ -20,7 +20,7 @@ class Square extends navigator(LitElement) {
     }
 
     clickHandler(e) {
-        this.navigate('/semesterview');
+        this.navigate('/semesteruebersicht/semester/1/modul');
     }
 }
 

@@ -12,7 +12,7 @@ class Returnbutton extends navigator(LitElement) {
     }
 
     clickHandler(e) {
-        this.navigate('/semesterview');
+        this.navigate('/');
     }
 }
 

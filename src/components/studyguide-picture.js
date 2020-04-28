@@ -7,8 +7,7 @@ class Picture extends navigator(LitElement) {
         return html`
        <link rel="stylesheet" href="style.css">
        <!-- template content -->
-      <p class="farbe">hello world</p>
-      <button @click="${this.clickHandler}">click</button>
+      <p class="farbe">PICTURE</p>
        `;
     }
 

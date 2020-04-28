@@ -2,15 +2,11 @@ import { LitElement, html } from 'lit-element';
 import { router } from 'lit-element-router';
 
 import './home';
-//import './semesterview/semesterview';
-//import './semesterview/modulview/modul';
-//import './semesterview/detailpage/modul-details';
-//import './professorview/profview';
-//import './professorview/detailpage/prof-details';
-import './src/components/studyguide-breadcrumb';
-import './src/components/studyguide-headline';
-import './src/components/studyguide-modul';
-import './src/components/studyguide-navigation';
+import './src/views/semester';
+import './src/views/moduls';
+import './src/views/modul-details';
+import './src/views/profs';
+import './src/views/prof-details';
 
 
 class Router extends router(LitElement) {
@@ -31,8 +27,8 @@ class Router extends router(LitElement) {
             name: 'semesterview',
             pattern: 'semesteruebersicht'
         }, {
-            name: 'modules',
-            pattern: 'semesteruebersicht/semester/:id/module'
+            name: 'moduls',
+            pattern: 'semesteruebersicht/semester/:id/modul'
         }, {
             name: 'moduldetail',
             pattern: 'semesteruebersicht/semester/:id/modul/:id'
@@ -62,19 +58,12 @@ class Router extends router(LitElement) {
     render() {
         return html` 
       <app-main active-route=${this.route}>
-        <studyguide-breadcrumb></studyguide-breadcrumb>
-        <studyguide-headline></studyguide-headline>  
-         <studyguide-modul></studyguide-modul>   
-      <studyguide-navigation></studyguide-navigation> 
-     
         <studyguide-home route="home" ?hidden="${this.route !== 'home'}"></studyguide-home>
-       
-      <!--   <studyguide-semesterview route="semesterview" ?hidden="${this.route !== 'semesterview'}"></studyguide-semesterview>
-        <studyguide-modul route="modules" ?hidden="${this.route !== 'modules'}"></studyguide-semesterview>
-        <studyguide-moduldetails route="moduldetail" ?hidden="${this.route !== 'moduldetail'}"></studyguide-semesterview>
-        <studyguide-profview route="profview" ?hidden="${this.route !== 'profview'}"></studyguide-semesterview>
-        <studyguide-profdetails route="profdetail" ?hidden="${this.route !== 'profdetail'}"></studyguide-semesterview>
-        -->
+        <studyguide-semester route="semesterview" ?hidden="${this.route !== 'semesterview'}"></studyguide-semester>
+        <studyguide-moduls route="moduls" ?hidden="${this.route !== 'moduls'}"></studyguide-moduls>
+        <studyguide-moduldetails route="moduldetail" ?hidden="${this.route !== 'moduldetail'}"></studyguide-moduldetails>
+        <studyguide-prof route="profview" ?hidden="${this.route !== 'profview'}"></studyguide-prof>
+        <studyguide-profdetails route="profdetail" ?hidden="${this.route !== 'profdetail'}"></studyguide-profdetails>
       </app-main>
     `;
     }
