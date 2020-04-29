@@ -6,7 +6,7 @@ import dataSem from '../data/sem.js'
 class Professor extends navigator(LitElement) {
     render() {
         return html`
-       <link rel="stylesheet" href="sem-detail.css">
+       <link rel="stylesheet" href="../src/styles/sem-detail.css">
        
         <div class="professor div--style">
             <h4>Professor</h4>

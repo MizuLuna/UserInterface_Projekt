@@ -5,14 +5,13 @@ import dataSem from '../data/prof.js'
 class Teach extends navigator(LitElement) {
     render() {
         return html`
-<<<<<<< Updated upstream
+        <link rel="stylesheet" href="../src/styles/prof-detail.css">
 
-       <!-- template content -->
-      <p class="farbe">TEACH</p>
+        <div class="teach div--style">
+            <h4>Lehre</h4>
+            <p>abc</p>
+        </div>
 
-=======
-      
->>>>>>> Stashed changes
        `;
     }
 

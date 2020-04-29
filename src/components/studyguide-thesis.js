@@ -5,12 +5,14 @@ import dataSem from '../data/prof.js'
 class Thesis extends navigator(LitElement) {
     render() {
         return html`
-<<<<<<< Updated upstream
-       <!-- template content -->
-      <p class="farbe">THESIS</p>
-=======
-      
->>>>>>> Stashed changes
+        <link rel="stylesheet" href="../src/styles/prof-detail.css">
+
+        <div class="thesis div--style">
+            <h4>Thesenthemen</h4>
+            <p>a</p>
+            <p>b</p>
+            <p>c</p>  
+        </div>
        `;
     }
 

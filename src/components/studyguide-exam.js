@@ -5,7 +5,7 @@ import dataSem from '../data/sem.js'
 class Exam extends navigator(LitElement) {
     render() {
         return html`
-       <link rel="stylesheet" href="sem-detail.css">
+       <link rel="stylesheet" href="../src/styles/sem-detail.css">
        
         <div class="exam div--style">
             <h4>Prüfung</h4>

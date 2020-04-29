@@ -5,13 +5,9 @@ import dataSem from '../data/prof.js'
 class Picture extends navigator(LitElement) {
     render() {
         return html`
-<<<<<<< Updated upstream
-       <link rel="stylesheet" href="style.css">
-       <!-- template content -->
-      <p class="farbe">PICTURE</p>
-=======
-      
->>>>>>> Stashed changes
+       <link rel="stylesheet" href="../src/styles/.css">
+       
+       <img src="">
        `;
     }
 
