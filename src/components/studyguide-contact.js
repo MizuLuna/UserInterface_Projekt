@@ -23,20 +23,19 @@ class Contact extends navigator(LitElement) {
         this.profContactMail= [];
     }
 
-    // getProfContact() {
-    //     //var semester = 'semester' + this.id;
-    //     for (var prof in dataProf.professoren) {
-    //         if (prof === 'professor1') {
-    //             for (var profDet in dataProf.professoren[prof]) {
-    //                 this.profContactHouse.push(dataProf.professoren[prof][profDet].office);
-    //                 console.log(this.profContactHouse);
-    //                 this.profContactRoom.push(dataProf.professoren[prof][profDet].office);
-    //                 this.profContactTel.push(dataProf.professoren[prof][profDet].telNumber);
-    //                 this.profContactMail.push(dataProf.professoren[prof][profDet].email);
-    //             }
-    //         }
-    //     }
-    // }
+     getProfContact() {
+         //var semester = 'semester' + this.id;
+         for (var prof in dataProf.professoren) {
+             if (prof === 'professor1') {
+                     this.profContactHouse.push(dataProf.professoren[prof].office.house);
+                     console.log(this.profContactHouse);
+                     this.profContactRoom.push(dataProf.professoren[prof].office.room);
+                     this.profContactTel.push(dataProf.professoren[prof].telNumber);
+                     this.profContactMail.push(dataProf.professoren[prof].email);
+
+             }
+         }
+     }
    
     render() {
         return html`
@@ -44,7 +43,15 @@ class Contact extends navigator(LitElement) {
 
         <div class="professor div--style">
             <h4>Kontakt</h4> 
-  
+
+         ${this.getProfContact()}
+          
+         ${this.profContactHouse.map((i) => html`<p>Haus ${i}</p>`)}
+         ${this.profContactRoom.map((i) => html`<p>Raum ${i}</p>`)}
+         ${this.profContactTel.map((i) => html`<p>Telefonnummer: ${i}</p>`)}
+         ${this.profContactMail.map((i) => html`<p>EMail: ${i}</p>`)}        
+
+
         </div>
 
        `;
@@ -57,10 +64,3 @@ class Contact extends navigator(LitElement) {
 
 customElements.define('studyguide-contact', Contact);
 
-// <!--   ${this.getProfContact()}
-          
-// ${this.moduleHouse.map((i) => html`<p>Haus ${i}</p>`)}
-// ${this.moduleRoom.map((i) => html`<p>Raum ${i}</p>`)}
-// ${this.moduleTel.map((i) => html`<p>Telefonnummer: ${i}</p>`)}
-// ${this.moduleMail.map((i) => html`<p>EMail: ${i}</p>`)}        
-// -->
