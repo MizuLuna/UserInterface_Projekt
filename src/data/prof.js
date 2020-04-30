@@ -2,7 +2,7 @@ let dataProf =
 {
     "professoren":
     {
-        "Professor1":
+        "professor1":
         {
             "profID": 1,
                 "name": "Ekaterina Auer",
@@ -18,7 +18,7 @@ let dataProf =
                 "Mathematik f�r Ingenieure 2"
             ]
         },
-        "Professor2":
+        "professor2":
         {
             "profID": 2,
                 "name": "Matthias Kreuseler",
@@ -38,7 +38,7 @@ let dataProf =
                 "Projektseminar"
             ]
         },
-        "Professor3":
+        "professor3":
         {
             "profID": 3,
                 "name": "Antje Raab Düsterhöft",
@@ -56,7 +56,7 @@ let dataProf =
                 "Soft Skills 2: Kommunikation (Blockseminar)"
             ]
         },
-        "Professor4":
+        "professor4":
         {
             "profID": 4,
                 "name": "Ernst Jonas",
@@ -74,7 +74,7 @@ let dataProf =
                 "Projektseminar"
             ]
         },
-        "Professor5":
+        "professor5":
         {
             "profID": 5,
                 "name": "Herbert Litschke",
@@ -93,7 +93,7 @@ let dataProf =
                 "User Interfaces"
             ]
         },
-        "Professor6":
+        "professor6":
         {
             "profID": 6,
                 "name": "Andreas Ahrens",
@@ -111,7 +111,7 @@ let dataProf =
                 "Informations�bertragung"
             ]
         },
-        "Professor7":
+        "professor7":
         {
             "profID": 7,
                 "name": "Jüregen Cleve",
@@ -128,7 +128,7 @@ let dataProf =
                 "Data Mining"
             ]
         },
-        "Professor8":
+        "professor8":
         {
             "profID": 8,
                 "name": "Sven Pawletta",
@@ -144,7 +144,7 @@ let dataProf =
                 "Echtzeit- und Netzwerkprogrammierung"
             ]
         },
-        "Professor9":
+        "professor9":
         {
             "profID": 9,
                 "name": "Uwe Lochmann",
@@ -161,7 +161,7 @@ let dataProf =
                 "Optische Kommunikationssysteme"
             ]
         },
-        "Professor10":
+        "professor10":
         {
             "profID": 10,
                 "name": "Jens Kraitl",
