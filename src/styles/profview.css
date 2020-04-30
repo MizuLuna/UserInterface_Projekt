@@ -16,7 +16,7 @@ body{
 .square{
   display: flex;
   flex-direction: column;
-  border: 1px solid #00b1db;
+  border: 1px solid #886cff;
   background-color: #f2f2f2;
   color: #666666;
   width: 28vw; 

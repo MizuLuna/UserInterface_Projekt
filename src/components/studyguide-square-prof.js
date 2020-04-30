@@ -5,7 +5,7 @@ import dataProf from '../data/prof.js'
 class Square extends navigator(LitElement) {
     render() {
         return html`
-       <link rel="stylesheet" href="../src/styles/semesterview.css">
+       <link rel="stylesheet" href="../src/styles/profview.css">
         
        <div class="square-view">
             <div class="square" @click=${this.clickHandler}>${dataProf.professoren.Professor1.name}</div>
