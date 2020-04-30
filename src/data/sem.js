@@ -10,9 +10,9 @@
                 "modulID": "MA1",
                 "profname": "Ekaterina Auer",
                 "hour": {
-                    "SWS Vorlesung": 4,
-                    "SWS Übung": 2,
-                    "SWS Praktikum": 0
+                    "vorlesung": 4,
+                    "uebung": 2,
+                    "praktikum": 0
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 8,
@@ -33,9 +33,9 @@
                 "modulID": "GTI",
                 "profname": "Matthias Kreuseler",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 1
+                    "vorlesung": 2,
+                    "uebung": 1,
+                    "praktikum": 1
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -56,9 +56,9 @@
                 "modulID": "FENG",
                 "profname": "Renee Lüskow",
                 "hour": {
-                    "SWS Vorlesung": 0,
-                    "SWS Übung": 4,
-                    "SWS Praktikum": 0
+                    "vorlesung": 0,
+                    "uebung": 4,
+                    "praktikum": 0
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -80,9 +80,9 @@
                 "modulID": "Besy",
                 "profname": "Ernst Jonas",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 1
+                    "vorlesung": 2,
+                    "uebung": 1,
+                    "praktikum": 1
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -101,9 +101,9 @@
                 "modulID": "PRO1",
                 "profname": "Herbert Litschke",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -128,9 +128,9 @@
                 "modulID": "BWL",
                 "dozID": 2,
                 "hour": {
-                    "SWS Vorlesung": 4,
-                    "SWS Übung": 0,
-                    "SWS Praktikum": 0
+                    "vorlesung": 4,
+                    "uebung": 0,
+                    "praktikum": 0
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -152,9 +152,9 @@
                 "modulID": "MA2",
                 "profname": "Stefan Tesch",
                 "hour": {
-                    "SWS Vorlesung": 4,
-                    "SWS Übung": 4,
-                    "SWS Praktikum": 0
+                    "vorlesung": 4,
+                    "uebung": 4,
+                    "praktikum": 0
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 7,
@@ -184,9 +184,9 @@
                 "modulID": "ADS",
                 "profname": "Matthias Kreuseler",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 1
+                    "vorlesung": 2,
+                    "uebung": 1,
+                    "praktikum": 1
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -207,9 +207,9 @@
                 "modulID": "SE",
                 "profname": "Ernst Jonas",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 2,
-                    "SWS Praktikum": 0
+                    "vorlesung": 2,
+                    "uebung": 2,
+                    "praktikum": 0
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -231,9 +231,9 @@
                 "modulID": "PRO2",
                 "profname": "Matthias Kreuseler",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 0,
-                    "SWS Praktikum": 2
+                    "vorlesung": 2,
+                    "uebung": 0,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -251,9 +251,9 @@
                 "modulID": "DBSy",
                 "profname": "Antje Raab Düsterhöft",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 2,
-                    "SWS Praktikum": 1
+                    "vorlesung": 1,
+                    "uebung": 2,
+                    "praktikum": 1
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -280,9 +280,9 @@
                 "modulID": "KRYP",
                 "profname": "Andreas Ahrens",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -298,9 +298,9 @@
                 "modulID": "GTHI",
                 "profname": "Jüregen Cleve",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 2,
-                    "SWS Praktikum": 0
+                    "vorlesung": 2,
+                    "uebung": 2,
+                    "praktikum": 0
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -317,9 +317,9 @@
                 "modulID": "TMS",
                 "profname": "Herbert Litschke",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -337,9 +337,9 @@
                 "modulID": "WEB-T",
                 "profname": "Anke Carstensen",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 2,
-                    "SWS Praktikum": 1
+                    "vorlesung": 1,
+                    "uebung": 2,
+                    "praktikum": 1
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -360,9 +360,9 @@
                 "modulID": "ASE",
                 "profname": "Matthias Kreuseler",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -381,9 +381,9 @@
                 "modulID": "APro",
                 "profname": "Sven Pawletta",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -402,9 +402,9 @@
                 "modulID": "KoTe",
                 "profname": "Uwe Lochmann",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -426,9 +426,9 @@
                 "modulID": "SynPro",
                 "profname": "Ernst Jonas",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -448,9 +448,9 @@
                 "modulID": "CoGra",
                 "profname": "Herbert Litschke",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 0,
-                    "SWS Praktikum": 2
+                    "vorlesung": 2,
+                    "uebung": 0,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -468,9 +468,9 @@
                 "modulID": "SSI",
                 "profname": "Antje Raab Düsterhöft",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -488,9 +488,9 @@
                 "modulID": "PMG",
                 "profname": "Matthias Kreuseler",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 0,
-                    "SWS Praktikum": 2
+                    "vorlesung": 2,
+                    "uebung": 0,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -512,9 +512,9 @@
                 "modulID": "E-NWPRO",
                 "profname": "Sven Pawletta",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "120 Minuten schriftlich",
                 "credits": 5,
@@ -532,9 +532,9 @@
                 "modulID": "GST",
                 "profname": "Antje Raab Düsterhöft",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 2,
-                    "SWS Praktikum": 1
+                    "vorlesung": 1,
+                    "uebung": 2,
+                    "praktikum": 1
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -557,9 +557,9 @@
                 "modulID": "BV",
                 "profname": "Herbert Litschke",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -582,9 +582,9 @@
                 "modulID": "PMQS",
                 "profname": "Jens Kraitl",
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -610,9 +610,9 @@
                 "modulID": "UI",
                 "profname": "Herbert Litschke",
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 0,
-                    "SWS Praktikum": 2
+                    "vorlesung": 2,
+                    "uebung": 0,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -634,9 +634,9 @@
                     "modulID": "MeRe",
                     "profName": "Prof. Dr. jur. T. Möller",
                     "hour": {
-                        "SWS Vorlesung": 2,
-                        "SWS Übung": 2,
-                        "SWS Praktikum": 0
+                        "vorlesung": 2,
+                        "uebung": 2,
+                        "praktikum": 0
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
@@ -653,9 +653,9 @@
                     "modulID": "EG",
                     "profName": null,
                     "hour": {
-                        "SWS Vorlesung": 2,
-                        "SWS Übung": 2,
-                        "SWS Praktikum": 0
+                        "vorlesung": 2,
+                        "uebung": 2,
+                        "praktikum": 0
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
@@ -679,9 +679,9 @@
                     "modulID": "Stat",
                     "profName": "Prof. Dr. rer. pol. Gerhard Müller",
                     "hour": {
-                        "SWS Vorlesung": 1,
-                        "SWS Übung": 3,
-                        "SWS Praktikum": 0
+                        "vorlesung": 1,
+                        "uebung": 3,
+                        "praktikum": 0
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
@@ -698,9 +698,9 @@
                     "modulID": "SySo",
                     "profName": "Prof. Dr. oec. E. Alde",
                     "hour": {
-                        "SWS Vorlesung": 1,
-                        "SWS Übung": 1,
-                        "SWS Praktikum": 2
+                        "vorlesung": 1,
+                        "uebung": 1,
+                        "praktikum": 2
                     },
                     "exam": "120 Minuten schriftich",
                     "credits": 5,
@@ -720,9 +720,9 @@
                     "modulID": "KI",
                     "profName": "Prof. Dr. rer. nat. J. Cleve",
                     "hour": {
-                        "SWS Vorlesung": 2,
-                        "SWS Übung": 2,
-                        "SWS Praktikum": 0
+                        "vorlesung": 2,
+                        "uebung": 2,
+                        "praktikum": 0
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
@@ -744,9 +744,9 @@
                     "modulID": "",
                     "profID": 5,
                     "hour": {
-                        "SWS Vorlesung": 2,
-                        "SWS Übung": 0,
-                        "SWS Praktikum": 2
+                        "vorlesung": 2,
+                        "uebung": 0,
+                        "praktikum": 2
                     },
                     "exam": "20 Minuten mündlich",
                     "credits": 5,
@@ -764,9 +764,9 @@
                 "modulID": "DD",
                 "dozID": 3,
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 2,
-                    "SWS Praktikum": 0
+                    "vorlesung": 2,
+                    "uebung": 2,
+                    "praktikum": 0
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -783,9 +783,9 @@
                 "modulID": "GST",
                 "profID": 3,
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 2,
-                    "SWS Praktikum": 1
+                    "vorlesung": 1,
+                    "uebung": 2,
+                    "praktikum": 1
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -808,9 +808,9 @@
                 "modulID": "BV",
                 "profID": 5,
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -833,9 +833,9 @@
                 "modulID": "PQ",
                 "profID": 10,
                 "hour": {
-                    "SWS Vorlesung": 1,
-                    "SWS Übung": 1,
-                    "SWS Praktikum": 2
+                    "vorlesung": 1,
+                    "uebung": 1,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
@@ -861,9 +861,9 @@
                 "modulID": "UI",
                 "profID": 5,
                 "hour": {
-                    "SWS Vorlesung": 2,
-                    "SWS Übung": 0,
-                    "SWS Praktikum": 2
+                    "vorlesung": 2,
+                    "uebung": 0,
+                    "praktikum": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,

@@ -27,4 +27,4 @@ class Square extends navigator(LitElement) {
     }
 }
 
-customElements.define('studyguide-square', Square);
+customElements.define('studyguide-square-prof', Square);

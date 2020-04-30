@@ -16,4 +16,4 @@ class Breadcrumb extends navigator(LitElement) {
     }
 }
 
-customElements.define('studyguide-breadcrumb', Breadcrumb);
+customElements.define('studyguide-breadcrumb-prof', Breadcrumb);

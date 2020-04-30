@@ -12,4 +12,4 @@ class Headline extends navigator(LitElement) {
     }
 }
 
-customElements.define('studyguide-headline', Headline);
+customElements.define('studyguide-headline-prof', Headline);

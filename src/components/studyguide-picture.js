@@ -5,7 +5,7 @@ import dataSem from '../data/prof.js'
 class Picture extends navigator(LitElement) {
     render() {
         return html`
-       <link rel="stylesheet" href="../src/styles/picture.css">
+       <!--<link rel="stylesheet" href="../src/styles/picture.css">-->
        
        <img src="">
        `;

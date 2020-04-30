@@ -16,4 +16,4 @@ class Returnbutton extends navigator(LitElement) {
     }
 }
 
-customElements.define('studyguide-returnbutton', Returnbutton);
+customElements.define('studyguide-returnbutton-prof', Returnbutton);
