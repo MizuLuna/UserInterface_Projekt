@@ -4,6 +4,7 @@ import dataSem from '../data/sem.js'
 
 
 class Modul extends navigator(LitElement) {
+    
     static get properties() {
         return {
             //id: { type: Integer },
@@ -30,7 +31,7 @@ class Modul extends navigator(LitElement) {
 
     getModulDetails(id) {
         //var url = "semesteruebersicht/semester/1/modul/" + id;
-        console.log(id);
+        //console.log(id);
         //this.navigate(url);
     }
 
