@@ -10,7 +10,10 @@ class Professor extends navigator(LitElement) {
         return {
             //id: { type: Integer },
             moduleProf: { type: Array },
+<<<<<<< HEAD
             moduleProfTitle: { type: Array },
+=======
+>>>>>>> data
             moduleSWSv: { type: Array },
             moduleSWSue: { type: Array },
             moduleSWSp: { type: Array }
@@ -21,7 +24,10 @@ class Professor extends navigator(LitElement) {
         super();
         //this.id = null;
         this.moduleProf = [];
+<<<<<<< HEAD
         this.moduleProfTitle = [];
+=======
+>>>>>>> data
         this.moduleSWSv = [];
         this.moduleSWSue = [];
         this.moduleSWSp = [];
@@ -41,12 +47,15 @@ class Professor extends navigator(LitElement) {
                 }
             }
         }
+<<<<<<< HEAD
         for (var prof in dataProf.professoren) {
             //id Vergleich aus dataSem des Profs und in dataProf!!!!!
             if (prof === 'professor1') {
                     this.moduleProfTitle.push(dataProf.professoren[prof].title);
             }
         }
+=======
+>>>>>>> data
     }
     
     render() {
@@ -57,10 +66,20 @@ class Professor extends navigator(LitElement) {
 
         <div class="professor div--style">
             ${this.moduleProf.map((i) => html`<h4>${i}</h4>`)} 
+<<<<<<< HEAD
             ${this.moduleProfTitle.map((i) => html`<h4>${i}</h4>`)} 
             ${this.moduleSWSv.map((i) => html`<p>${i} SWS Vorlesung</p>`)} 
             ${this.moduleSWSue.map((i) => html`<p>${i}  SWS Übung</p>`)} 
             ${this.moduleSWSp.map((i) => html`<p>${i} SWS Übung</p>`)} 
+=======
+            ${this.moduleSWSv.map((i) => html`<p>${i} SWS Vorlesung</p>`)} 
+            ${this.moduleSWSue.map((i) => html`<p>${i}  SWS Übung</p>`)} 
+            ${this.moduleSWSp.map((i) => html`<p>${i} SWS Übung</p>`)} 
+           <!-- <h4>Professor</h4>
+            <p>4 SWS Vorlesung</p>
+            <p>4 SWS Übung</p>
+            <p>4 SWS Praktikum</p>-->
+>>>>>>> data
         </div>
        `;
     }
