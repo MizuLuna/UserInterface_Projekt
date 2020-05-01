@@ -6,6 +6,7 @@ body{
 
 .square-view{
  display: flex;
+ flex-direction: row;
  width:80vw;
  height: 75vh;
  flex-wrap: wrap;

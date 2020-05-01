@@ -9,12 +9,10 @@ import '../components/studyguide-navigation';
 class Semesterview extends navigator(LitElement) {
     render() {
         return html`
-
-       <!-- template content -->
-       <studyguide-breadcrumb></studyguide-breadcrumb>
-   <studyguide-headline></studyguide-headline>
-    <studyguide-square></studyguide-square>
-    <studyguide-navigation></studyguide-navigation>
+        <studyguide-breadcrumb></studyguide-breadcrumb>
+        <studyguide-headline></studyguide-headline>
+        <studyguide-square></studyguide-square>
+        <studyguide-navigation></studyguide-navigation>
        `;
     }
 

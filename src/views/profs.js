@@ -12,7 +12,7 @@ class Semesterview extends navigator(LitElement) {
 
        <!-- template content -->
        <studyguide-breadcrumb-prof></studyguide-breadcrumb-prof>
-   <studyguide-headline-prof></studyguide-headline-prof>
+   <!--<studyguide-headline-prof></studyguide-headline-prof>-->
     <studyguide-square-prof></studyguide-square-prof>
    <!--<studyguide-headline-prof></studyguide-headline-prof>
     <studyguide-square-prof></studyguide-square-prof>-->

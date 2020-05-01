@@ -3,35 +3,47 @@ import { navigator } from 'lit-element-router';
 import dataProf from '../data/prof.js'
 
 class Square extends navigator(LitElement) {
+    
+    static get properties() {
+        return {
+            //id: { type: Integer },
+            profName: { type: Array },
+            dozName: { type: Array }
+        };
+    }
+
+    constructor() {
+        super();
+        //this.id = null;
+        this.profName= [];
+        this.dozName= [];
+    }
+
+     getProfName() {
+         //var semester = 'semester' + this.id;
+         for (var prof in dataProf.professoren) {     
+                     this.profName.push(dataProf.professoren[prof].name);            
+         }
+         for (var doz in dataProf.dozenten) {     
+            this.dozName.push(dataProf.dozenten[doz].name);            
+}
+     }
+    
     render() {
         return html`
-       <link rel="stylesheet" href="../src/styles/profview.css">
-       <link rel="stylesheet" href="../src/styles/headline-prof.css">
-
-       <h1 class="headline">Professoren</h1> 
-       <div class="square-view">
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor1.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor2.name}</div> 
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor3.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor4.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor5.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor6.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor7.name}</div> 
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor8.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor9.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.professoren.professor10.name}</div>
-        </div>
-
-        <h1 class="headline">Mitarbeiter</h1>
-
-        <div class="square-view">
-            <div class="square" @click=${this.clickHandler}>${dataProf.dozenten.dozent1.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.dozenten.dozent2.name}</div> 
-            <div class="square" @click=${this.clickHandler}>${dataProf.dozenten.dozent3.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.dozenten.dozent4.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.dozenten.dozent5.name}</div>
-            <div class="square" @click=${this.clickHandler}>${dataProf.dozenten.dozent6.name}</div>
-        </div>
+            <link rel="stylesheet" href="../src/styles/profview.css">
+            <link rel="stylesheet" href="../src/styles/headline-prof.css">
+       
+            ${this.getProfName()}
+       
+            
+            <div class="square-view">
+                <h1 class="headline">Professoren</h1><br> 
+                ${this.profName.map((i) => html`<div class="square" @click=${this.clickHandler}>${i} </div><br>`)}
+    
+                <h1 class="headline">Mitarbeiter</h1><br> 
+                ${this.dozName.map((i) => html`<div class="square" @click=${this.clickHandler}>${i} </div>`)}
+            </div>
        `;
     }
 
