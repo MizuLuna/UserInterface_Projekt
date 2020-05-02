@@ -254,10 +254,15 @@
 
 \chapter{Einleitung}
 
-\chapter{Untersuchung der HS Website}	
-		
+\chapter{Untersuchung der Hochschul Website}	
+Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs Klicks um von der Startseite der HS Wismar zur Semsterübersicht (AIMMT) zu gelangen. Innerhalb dieser Seiten gibt es einige Unstimmigkeiten und fehlerhaftes Fehlerhaftes Verhalten, welches im folgendem näher erläutert wird.
 		\section{Analyse des Ist-Zustandes}
+		Die Hochschulwebsite hat einen großen allgemeinen Teil der Informationen über die Hochschule enthält und hat Verlinkungen zu den drei Fakultätsseiten. Da die entwickelte Webanwendung für Studierende des Studiengangs Angewandte Informatik und Multimendiatechnik gedacht ist wird an dieser Stelle nur die Fakultätsseite der Ingenieurstechnik bzw. des Bereiches Elektrotechnik und Information.
+		
+		In der oberen Navigationsleiste gibt es nicht eindeutig erkennbare Icons für den Schnelleinstig und Informationen. Werden diese angeklickt, klappt sich ein Panel nach oben aus. Die obere Navigationsleiste ist nicht fixiert. Der Footer ist sehr groß und enthält teilweise die selben Verlinkungen wie in der Seitennavigation oben. Auf der Seite der Semsterübersicht gib es eine Akkordeonmenü welches nicht an allen Punkten anklickbar ist. Dieses Menü enthält ein Pfeil-Icon nach unten zeigend, welches dem User sugerriert das sich hinter dem Icon mehr Informationen enthalten.  Dieses Icon ist aber nicht anklickbar. Die Pfeil-Icons gibt es auf der gesamten Website als wiederkehrendes Symbol für Verlinkungen. Auf den Informationsseiten werden diese Icons allerdings auch als Auflistungszeichen verwendet. Weiterhin gibt es viel zu viele Querverweise. Beispielsweise auf einer Modulübersichtsseite gibt es Verlinkungen zu weiteren Studiengängen die dieses Modul besuchen, weitere Module die der/die Professor |in unterrichtet, die Forschungsthemen, Thesenthemen, und Jobs die der/die Professor|in anbietet. Diese Informationen gibt als sowohl auf der Modulübersicht als auch auf der persönlichen Seite der/des Professor|in. Der User wird überfordert, da zu viele Informationen gegeben werden. Desweiteren fehlt die Auflistung der Wahlpflichtmodule. Diese müssen umständlich im Modulhandbuch gesucht werden. 
+		
 		\section{Festlegung Systemanforderung}
+		Die Hochschulwebsite ist sowohl für Studieninterssierte, als auch für eingeschriebene Studierende konzipiert. Um schneller an die wichtigsten Informationen zu gelangen, soll die Anwendung nur für eingeschriebene Studierende des Studiengangs Angewandte Informatik und Multimediatechnik dienen. Weiterhin sollen nur die wichtigsten Information kurz und knapp dargestellt werden. Daher hat jede Seite ein klares Ziel.	So ergeben sich weniger Verlinkungen, sodass der User immer genau weiß wo er sich befindet. Die heutigen Studierenden gehören zur Generation Smartphone. Daher soll der Ansatz "mobile first" verfolgt werden.
 	
 
 \chapter{Grundlagen}				
@@ -276,9 +281,9 @@
 
 
 \chapter{Konzept}			
-	\section{Use-Cases der Anwendung}	
-	\section{Systementwurf}
-
+		\section{Use-Cases der Anwendung}	
+		\section{Systementwurf}
+		Die Webanwendung teilt sich in zwei Bereiche: Semesterübersicht und Professoren und Mitarbeiter Übersicht. Die Trennung erfolgt durch ein klares Farbschema. In der Semesterübersicht werden im ersten Schritt alle 7 Semester aufgelistet. Wählt der User ein Semester aus, sind alle Module die in dem ausgewählten Semester angeboten werden aufgelistet. Klickt der User auf ein Modul, erhält er weitere Informationen zu diesem Modul. Hier idt beschrieben welcher Professor|in unterrichtet, wie viele SWS, Credits und Inhalte dieses Modul bietet und welche Form die Prüfung hat. In der unteren Navigation kann der User jederzeit in die gewünschte Übersicht wechseln. In der Übersicht der Professoren, sind alle Professoren und Mitarbeiter die diesen Studiengang begleiten aufgelistet. Wählt der User eine Person aus, bekommt er wichtige Informationen wie Kontaktdaten (Büro, Telefonnummer, EMail) und eine Auflistung der Module die dieser unterrichtet. Bei den Mitarbeitern sind die Module aufgelistet die diese betreuen.
 		
 \chapter{Implementierung}  
 
