@@ -8,7 +8,8 @@ class Modul extends navigator(LitElement) {
     static get properties() {
         return {
             //id: { type: Integer },
-            moduleNames: { type: Array }
+            moduleNames: { type: Array },
+            wahlModuleNames: { type: Array }
         };
     }
 
@@ -16,16 +17,22 @@ class Modul extends navigator(LitElement) {
         super();
         //this.id = null;
         this.moduleNames = [];
+        this.wahlModuleNames = [];
     }
 
     getModuleNames() {
         //var semester = 'semester' + this.id;
-        for (var sem in dataSem.semester) {
+        for (let sem in dataSem.semester) {
             if (sem === 'semester1') {
-                for (var modul in dataSem.semester[sem]) {
+                for (let modul in dataSem.semester[sem]) {
                     this.moduleNames.push(dataSem.semester[sem][modul].name);
                 }
             }
+        /*    if (sem === 'semester6'){
+                for (let wahlModul in dataSem.semester6.modul6) {
+                    this.wahlModuleNames.push(dataSem.semester6.modul6[wahlModul].name);
+                }
+            }*/
         }
     }
 
@@ -41,14 +48,7 @@ class Modul extends navigator(LitElement) {
         <div class="modul-view">
             ${this.getModuleNames()}
             ${this.moduleNames.map((i,index) => html`<div class="modul" @click=${this.getModulDetails(index+1)}>${i}</div>`)}
-<!--
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul1.name}</div>
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul2.name}</div> 
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul3.name}</div>
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul4.name}</div>
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul5.name}</div>
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul6.name}</div>
--->
+          <!--  ${this.wahlModuleNames.map((i) => html`<div class="modul">${i}</div>`)}-->
         </div>
        `;
     }

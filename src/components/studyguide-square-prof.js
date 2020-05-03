@@ -36,11 +36,13 @@ class Square extends navigator(LitElement) {
        
             ${this.getProfName()}
        
-            <div class="square-view">
                 <h1 class="headline">Professoren</h1><br> 
+             
+            <div class="square-view">   
                 ${this.profName.map((i) => html`<div class="square" @click=${this.clickHandler}>${i} </div><br>`)}
-    
+                </div>
                 <h1 class="headline">Mitarbeiter</h1><br> 
+                <div class="square-view">
                 ${this.dozName.map((i) => html`<div class="square" @click=${this.clickHandler}>${i} </div>`)}
             </div>
        `;

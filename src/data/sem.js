@@ -1,4 +1,4 @@
-﻿let dataSem =
+let dataSem =
 {
     "semester":
     {
@@ -504,6 +504,23 @@
                 ]
             }
         },
+        "semester5":
+        {
+            "name": "Praxissemester",
+            "duration": "mind. 100 Tage",
+            "contactPerson": {
+                "name": "Olaf Hagendorf",
+                "office": {
+                    "house": 17,
+                    "room": 202
+                },
+                "telNumber": "03841 753–7176",
+                "email": "olaf.hagendorf@hs-wismar.de",
+
+            },
+            "motion": "https://fiw.hs-wismar.de/storages/hs-wismar/_FIW/Vorlagen_und_Richtlinien/PV_deutsch_BAI_.pdf",
+            "hints": "https://fiw.hs-wismar.de/storages/hs-wismar/_FIW/Vorlagen_und_Richtlinien/Hinweise_zum_praktischen_Studiensemester.pdf",
+        },
         "semester6":
         {
             "modul1":
@@ -629,7 +646,8 @@
                 ]
             },
             "modul6": {
-                "Wahlpflichtmodul1": {
+                "name": "Wahlpflichtmodul",
+                "wahlpflichtmodul1": {
                     "name": "Medienrecht",
                     "modulID": "MeRe",
                     "profName": "Prof. Dr. jur. T. Möller",
@@ -648,7 +666,7 @@
                         "Umgang mit dem Rechtsinformationssystem juris"
                     ]
                 },
-                "Wahlpflichtmodul2": {
+                "wahlpflichtmodul2": {
                     "name": "Existenzgründung",
                     "modulID": "EG",
                     "profName": null,
@@ -674,7 +692,7 @@
                         "Führungskräftetraining – Gruppendynamische Prozesse"
                     ]
                 },
-                "Wahlpflichtmodul3": {
+                "wahlpflichtmodul3": {
                     "name": "Statistik",
                     "modulID": "Stat",
                     "profName": "Prof. Dr. rer. pol. Gerhard Müller",
@@ -693,7 +711,7 @@
                         "Maß- und Indexzahlen; Bestands- und Bewegungsmassen; Zeitreihenanalyse (Aufgabe, Bewegungskomponenten, Methoden der Trendermittlung, Ermittlung der Saisonkomponente)"
                     ]
                 },
-                "Wahlpflichtmodul4": {
+                "wahlpflichtmodul4": {
                     "name": "Systemanalyse und Softwaretechnik",
                     "modulID": "SySo",
                     "profName": "Prof. Dr. oec. E. Alde",
@@ -715,7 +733,7 @@
                         "Einsatz der Unified Modeling Language (UML) in der Systemanalyse"
                     ]
                 },
-                "Wahlpflichtmodul5": {
+                "wahlpflichtmodul5": {
                     "name": "Künstliche Intelligenz",
                     "modulID": "KI",
                     "profName": "Prof. Dr. rer. nat. J. Cleve",
@@ -739,7 +757,7 @@
                         "Fuzzy-Logik"
                     ]
                 },
-                "Wahlpflichtmodul6": {
+                "wahlpflichtmodul6": {
                     "name": "",
                     "modulID": "",
                     "profID": 5,
