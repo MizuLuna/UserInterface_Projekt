@@ -280,7 +280,21 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 					\subsubsection{Shadow Dom}
 					\subsubsection{Templates}
 				
-				\subsection{Router}			
+				\subsection{Router}
+Der Router übernimmt das Navigieren auf der gesamten Seite.
+Er legt die angezeigte URL fest und managed welche HTML-Tags
+(SPA's) dafür angezeigt werden.
+Die verschiedenen Routen werden mit Namen und einem URL Pattern angelegt
+und können auf diesem Wege auseinander gehalten werden.
+Über Parameter und Querys können dann auch Informationen übertragen werden,
+die für die neu aufgerufene Seite von belangen sind.
+
+Wird nun ein Button mit einem Redirect auf eine neue SPA belegt,
+registriert auch der Router den Klick und wechselt die 'route' Variable
+auf den entsprechenden Namen, welcher zu der neuen URL zugehörig ist.
+Anhand dieser Variable können alle nicht benötigten Seiten ausgeblendet
+und die neue SPA angezeigt werden.
+
 %		\section{Responsive Webentwicklung}	
 %				\subsection{Positionierungseinheiten }
 %					px, prozent, vh, vw, em, rem ...
