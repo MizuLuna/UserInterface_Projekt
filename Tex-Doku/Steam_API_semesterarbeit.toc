@@ -7,15 +7,17 @@
 \contentsline {section}{\numberline {3.1}Technische Grundlagen}{7}{section.8}%
 \contentsline {subsection}{\numberline {3.1.1}Webcomponents}{7}{subsection.9}%
 \contentsline {subsection}{\numberline {3.1.2}LitElement}{7}{subsection.10}%
-\contentsline {subsubsection}{\nonumberline Shadow Dom}{8}{section*.11}%
+\contentsline {subsubsection}{\nonumberline Shadow-Dom}{8}{section*.11}%
 \contentsline {subsubsection}{\nonumberline Templates}{8}{section*.12}%
-\contentsline {subsection}{\numberline {3.1.3}Router}{8}{subsection.13}%
-\contentsline {chapter}{\numberline {4}Konzept}{9}{chapter.14}%
-\contentsline {section}{\numberline {4.1}Use-Cases der Anwendung}{9}{section.15}%
-\contentsline {section}{\numberline {4.2}Systementwurf}{9}{section.16}%
-\contentsline {chapter}{\numberline {5}Implementierung}{10}{chapter.17}%
-\contentsline {section}{\numberline {5.1}...}{10}{section.18}%
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{11}{chapter.19}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{12}{chapter*.20}%
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{13}{chapter*.21}%
-\contentsline {chapter}{Selbstständigkeitserklärung}{14}{chapter*.22}%
+\contentsline {subsubsection}{\nonumberline Properties}{8}{section*.14}%
+\contentsline {subsection}{\numberline {3.1.3}Router}{9}{subsection.15}%
+\contentsline {chapter}{\numberline {4}Konzept}{10}{chapter.16}%
+\contentsline {section}{\numberline {4.1}Use-Cases der Anwendung}{10}{section.17}%
+\contentsline {section}{\numberline {4.2}Systementwurf}{10}{section.19}%
+\contentsline {chapter}{\numberline {5}Implementierung}{12}{chapter.21}%
+\contentsline {section}{\numberline {5.1}Components}{12}{section.22}%
+\contentsline {section}{\numberline {5.2}Router}{12}{section.23}%
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{13}{chapter.24}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{14}{chapter*.25}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{15}{chapter*.26}%
+\contentsline {chapter}{Selbstständigkeitserklärung}{16}{chapter*.27}%
