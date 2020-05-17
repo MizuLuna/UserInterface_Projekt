@@ -267,16 +267,26 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 
 \chapter{Grundlagen}				
 		\section{Technische Grundlagen}
-				\subsection{Programmiersprachen im Web}
-				\subsection{Webapp}
-				\subsection{Templates}
-			
-		\section{Responsive Webentwicklung}	
-				\subsection{Positionierungseinheiten }
-					px, prozent, vh, vw, em, rem ...
-				\subsection{Umsetzung für verschiedene Displaygrößen}
-				\subsection{click- vs Touchevents}
-				\subsection{Elementanordnungen}
+				\subsection{Webcomponents}
+				Web Components stellen eine Reihe von Webplattform-APIs dar. Mit Ihnen kann wiederverwendbares gekapseltes HTML erstellt und erweitert werden. Das HTML wird in Komponenten gegliedert die in jedem modernen Browser und jeder JavaScript-Bibliothek und jedem Framework verwendet werden kann. Web Components basieren auf vier Anforderungen: 
+\begin{itemize}
+\item \textit{Custom Elements:} Grundlage für das Erstellen neuer DOM-Elemente
+\item \textit{Shadow Dom:} Definiert wie gekapseltes HTML in den Components verwendet wird
+\item \textit{ES Modules:} Definiert die Einbindung und Wiederverwendung der JavaScript-Dateien
+\item \textit{HTML Templates:} Definiert HTML-Fragmente die erst zur Laufzeit istanziiert werden
+\end{itemize} Es existieren viel Bibliotheken mit denen die Erstellung von Web Components erleichtert wird, wie zum Beispiel Hybrids, LitElement, Polymer usw. Im folgenden wird die Bibliothek LitElement näher erläutert.\cite{webcom}
+				\subsection{LitElement}
+				LitElement ist eine Basisklasse zum Erstellen von Web Components. Sie verwendet lit-html um Templates zu definieren und zu rendern und fügt eine API zum Verwalten von Eigenschaften und Attributen hinzu.  Die Eigenschaften werden beobachtet und die Elemente werden asynchron aktualisiert, wenn sich ihre Eigenschaft ändert. 
+					\subsubsection{Shadow Dom}
+					\subsubsection{Templates}
+				
+				\subsection{Router}			
+%		\section{Responsive Webentwicklung}	
+%				\subsection{Positionierungseinheiten }
+%					px, prozent, vh, vw, em, rem ...
+%				\subsection{Umsetzung für verschiedene Displaygrößen}
+%				\subsection{click- vs Touchevents}
+%				\subsection{Elementanordnungen}
 				
 
 
@@ -307,8 +317,8 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 
 
 \begin{thebibliography}{unsrt}
-\bibitem{insta} \textit{Instagram API Platform}, 2019 Instagram\\
-https://www.instagram.com/developer/ [08.06.2019]
+\bibitem{webcom} \textit{Introduction - What are web componts?} \\
+https://www.webcomponents.org/introduction [17.05.2020]
 
 \bibitem{twitter} \textit{Developer policy and terms} 2019 Twitter, Inc.\\
 https://developer.twitter.com/ [08.06.2019]
