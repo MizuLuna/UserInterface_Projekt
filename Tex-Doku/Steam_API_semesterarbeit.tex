@@ -228,9 +228,7 @@
 
 	%-----------------------------------------------------------------------------
 	% Hauptteil
-	%-----------------------------------------------------------------------------	
-\newpage
-\chapter*{Aufgabenstellung:}
+	%-----------------------------------------------------------------------------
 
 \newpage
 
@@ -248,8 +246,7 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 	
 
 \chapter{Grundlagen}				
-		\section{Technische Grundlagen}
-				\subsection{Webcomponents}
+				\section{Webcomponents}
 				Web Components stellen eine Reihe von Webplattform-APIs dar. Mit Ihnen kann wiederverwendbares gekapseltes HTML erstellt und erweitert werden. Das HTML wird in Komponenten gegliedert die in jedem modernen Browser und jeder JavaScript-Bibliothek und jedem Framework verwendet werden kann. Web Components basieren auf vier Anforderungen: 
 \begin{itemize}
 \item \textit{Custom Elements:} Grundlage für das Erstellen neuer DOM-Elemente
@@ -259,7 +256,7 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 \end{itemize} Es existieren viel Bibliotheken mit denen die Erstellung von Web Components erleichtert wird, wie zum Beispiel Hybrids, LitElement, Polymer usw. Im folgenden wird die Bibliothek LitElement näher erläutert.\cite{webcom}
 				\subsection{LitElement}
 				LitElement ist eine Basisklasse zum Erstellen von Web Components. Sie verwendet lit-html um Templates zu definieren und zu rendern und fügt eine API zum Verwalten von Eigenschaften und Attributen hinzu.  Die Eigenschaften werden beobachtet und die Elemente werden asynchron aktualisiert, wenn sich ihre Eigenschaft ändert. 
-					\subsubsection{Shadow-Dom}
+					\subsection{Shadow-Dom}
 					Der SHadow-Dom wird verwendet um den Template-Dom zu Kapseln. Er bietet drei wesentliche Vorteile: 
 					\begin{itemize}
 \item \textit{Dom-Scoping:} DOM-APIs finden keine Element im Schatten-Dom sodass globale Scripte keinen Zugriff haben
@@ -267,7 +264,7 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 \item \textit{Composition:} der Schatten-Dom der Komponente ist von untergeordneten Elementen getrennt, so kann gesteuert werden wie untergeordnete Elemente in das Template gerendert werden sollen\cite{webcom}
 \end{itemize}
 					
-					\subsubsection{Templates}
+					\subsection{Templates}
 					In einer Render-Funktion der Elementklasse wird das Template für die Component definiert. In dieser Funktion wird das rohe HTML in einem JavaScript template literal innerhalb von back-ticks geschrieben (siehe Abb. ). Die Render Methode kann alles zurückgeben was lit-html rendern kann. \cite{litelem}
 					\begin{figure}[h]
 						\centering
@@ -276,10 +273,10 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 						\label{Render-Funktion}
 					\end{figure}
 				
-					\subsubsection{Properties}
+					\subsection{Properties}
 					LitElement verwaltet deklarierte Eigenschaften in einem statischen properties Getter, die entsprechenden Attribute werden in einem Elementkonstruktor initialisiert. So kann sicher gestellt werden das das bei einer geplanten Elementaktualiserung sich die deklarierte Eigenschaft ändert.  \cite{litelem}
 
-					\subsection{Router}
+					\section{Router}
 Der Router übernimmt das Navigieren auf der gesamten Seite.
 Er legt die angezeigte URL fest und verwaltet welche SPA
 (mit dazugehörigen Webcomponents) dafür angezeigt wird.
