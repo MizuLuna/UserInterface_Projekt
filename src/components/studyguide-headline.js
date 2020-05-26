@@ -7,7 +7,7 @@ class Headline extends navigator(LitElement) {
         return html`
         <link rel="stylesheet" href="../src/styles/headline.css">
 
-        <h1 class="headline">HEADLINE</h1>
+        <h1 class="headline">Semester</h1>
        `;
     }
 }

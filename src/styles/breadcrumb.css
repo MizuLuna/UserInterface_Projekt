@@ -5,8 +5,9 @@ body{
 }
 
 .breadcrumb{
+  position: fixed;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 0.6rem;
   font-weight: 600;
   margin-left: 3%;
   margin-top: 3%;

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+*{
+  box-sizing: border-box;
+}
 
 body{
   margin: 0;
@@ -6,7 +9,6 @@ body{
 
 .modul-view{
  width:80vw;
-
  margin-left:10vw;
 }
 
@@ -22,6 +24,5 @@ body{
   font-family: 'Fira Sans', sans-serif;
   font-size: 3rem;
   font-weight: 600;
-  box-shadow: 10px 9px 16px 1px rgba(0,0,0,0.16);
- 
+  box-shadow: 10px 9px 16px 1px rgba(0,0,0,0.16); 
 }

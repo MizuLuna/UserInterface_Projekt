@@ -40,16 +40,17 @@ class Contact extends navigator(LitElement) {
     render() {
         return html`
         <link rel="stylesheet" href="../src/styles/prof-detail.css">
+        <script src="https://kit.fontawesome.com/4b3bdf8439.js" crossorigin="anonymous"></script>
 
         <div class="professor div--style">
             <h4>Kontakt</h4> 
 
          ${this.getProfContact()}
           
-         ${this.profContactHouse.map((i) => html`<p>Haus ${i}</p>`)}
+         ${this.profContactHouse.map((i) => html`<p><i class="fas fa-map-marker-alt"></i>Haus ${i}</p>`)}
          ${this.profContactRoom.map((i) => html`<p>Raum ${i}</p>`)}
-         ${this.profContactTel.map((i) => html`<p>Telefonnummer: ${i}</p>`)}
-         ${this.profContactMail.map((i) => html`<p>EMail: ${i}</p>`)}        
+         ${this.profContactTel.map((i) => html`<p><i class="fas fa-mobile-alt"></i>Telefonnummer:<br> ${i}</p>`)}
+         ${this.profContactMail.map((i) => html`<p><i class="fas fa-envelope"></i>EMail:<br> ${i}</p>`)}        
 
 
         </div>

@@ -7,7 +7,7 @@ class Breadcrumb extends navigator(LitElement) {
         return html`
         <link rel="stylesheet" href="../src/styles/breadcrumb-prof.css">
         
-        <div class="breadcrumb">Semester�bersicht</div> 
+        <div class="breadcrumb">Semesterübersicht</div> 
        `;
     }
 

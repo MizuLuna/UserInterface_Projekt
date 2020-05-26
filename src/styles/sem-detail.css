@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+*{
+  box-sizing: border-box;
+}
 
 body{
   margin: 0;
@@ -10,12 +13,12 @@ h4 {
   font-weight: 600;
   color: #666666;
   margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
+  margin-block-end: 0.5em;
 }
 
 p {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   color: #666666;
   margin-block-start: 0em;
