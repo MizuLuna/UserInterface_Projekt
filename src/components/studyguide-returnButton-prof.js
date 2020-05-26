@@ -11,9 +11,9 @@ class Returnbutton extends navigator(LitElement) {
        `;
     }
 
-    clickHandler(e) {
-        this.navigate('/');
-    }
+    //clickHandler(e) {
+    //    this.navigate('/');
+    //}
 }
 
 customElements.define('studyguide-returnbutton-prof', Returnbutton);

@@ -21,11 +21,15 @@ class Semesterview extends navigator(LitElement) {
    <studyguide-contact></studyguide-contact>
     <studyguide-teach></studyguide-teach>
     <studyguide-thesis></studyguide-thesis>
-    <studyguide-returnButton-prof></studyguide-returnButton-prof>
+    <studyguide-returnButton-prof @click=${this.clickHandler}></studyguide-returnButton-prof>
     <studyguide-navigation></studyguide-navigation>
        `;
     }
 
+
+    clickHandler(e) {
+        this.navigate('/professor_und_mitarbeiter');
+    }
 }
 
 customElements.define('studyguide-profdetails', Semesterview);

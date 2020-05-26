@@ -40,7 +40,8 @@ class Modul extends navigator(LitElement) {
        <link rel="stylesheet" href="../src/styles/modul.css">
         <div class="modul-view">
             ${this.getModuleNames()}
-            ${this.moduleNames.map((i,index) => html`<div class="modul" @click=${this.getModulDetails(index+1)}>${i}</div>`)}
+            <!--${this.moduleNames.map((i,index) => html`<div class="modul" @click=${this.getModulDetails(index+1)}>${i}</div>`)}-->
+            ${this.moduleNames.map((i, index) => html`<div class="modul" @click=${this.clickHandler}>${i}</div>`)}
 <!--
             <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul1.name}</div>
             <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul2.name}</div> 
@@ -53,9 +54,9 @@ class Modul extends navigator(LitElement) {
        `;
     }
 
-    //clickHandler(e) {
-    //    this.navigate('/semesterview');
-    //}
+    clickHandler(e) {
+        this.navigate('/semesteruebersicht/semester/1/modul/1');
+    }
 }
 
 customElements.define('studyguide-modul', Modul);

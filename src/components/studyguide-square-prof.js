@@ -36,7 +36,7 @@ class Square extends navigator(LitElement) {
     }
 
     clickHandler(e) {
-        this.navigate('/semesteruebersicht/semester/1/modul');
+        this.navigate('/professor_und_mitarbeiter/1');
     }
 }
 

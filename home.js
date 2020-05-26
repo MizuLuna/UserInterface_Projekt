@@ -23,9 +23,9 @@ class Home extends navigator(LitElement) {
             <p class="farbe">Welche Seite möchten sie sehen?</p>
             <button @click="${this.clickHandler}">Semesteruebersicht</button>
             <button @click="${this.prof}">Profuebersicht</button>
-            <button @click="${this.profdetail}">Profdetails</button>
+           <!-- <button @click="${this.profdetail}">Profdetails</button>
             <button @click="${this.moduldetail}">moduldetails</button>
-            <button @click="${this.modul}">module</button>
+            <button @click="${this.modul}">module</button> -->
        `;
     }
 

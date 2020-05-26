@@ -19,9 +19,14 @@ class Semesterview extends navigator(LitElement) {
     <studyguide-professor></studyguide-professor>
    <studyguide-exam></studyguide-exam>
     <studyguide-modulContent></studyguide-modulContent>
-    <studyguide-returnButton></studyguide-returnButton>
+    <studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
     <studyguide-navigation></studyguide-navigation>
        `;
+    }
+
+
+    clickHandler(e) {
+        this.navigate('/semesteruebersicht/semester/1/modul');
     }
 }
 

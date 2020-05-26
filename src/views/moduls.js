@@ -15,9 +15,14 @@ class Semesterview extends navigator(LitElement) {
 <studyguide-breadcrumb></studyguide-breadcrumb>
 <studyguide-headline></studyguide-headline>
 <studyguide-modul></studyguide-modul>
-<studyguide-returnButton></studyguide-returnButton>
+<studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
 <studyguide-navigation></studyguide-navigation>
        `;
+    }
+
+
+    clickHandler(e) {
+        this.navigate('/semesteruebersicht');
     }
 }
 
