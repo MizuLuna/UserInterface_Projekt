@@ -328,9 +328,65 @@ und die neue SPA angezeigt werden.
 		
 \chapter{Implementierungen}  
 
-	\section{Components}
-	\section{Router}
+	\section{Components und Views}
+	Für die einfache und seperate Entwicklung der
+einzelnen Seiten und Webcomponents bestand eine Hauptaufgabe darin, die Webapp in
+gut abspaltbare und wiederverwendbare Teile zu gliedern. Die Aufteilung der Webapp
+erfolgte somit in sechs SPA's die Inhaltlich keinen zusammenhang besitzen:
+\begin{itemize}
+\item Startseite
+\item Semester Übersicht
+\item Modul Übersicht
+\item Modul Details
+\item Professoren Überischt
+\item Professoren Details
+\end{itemize}	
+Um diese mit Kontent zu füllen erfolgte die Aufteilung des Inhalts in überschaubare
+und mehrfach verwendbare Webcomponents. Components wie die Hauptnavigation erleichtern
+damit den Implementieraufwand und lassen sich schnell an allen benötigten stellen
+einbinden. Somit ergaben sich allgemeine Components für:
+\begin{itemize}
+\item Hauptnavigation
+\item Breadcrumb
+\item Zurückbutton
+\item Überschrift
+\end{itemize}	
+Und mehr spezifische Components für den Inhalt:
+\begin{itemize}
+\item Semester
+\item Professoren
+\item Module
+\item Stundenübersicht
+\item Prüfung
+\item Modul Inhalt
+\item Kontakt
+\item Professorenbild
+\item Lehre
+\item Thesen
+\end{itemize}	
+Alle Javascript Dateien der Views legen die Struktur der Webseite fest, indem sie
+die benötigten Components anhand ihres Tags einbinden.
+Das eigentliche Styling und anlegen der Elemente, die für die Seite benötigt werden, geschieht in den einzelnen Dateien der Components.
+In den Components sind einzelne Elemente festgelegt.
+Für die Modulübersicht, in welcher alle allgemeinen und die Modul spezifische Components eingebunden sind,
+sieht der Quellcode wie folgt aus:
+## Bild von Quellcode Module
 
+Der Components Code ist in mehrere Methoden gegliedert. Die Methode zum abfragen der benötigten Daten 'getModulesNames' und die render Funtkion für das HTML.
+Für die Module sind in der render Funktion gestylte Div Tags mit dem
+Modulnamen als Inhalt. Jedes Div enthält einen 'Clickhandler' welcher die Navigation zur nächsten Seite ermöglicht und über den Router gesteuert wird.
+Welche Daten benötigt sind kann über die URL herausgefunden werden und wird in
+'getModulesNames' abgefragt.
+	
+	\section{Router}
+In der Router Datei werden in der routes Methode alle benötigten Routen festgelegt.
+Sie erhalten einen namen, welcher verwendet werden kann, um herauszufinden wo man sich auf
+der Webseite befindet und ein Pattern. Welches fest legt, wie die zugehörige URL aussieht.
+Dieses kann mit Variablen versehen werden, um z.B.: verschiedene Semester auseinander zu halten.
+Es können auch Parameter mit angegeben werden, sollten diese benötigt sein.
+In der render Funktion werden alle Views über ihre Tags eingebunden und anhand der 'route' Variable,
+welche den Namen der aktuell aufgerufenen Seite enthält, ein und ausgeblendet.
+## Bild Routes Methode und render funktion?
 
 
 \chapter{Zusammenfassung und Ausblick}     
@@ -355,17 +411,8 @@ https://www.webcomponents.org/introduction [17.05.2020]
 \bibitem{litelem} \textit{LitElement} 2018 Polymer Project\\
 https://lit-element.polymer-project.org/ [17.05.2020]
 
-\bibitem{steamallg} \textit{Steam}, Valve Corporation\\
-https://store.steampowered.com/about/ [19.05.2019]
-
-\bibitem{steam} \textit{Steam Web API}, Valve Developer Community, 2019 \\
-https://developer.valvesoftware.com/wiki/Steam\_Web\_API [17.05.2019]
-
-\bibitem{neo4j} \textit{Eine Graphendatenbank für alle}, Michael Hunger, 2014, Entwickler.Press, ISBN: 978-3-86802-128-0
-
-\bibitem{kommneo4j} \textit{Diese Vorteile bieten Graphdatenbanken}, Kommentar von Stefan Kolmar, 2017\\
-https://www.bigdata-insider.de/diese-vorteile-bieten-graphdatenbanken-a-615118/ [17.05.2019]
-
+\bibitem{router} \textit{LitElement Router}\\
+https://www.npmjs.com/package/lit-element-router [28.05.2020]
 
 \end{thebibliography}	
 
