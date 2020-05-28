@@ -28,11 +28,14 @@ class Teach extends navigator(LitElement) {
     
     render() {
         return html`
-        <link rel="stylesheet" href="../src/styles/prof-detail.css">
+        <link rel="stylesheet" href="../src/styles/font-style.css">
+        <link rel="stylesheet" href="../src/styles/details.css">
         ${this.getProfTeaching()}
-        <div class="teach div--style">
-            <h4>Lehre</h4>
-            ${this.profTeaching.map((i) => html`<p>${i}<br></p>`)}
+       
+        <div class="teach detail detail-style detail-style-prof font-fam">
+            <h4 class="font-weight-600 font-size-md">Lehre</h4>
+            </br>
+            ${this.profTeaching.map((i) => html`<p class="font-weight-300 font-size-s">${i}<br></p>`)}
         </div>
 
        `;

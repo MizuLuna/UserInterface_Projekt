@@ -5,9 +5,10 @@ import { navigator } from 'lit-element-router';
 class Breadcrumb extends navigator(LitElement) {
     render() {
         return html`
-        <link rel="stylesheet" href="../src/styles/breadcrumb-prof.css">
+        <link rel="stylesheet" href="../src/styles/font-style.css">
+        <link rel="stylesheet" href="../src/styles/breadcrumb.css">
         
-        <div class="breadcrumb">Semesterübersicht</div> 
+        <div class="breadcrumb breadcrumb-prof font-fam font-size-s font-weight-600">Semesterübersicht</div> 
        `;
     }
 

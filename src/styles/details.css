@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+h4 {
+  color: #666666;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+p {
+  color: #666666;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.detail{
+  margin-top: 5%;
+  width: 80%;
+  max-width: 500px;
+  margin-left:10%;
+  padding: 15px;
+}
+
+.detail-style{
+  background-color: #f2f2f2;
+  border-radius: 7px;
+  box-shadow: 10px 9px 16px 1px rgba(0,0,0,0.16);
+}
+
+
+.detail-style-prof{
+  border: 1px solid #886cff;
+}
+
+
+.detail-style-sem{ 
+  border: 1px solid #00b1db;
+}

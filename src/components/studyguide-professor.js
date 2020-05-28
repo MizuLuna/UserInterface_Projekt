@@ -51,16 +51,18 @@ class Professor extends navigator(LitElement) {
     
     render() {
         return html`
-       <link rel="stylesheet" href="../src/styles/sem-detail.css">
+        <link rel="stylesheet" href="../src/styles/font-style.css">
+        <link rel="stylesheet" href="../src/styles/details.css">
        ${this.getModuleInfo()}
        
 
-        <div class="professor div--style">
-            ${this.moduleProf.map((i) => html`<h4>${i}</h4>`)} 
-            ${this.moduleProfTitle.map((i) => html`<h4>${i}</h4>`)} 
-            ${this.moduleSWSv.map((i) => html`<p>${i} SWS Vorlesung</p>`)} 
-            ${this.moduleSWSue.map((i) => html`<p>${i}  SWS Übung</p>`)} 
-            ${this.moduleSWSp.map((i) => html`<p>${i} SWS Übung</p>`)} 
+        <div class="professor detail detail-style detail-style-sem font-fam">
+            ${this.moduleProf.map((i) => html`<h4 class="font-weight-600 font-size-md">${i}</h4>`)} 
+            ${this.moduleProfTitle.map((i) => html`<h4 class="font-weight-600 font-size-md">${i}</h4>`)} 
+            </br>
+            ${this.moduleSWSv.map((i) => html`<p class="font-weight-300 font-size-s">${i} SWS Vorlesung</p>`)} 
+            ${this.moduleSWSue.map((i) => html`<p class="font-weight-300 font-size-s">${i}  SWS Übung</p>`)} 
+            ${this.moduleSWSp.map((i) => html`<p class="font-weight-300 font-size-s">${i} SWS Übung</p>`)} 
         </div>
        `;
     }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
 
 body{
   margin: 0;
@@ -6,10 +6,15 @@ body{
 
 .breadcrumb{
   position: fixed;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 0.6rem;
-  font-weight: 600;
   margin-left: 3%;
   margin-top: 3%;
+  
+}
+
+.breadcrumb-sem{
   color: #00b1db;
+}
+
+.breadcrumb-prof{
+  color: #886cff;
 }

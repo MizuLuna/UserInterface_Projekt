@@ -1,0 +1,35 @@
+.square-view{
+  display: flex;
+  /*width: 80%;*/
+  height: 75%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 10%;
+ }
+ 
+ .square{
+   display: flex;
+   flex-direction: column;
+   width: 49%; 
+   height: 20%;
+   margin-top: 3%;  
+ }
+/*
+ .square:after{
+  padding-bottom: 100%;
+ }*/
+
+ .square-style{
+   text-align: center;
+   box-shadow: 10px 9px 16px 1px rgba(0,0,0,0.16);      
+   border-radius: 7px;
+   background-color: #f2f2f2;
+   color: #666666;
+ }
+
+ .square-style-prof{  
+  border: 1px solid #886cff ;
+}
+ .square-style-sem{
+  border: 1px solid #00b1db;
+ }

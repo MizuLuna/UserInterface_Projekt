@@ -32,12 +32,14 @@ class Modulcontent extends navigator(LitElement) {
    
     render() {
         return html`
-       <link rel="stylesheet" href="../src/styles/sem-detail.css">
-      
-       <div class="modulContent div--style">
-            <h4>Inhalte</h4>
-            ${this.getModuleContent()}
-            ${this.moduleContent.map((i) => html`<p>${i}</p>`)}   
+        <link rel="stylesheet" href="../src/styles/font-style.css">
+        <link rel="stylesheet" href="../src/styles/details.css">
+      ${this.getModuleContent()}
+
+       <div class="modulContent detail detail-style detail-style-sem font-fam">
+            <h4 class="font-weight-600 font-size-md">Inhalte</h4>
+            </br>
+            ${this.moduleContent.map((i) => html`<p class="font-weight-300 font-size-s">${i}</p>`)}   
         </div>
        `;
     }

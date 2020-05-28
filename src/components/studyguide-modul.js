@@ -37,19 +37,12 @@ class Modul extends navigator(LitElement) {
 
     render() {
         return html`
-       <link rel="stylesheet" href="../src/styles/modul.css">
-        <div class="modul-view">
-            ${this.getModuleNames()}
-            <!--${this.moduleNames.map((i,index) => html`<div class="modul" @click=${this.getModulDetails(index+1)}>${i}</div>`)}-->
-            ${this.moduleNames.map((i, index) => html`<div class="modul" @click=${this.clickHandler}>${i}</div>`)}
-<!--
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul1.name}</div>
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul2.name}</div> 
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul3.name}</div>
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul4.name}</div>
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul5.name}</div>
-            <div class="modul" @click=${this.clickHandler}>${dataSem.semester.semester1.modul6.name}</div>
--->
+        <link rel="stylesheet" href="../src/styles/font-style.css">
+        <link rel="stylesheet" href="../src/styles/modul.css">
+        ${this.getModuleNames()}
+
+        <div class="modul-view font-fam font-size-md font-weight-600">
+            ${this.moduleNames.map((i) => html`<div class="modul modul-style" @click=${this.clickHandler}>${i}</div>`)}
         </div>
        `;
     }

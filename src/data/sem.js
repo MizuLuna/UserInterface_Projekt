@@ -797,104 +797,59 @@ let dataSem =
             },
             "modul2":
             {
-                "name": "Grundlagen Sprachtechnologien",
-                "modulID": "GST",
-                "profID": 3,
+                "name": "Projekt Angewandte Informatik 2",
+                "modulID": "PAI2",
+                "profID": 2,
                 "hour": {
-                    "vorlesung": 1,
                     "uebung": 2,
-                    "praktikum": 1
+                    "praktikum": 2
                 },
-                "exam": "20 Minuten mündlich",
+                "exam": "APL",
                 "credits": 5,
                 "content": [
-                    "Einführung in die Sprachtechnologie: Anwendungen, Herausforderungen und Grenzen, Teilgebiete",
-                    "Architektur von Sprachverarbeitungssystemen",
-                    "Syntax: Aufbau und Abarbeitung natürlichsprachlicher Grammatiken",
-                    "Syntax: Funktionsweise von natürlichsprachlichen Parser",
-                    "Lexikologie: Aufbau und Struktur von natürlichsprachlichen Wörterbüchern",
-                    "Semantik: Semantische Strukturen in der natürlichen Sprache",
-                    "Semantik: Prädikatenlogik zur Beschreibung von Semantik in der Sprache, Prolog",
-                    "Pragmatik: Auswertung von natürlichsprachlichen Äußerungen im Kontext",
-                    "Architektur von Dialogsystemen",
-                    "Psychologische Aspekte zur Gestaltung von natürlichsprachlichen Dialogsystemen"
+                    "Analyse der Aufgabenstellung und Erstellug eines Anforderungskataloges",
+                    "Erarbeitung von Lösungdkonzepten und deren bewertender Vergleich",
+                    "Entwurf und Implementierung einer ausgewählten Lösung",
+                    "Test und Bewertung",
+                    "Präsentation der Ergebnisse"
                 ]
             },
             "modul3":
             {
-                "name": "Bildverarbeitung",
-                "modulID": "BV",
-                "profID": 5,
+                "name": "Soft Skills 2: Kommunikation",
+                "modulID": "SS2",
+                "profID": 3,
                 "hour": {
-                    "vorlesung": 1,
-                    "uebung": 1,
-                    "praktikum": 2
+                    "uebung": 2
                 },
                 "exam": "20 Minuten mündlich",
                 "credits": 5,
                 "content": [
-                    "Grundlagen der Optik und Fotografie",
-                    "Aufbau industrieller Bildverarbeitungssysteme",
-                    "Abgrenzung Bildbearbeitung, -verarbeitung",
-                    "Statistische Bildverarbeitung",
-                    "Punktoperationen",
-                    "Nachbarschaftsoperationen und Filter",
-                    "Globale Operationen: Integral- und geometrische Transformationen; Fourier-Analyse von Bilddaten",
-                    "Objekte und Segmentierung",
-                    "Objektklassifikation",
-                    "Bildverarbeitung mit MatLab",
-                    "Bildverarbeitung mit neuronalen Netzen"
+                    "Zielstellung der Lehrveranstaltung: Was macht Kommunikation aus",
+                    "Kommunikative Vorannahmen",
+                    "Einführung in die Kommunikation-Kommunikations- und Wahrnehmungsmodelle",
+                    "Einführung in die Repräsentationssysteme",
+                    "Meta- und Milton-Modell der Sprache", 
+                    "Motivationsprofile zur Zielgruppen-gerechten Kommunikation",
+                    "Ausgewählte Strategien zur Team-Kommunikation (ICH-DU-Ansprache, Walt-Disney-Strategy, u.a.)"
                 ]
             },
             "modul4": {
-                "name": "Projektmanagement und Qualitätssicherung",
-                "modulID": "PQ",
-                "profID": 10,
+                "name": "Bachelor-Seminar",
+                "modulID": "BS",
+                "profID": 2,
                 "hour": {
-                    "vorlesung": 1,
-                    "uebung": 1,
+                    "uebung": 2,
                     "praktikum": 2
                 },
-                "exam": "20 Minuten mündlich",
+                "exam": "APL",
                 "credits": 5,
                 "content": [
-                    "Einführung: Begriffe, Grundzusammenhänge",
-                    "Grundlagen: Wissensgebiete, Dimensionen, Strukturen und allgemeine Projektphasen",
-                    "Projektgenerierung: Indentifikation, Analyse und Gestaltung von Projekten",
-                    "Definition von Projekten: Ziel, Wirtschaftlichkeit, Organisationsstrukturen, Projektleitung",
-                    "Projektplanung: Einführung, Aufgaben, Struktur, Ablauf, Termine, Personal, Kapazitäten und Kosten",
-                    "Projektarbeit: Start, Leitung und Abschluss",
-                    "Klassische Softwareentwicklung und Vorgehensmodelle: Wasserfall-, V-, Spiral- und XP-Modell",
-                    "Agile Softwareentwicklung - Scrum: Wesen, Agiles Manifest, Rollen, Produkt-Backlog, Sprint",
-                    "Kanban IT: Wesen, Prinzipien und Praktiken, Integration im Unternehmen, Vergleich mit Scrum",
-                    "Qualitätsmanagement: Einführung, Rolle des Kunden, Q-Anforderungen, PDCA-Zyklus",
-                    "Prozesse: Merkmale, Prozessketten, guter Prozess",
-                    "Qualitätsverbesserung: Kaizen und Poka Yoke",
-                    "Qualitätsmanagementsysteme und Normen: Grundätze, Entwicklungsschritte, Normen, Auditierung und Zertifizierung",
-                    "Total Quality Management: Einführung, Demingsche Kette, EFQM-Excellence- Modell"
-                ]
-            },
-            "modul5": {
-                "name": "User Interface",
-                "modulID": "UI",
-                "profID": 5,
-                "hour": {
-                    "vorlesung": 2,
-                    "uebung": 0,
-                    "praktikum": 2
-                },
-                "exam": "20 Minuten mündlich",
-                "credits": 5,
-                "content": [
-                    "Grundlagen zur Bedeutung der Benutzerschnittstelle (UI)",
-                    "Charakteristika grafischer Benutzeroberflächen",
-                    "der Entwurfsprozess einer UI",
-                    "Auslegung von Kontroll-Elementen",
-                    "Verwendung und Wirkung von Farben",
-                    "Strategien zur sicheren Benutzerführung",
-                    "Die Mensch-Maschine-Schnittstelle der Zukunft",
-                    "Praktische Umsetzung mit C++ und Qt",
-                    "Geräteabhängige Aspekte von UIs)"
+                    "Analyse der Aufgabenstellung und Erstellug eines Anforderungskataloges",
+                    "Erarbeitung von Lösungdkonzepten und deren bewertender Vergleich",
+                    "Entwurf und Implementierung einer ausgewählten Lösung",
+                    "Test und Bewertung",
+                    "Präsentation der Ergebnisse"
                 ]
             }
         }

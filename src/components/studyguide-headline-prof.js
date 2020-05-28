@@ -31,12 +31,12 @@ class Headline extends navigator(LitElement) {
     
     render() {
         return html`
-        <link rel="stylesheet" href="../src/styles/headline-prof.css">
-
+        <link rel="stylesheet" href="../src/styles/font-style.css">
+        <link rel="stylesheet" href="../src/styles/headline.css">
         ${this.getProfName()}
-        ${this.profTitle.map((i) => html`<h1 class="headline"><br> ${i}</h1>`)}
-        ${this.profName.map((i) => html`<h1 class="headline"> ${i}</h1>`)}
-        <!--<h1 class="headline">HEADLINE</h1>-->
+ 
+        ${this.profTitle.map((i) => html`<h1 class="headline headline-prof font-fam font-size-md font-weight-600"> ${i}</h1>`)}
+        ${this.profName.map((i) => html`<h1 class="headline headline-prof font-fam font-size-md font-weight-600"> ${i}</h1>`)}
        `;
     }
 }

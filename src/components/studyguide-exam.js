@@ -35,13 +35,15 @@ class Exam extends navigator(LitElement) {
     
     render() {
         return html`
-       <link rel="stylesheet" href="../src/styles/sem-detail.css">
-       
-        <div class="exam div--style">
-            <h4>Prüfung</h4>
-            ${this.getModuleExam()}
-            ${this.moduleExam.map((i) => html`<p>${i}</p>`)} 
-            ${this.moduleCredit.map((i) => html`<p>${i} Credits</p>`)} 
+        <link rel="stylesheet" href="../src/styles/font-style.css">
+        <link rel="stylesheet" href="../src/styles/details.css">
+        ${this.getModuleExam()}
+
+        <div class="exam detail detail-style detail-style-sem font-fam">
+            <h4 class="font-weight-600 font-size-md">Prüfung</h4>
+            </br>
+            ${this.moduleExam.map((i) => html`<p class="font-weight-300 font-size-s">${i}</p>`)} 
+            ${this.moduleCredit.map((i) => html`<p class="font-weight-300 font-size-s">${i} Credits</p>`)} 
         </div>
        `;
     }

@@ -11,12 +11,11 @@ class Semesterview extends navigator(LitElement) {
     render() {
         return html`
 
-       <!-- template content -->
-<studyguide-breadcrumb></studyguide-breadcrumb>
-<studyguide-headline></studyguide-headline>
-<studyguide-modul></studyguide-modul>
-<studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
-<studyguide-navigation></studyguide-navigation>
+        <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
+        <studyguide-headline></studyguide-headline>
+        <studyguide-modul></studyguide-modul>
+        <studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
+        <studyguide-navigation></studyguide-navigation>
        `;
     }
 

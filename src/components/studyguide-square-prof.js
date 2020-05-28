@@ -31,19 +31,21 @@ class Square extends navigator(LitElement) {
     
     render() {
         return html`
-            <link rel="stylesheet" href="../src/styles/profview.css">
-            <link rel="stylesheet" href="../src/styles/headline-prof.css">
+            <link rel="stylesheet" href="../src/styles/font-style.css">
+            <link rel="stylesheet" href="../src/styles/squares.css">
+            <link rel="stylesheet" href="../src/styles/headline.css">
        
             ${this.getProfName()}
        
-                <h1 class="headline">Professoren</h1><br> 
-             
+            <h1 class="headline headline-prof font-fam font-size-lg font-weight-600">Professoren</h1><br>  
             <div class="square-view">   
-                ${this.profName.map((i) => html`<div class="square" @click=${this.clickHandler}>${i} </div><br>`)}
-                </div>
-                <h1 class="headline">Mitarbeiter</h1><br> 
-                <div class="square-view">
-                ${this.dozName.map((i) => html`<div class="square" @click=${this.clickHandler}>${i} </div>`)}
+                ${this.profName.map((i) => html`<div class="square square-style square-style-prof font-fam font-size-md font-weight-600" @click=${this.clickHandler}>${i} </div><br>`)}
+            </div>
+            </br>
+            </br>
+            <h1 class="headline headline-prof font-fam font-size-lg font-weight-600">Mitarbeiter</h1><br> 
+            <div class="square-view font-fam font-size-md font-weight-600">
+                ${this.dozName.map((i) => html`<div class="square square-style square-style-prof" @click=${this.clickHandler}>${i} </div>`)}
             </div>
        `;
     }
