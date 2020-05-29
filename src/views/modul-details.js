@@ -10,22 +10,34 @@ import '../components/studyguide-returnButton';
 import '../components/studyguide-navigation';
 
 class Semesterview extends navigator(LitElement) {
+
+    static get properties() {
+        return {
+            semesterId: { type: Number },
+            courseId: { type: Number }
+        };
+    }
+
+    constructor() {
+        super();
+        this.params = {};
+    }
+   
+
     render() {
+
+        const semesterId = this.semesterId;
+
         return html`
 
         <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
         <studyguide-headline></studyguide-headline>
         <studyguide-professor></studyguide-professor>
         <studyguide-exam></studyguide-exam>
-        <studyguide-modulContent></studyguide-modulContent>
-        <studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
+        <studyguide-modulContent semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-modulContent>
+        <studyguide-returnButton semesterId="${this.semesterId}"></studyguide-returnButton>
         <studyguide-navigation></studyguide-navigation>
        `;
-    }
-
-
-    clickHandler(e) {
-        this.navigate('/semesteruebersicht/semester/1/modul');
     }
 }
 

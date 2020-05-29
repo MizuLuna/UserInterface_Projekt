@@ -8,12 +8,19 @@ import '../components/studyguide-returnButton';
 import '../components/studyguide-navigation';
 
 class Semesterview extends navigator(LitElement) {
+
+    static get properties() {
+        return {
+            semesterId: { type: Number }
+        };
+    }
+
     render() {
         return html`
 
         <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
         <studyguide-headline></studyguide-headline>
-        <studyguide-modul></studyguide-modul>
+        <studyguide-modul semesterId="${this.semesterId}"></studyguide-modul>
         <studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
         <studyguide-navigation></studyguide-navigation>
        `;

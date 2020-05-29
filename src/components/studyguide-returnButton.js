@@ -3,6 +3,14 @@ import { navigator } from 'lit-element-router';
 
 
 class Returnbutton extends navigator(LitElement) {
+
+    static get properties() {
+        return {
+            semesterId: { type: Number },
+            courseId: { type: Number }
+        };
+    }
+
     render() {
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">
@@ -12,8 +20,8 @@ class Returnbutton extends navigator(LitElement) {
        `;
     }
 
-    clickHandler(e) {
-        this.navigate('/');
+    clickHandler(semesterId) {
+        this.navigate(`/semesteruebersicht/semester/${this.semesterId}/modul`);
     }
 }
 

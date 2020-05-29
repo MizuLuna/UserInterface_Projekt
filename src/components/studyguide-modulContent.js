@@ -1,51 +1,39 @@
 import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
-import dataSem from '../data/sem.js'
+import data from '../data/sem.js'
 
 class Modulcontent extends navigator(LitElement) {
    
     static get properties() {
         return {
-            //id: { type: Integer },
-            moduleContent: { type: Array }
+            semesterId: { type: Number },
+            courseId: { type: Number }
         };
-    }
-
-    constructor() {
-        super();
-        //this.id = null;
-        this.moduleContent = [];
     }
    
     getModuleContent() {
-        //var semester = 'semester' + this.id;
-        for (var sem in dataSem.semester) {
-            if (sem === 'semester1') {
-                for (var modul in dataSem.semester[sem]) {
-                    if (modul === 'modul1') {
-                        this.moduleContent.push(dataSem.semester[sem][modul].content);
-                    }
-                }
-            }
+        let moduleContent = [];
+        if(this.semesterId && this.courseId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            moduleContent = course.content;
         }
+        return moduleContent
     }
    
     render() {
+
+        const moduleContent = this.getModuleContent();
+
         return html`
-        <link rel="stylesheet" href="../src/styles/font-style.css">
-        <link rel="stylesheet" href="../src/styles/details.css">
-      ${this.getModuleContent()}
-
-       <div class="modulContent detail detail-style detail-style-sem font-fam">
-            <h4 class="font-weight-600 font-size-md">Inhalte</h4>
-            </br>
-            ${this.moduleContent.map((i) => html`<p class="font-weight-300 font-size-s">${i}</p>`)}   
-        </div>
+            <link rel="stylesheet" href="../src/styles/font-style.css">
+            <link rel="stylesheet" href="../src/styles/details.css">
+            <div class="modulContent detail detail-style detail-style-sem font-fam">
+                <h4 class="font-weight-600 font-size-md">Inhalte</h4>
+                </br>
+                ${moduleContent.map((i) => html`<p class="font-weight-300 font-size-s">${i}</p>`)}   
+            </div>
        `;
-    }
-
-    clickHandler(e) {
-        this.navigate('/semesterview');
     }
 }
 
