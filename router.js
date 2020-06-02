@@ -37,7 +37,7 @@ class Router extends router(LitElement) {
             pattern: 'professor_und_mitarbeiter'
         }, {
             name: 'profdetail',
-            pattern: 'professor_und_mitarbeiter/:id'
+            pattern: 'professor_und_mitarbeiter/:profId'
         }];
     }
 
@@ -63,7 +63,7 @@ class Router extends router(LitElement) {
         <studyguide-moduls route="moduls" semesterId="${this.params.semesterId}" ?hidden="${this.route !== 'moduls'}"></studyguide-moduls>
         <studyguide-moduldetails route="moduldetail" semesterId="${this.params.semesterId}" courseId="${this.params.courseId}" ?hidden="${this.route !== 'moduldetail'}"></studyguide-moduldetails>
         <studyguide-prof route="profview" ?hidden="${this.route !== 'profview'}"></studyguide-prof>
-        <studyguide-profdetails route="profdetail" ?hidden="${this.route !== 'profdetail'}"></studyguide-profdetails>
+        <studyguide-profdetails route="profdetail" profId="${this.params.profId}" ?hidden="${this.route !== 'profdetail'}"></studyguide-profdetails>
       </app-main>
     `;
     }
