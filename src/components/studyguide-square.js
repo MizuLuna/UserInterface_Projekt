@@ -8,20 +8,20 @@ class Square extends navigator(LitElement) {
         <link rel="stylesheet" href="../src/styles/squares.css">
         
         <div class="square-view font-fam font-size-md font-weight-600">
-            <div class="square square-style square-style-sem" @click=${this.clickHandler}>Semester 1</div>
-            <div class="square square-style square-style-sem" @click=${this.clickHandler}>Semester 2</div> 
-            <div class="square square-style square-style-sem" @click=${this.clickHandler}>Semester 3</div>
-            <div class="square square-style square-style-sem" @click=${this.clickHandler}>Semester 4</div>
-            <div class="square square-style square-style-sem" @click=${this.clickHandler}>Semester 5</div>
-            <div class="square square-style square-style-sem" @click=${this.clickHandler}>Semester 6</div>
-            <div class="square square-style square-style-sem" @click=${this.clickHandler}>Semester 7</div> 
-            <div class="square square-style square-style-sem" @click=${this.clickHandler}>Master</div>
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(1)}>Semester 1</div>
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(2)}>Semester 2</div> 
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(3)}>Semester 3</div>
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(4)}>Semester 4</div>
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(5)}>Semester 5</div>
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(6)}>Semester 6</div>
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(7)}>Semester 7</div> 
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(1)}>Master</div>
         </div>
        `;
     }
 
-    clickHandler(e) {
-        this.navigate('/semesteruebersicht/semester/1/modul');
+    clickHandler(semesterId) {
+        this.navigate(`/semesteruebersicht/semester/${semesterId}/modul`);
     }
 }
 
