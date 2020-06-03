@@ -241,34 +241,41 @@ Nach einer Analyse der Hochschulseite und der Beschreibung des IST-Zustandes fol
 
 \chapter{Untersuchung der Hochschul-Website}	
 Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs Klicks um von der Startseite der HS Wismar zur Semsterübersicht (AIMMT) zu gelangen. Innerhalb dieser Seiten gibt es einige Unstimmigkeiten und fehlerhaftes Fehlerhaftes Verhalten, welches im folgendem näher erläutert wird.
+
+		%----------------------------------------------------------------------		
 		\section{Analyse des Ist-Zustandes}
 		Die Hochschulwebsite hat einen großen allgemeinen Teil der Informationen über die Hochschule enthält und hat Verlinkungen zu den drei Fakultätsseiten. Da die entwickelte Webanwendung für Studierende des Studiengangs Angewandte Informatik und Multimendiatechnik gedacht ist wird an dieser Stelle nur die Fakultätsseite der Ingenieurstechnik bzw. des Bereiches Elektrotechnik und Information.
 		
 		In der oberen Navigationsleiste gibt es nicht eindeutig erkennbare Icons für den Schnelleinstig und Informationen. Werden diese angeklickt, klappt sich ein Panel nach oben aus. Die obere Navigationsleiste ist nicht fixiert. Der Footer ist sehr groß und enthält teilweise die selben Verlinkungen wie in der Seitennavigation oben. Auf der Seite der Semsterübersicht gib es eine Akkordeonmenü welches nicht an allen Punkten anklickbar ist. Dieses Menü enthält ein Pfeil-Icon nach unten zeigend, welches dem User sugerriert das sich hinter dem Icon mehr Informationen enthalten.  Dieses Icon ist aber nicht anklickbar. Die Pfeil-Icons gibt es auf der gesamten Website als wiederkehrendes Symbol für Verlinkungen. Auf den Informationsseiten werden diese Icons allerdings auch als Auflistungszeichen verwendet. Weiterhin gibt es viel zu viele Querverweise. Beispielsweise auf einer Modulübersichtsseite gibt es Verlinkungen zu weiteren Studiengängen die dieses Modul besuchen, weitere Module die der/die Professor |in unterrichtet, die Forschungsthemen, Thesenthemen, und Jobs die der/die Professor|in anbietet. Diese Informationen gibt als sowohl auf der Modulübersicht als auch auf der persönlichen Seite der/des Professor|in. Der User wird überfordert, da zu viele Informationen gegeben werden. Desweiteren fehlt die Auflistung der Wahlpflichtmodule. Diese müssen umständlich im Modulhandbuch gesucht werden. 
-		
+
+%----------------------------------------------------------------------		
 		\section{Festlegung Systemanforderung}
 		Die Hochschulwebsite ist sowohl für Studieninterssierte, als auch für eingeschriebene Studierende konzipiert. Um schneller an die wichtigsten Informationen zu gelangen, soll die Anwendung nur für eingeschriebene Studierende des Studiengangs Angewandte Informatik und Multimediatechnik dienen. Weiterhin sollen nur die wichtigsten Information kurz und knapp dargestellt werden. Daher hat jede Seite ein klares Ziel.	So ergeben sich weniger Verlinkungen, sodass der User immer genau weiß wo er sich befindet. Die heutigen Studierenden gehören zur Generation Smartphone. Daher soll der Ansatz "mobile first" verfolgt werden.
 	
-
+%___________________________________________________________________________________
 \chapter{Grundlagen}				
-				\section{Webcomponents}
-				Web Components stellen eine Reihe von Webplattform-APIs dar. Mit Ihnen kann wiederverwendbares gekapseltes HTML erstellt und erweitert werden. Das HTML wird in Komponenten gegliedert die in jedem modernen Browser und jeder JavaScript-Bibliothek und jedem Framework verwendet werden kann. Web Components basieren auf vier Anforderungen: 
+		\section{Webcomponents}
+		Web Components stellen eine Reihe von Webplattform-APIs dar. Mit Ihnen kann wiederverwendbares gekapseltes HTML erstellt und erweitert werden. Das HTML wird in Komponenten gegliedert die in jedem modernen Browser und jeder JavaScript-Bibliothek und jedem Framework verwendet werden kann. Web Components basieren auf vier Anforderungen: 
 \begin{itemize}
 \item \textit{Custom Elements:} Grundlage für das Erstellen neuer DOM-Elemente
 \item \textit{Shadow Dom:} Definiert wie gekapseltes HTML in den Components verwendet wird
 \item \textit{ES Modules:} Definiert die Einbindung und Wiederverwendung der JavaScript-Dateien
 \item \textit{HTML Templates:} Definiert HTML-Fragmente die erst zur Laufzeit istanziiert werden
 \end{itemize} Es existieren viel Bibliotheken mit denen die Erstellung von Web Components erleichtert wird, wie zum Beispiel Hybrids, LitElement, Polymer usw. Im folgenden wird die Bibliothek LitElement näher erläutert.\cite{webcom}
+
+%----------------------------------------------------------------------				
 				\subsection{LitElement}
 				LitElement ist eine Basisklasse zum Erstellen von Web Components. Sie verwendet lit-html um Templates zu definieren und zu rendern und fügt eine API zum Verwalten von Eigenschaften und Attributen hinzu.  Die Eigenschaften werden beobachtet und die Elemente werden asynchron aktualisiert, wenn sich ihre Eigenschaft ändert. 
+
+%----------------------------------------------------------------------					
 					\subsection{Shadow-Dom}
 					Der SHadow-Dom wird verwendet um den Template-Dom zu Kapseln. Er bietet drei wesentliche Vorteile: 
 					\begin{itemize}
-\item \textit{Dom-Scoping:} DOM-APIs finden keine Element im Schatten-Dom sodass globale Scripte keinen Zugriff haben
-\item \textit{Style-Scoping:} gekapselte Styles haben keine Auswirkung auf den Rest des DOM-Baumes
-\item \textit{Composition:} der Schatten-Dom der Komponente ist von untergeordneten Elementen getrennt, so kann gesteuert werden wie untergeordnete Elemente in das Template gerendert werden sollen\cite{webcom}
-\end{itemize}
-					
+						\item \textit{Dom-Scoping:} DOM-APIs finden keine Element im Schatten-Dom sodass globale Scripte keinen Zugriff haben
+						\item \textit{Style-Scoping:} gekapselte Styles haben keine Auswirkung auf den Rest des DOM-Baumes
+						\item \textit{Composition:} der Schatten-Dom der Komponente ist von untergeordneten Elementen getrennt, so kann gesteuert werden wie untergeordnete Elemente in das Template gerendert werden sollen\cite{webcom}
+					\end{itemize}
+														%----------------------------------------------------------------------
 					\subsection{Templates}
 					In einer Render-Funktion der Elementklasse wird das Template für die Component definiert. In dieser Funktion wird das rohe HTML in einem JavaScript template literal innerhalb von back-ticks geschrieben (siehe Abb. ). Die Render Methode kann alles zurückgeben was lit-html rendern kann. \cite{litelem}
 					\begin{figure}[h]
@@ -280,21 +287,12 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 				
 					\subsection{Properties}
 					LitElement verwaltet deklarierte Eigenschaften in einem statischen properties Getter, die entsprechenden Attribute werden in einem Elementkonstruktor initialisiert. So kann sicher gestellt werden das das bei einer geplanten Elementaktualiserung sich die deklarierte Eigenschaft ändert.  \cite{litelem}
-
-					\section{Router}
-Der Router übernimmt das Navigieren auf der gesamten Seite.
-Er legt die angezeigte URL fest und verwaltet welche SPA
-(mit dazugehörigen Webcomponents) dafür angezeigt wird.
-Die verschiedenen Routen werden mit Namen und einem URL Pattern angelegt
-und können auf diesem Wege auseinander gehalten werden.
-Über Parameter und Querys können dann auch Informationen übertragen werden,
-die für die neu aufgerufene Seite von belangen sind.
-
-Wird nun ein Button mit einem Redirect auf eine neue SPA belegt,
-registriert auch der Router den Klick und wechselt die Path Variable
-auf den entsprechenden Namen, welcher zu der neuen URL zugehörig ist.
-Anhand dieser Variable können alle nicht benötigten SPA's ausgeblendet
-und die neue SPA angezeigt werden.
+		
+		%----------------------------------------------------------------------
+		\section{Router}
+	Der Router übernimmt das Navigieren auf der gesamten Seite. Er legt die angezeigte URL fest und verwaltet welche Ansicht gezeigt werden soll. Die verschiedenen Routen werden mit Namen und einem URL Pattern angelegt und können so auseinander gehalten werden. Über Parameter und Querys können dann Informationen übertragen werden, die für die neu aufgerufene Seite von belangen sind.\\
+\\
+Wird ein Button mit einem Redirect auf eine neue Ansicht belegt, registriert auch der Router den Klick und wechselt die Path Variable auf den entsprechenden Namen, welcher zu der neuen URL zugehörig ist. Anhand dieser Variable können alle nicht benötigten Ansichten ausgeblendet und die neuen angezeigt werden.
 
 %		\section{Responsive Webentwicklung}	
 %				\subsection{Positionierungseinheiten }
@@ -304,91 +302,103 @@ und die neue SPA angezeigt werden.
 %				\subsection{Elementanordnungen}
 				
 
-
+%___________________________________________________________________________________
 \chapter{Konzept}			
-		\section{Use-Cases der Anwendung}	
-		Das in Abbilding 4.1 gezeigte Use-Case-Diagram beinhalten zu Beginn zwei mögliche Interaktionen. Der User kann zwischen der Übersicht der Semester oder der Übersicht der Professoren und Mitarbeiter wählen. Wählt der User die Semester Übersicht kann er nun ein Semester wählen und bekommt anschließend die Module des jeweiligen Semesters angezeigt. Entscheidet er sich hier für ein Modul werden ihm die Details des Moduls gezeigt. In der Professoren und Mitarbeiter Übersicht kann der User eine Person auswählen und bekommt dann ebenfalls die Details zu dieser Person gezeigt.
-\begin{figure}[h]
-						\centering
-						\includegraphics[width=1\textwidth]{pictures/use-cases.png}
-						\caption{Use-Case-Diagramm (eigene Darstellung)}							
-						\label{Use-Case-Diagramm}
-					\end{figure}	
+%		\section{Use-Cases der Anwendung}	
+%		Das in Abbilding 4.1 gezeigte Use-Case-Diagram beinhalten zu Beginn zwei mögliche Interaktionen. Der User kann zwischen der Übersicht der Semester oder der Übersicht der Professoren und Mitarbeiter wählen. Wählt der User die Semester Übersicht kann er nun ein Semester wählen und bekommt anschließend die Module des jeweiligen Semesters angezeigt. Entscheidet er sich hier für ein Modul werden ihm die Details des Moduls gezeigt. In der Professoren und Mitarbeiter Übersicht kann der User eine Person auswählen und bekommt dann ebenfalls die Details zu dieser Person gezeigt.
+%	\begin{figure}[h]
+%		\centering
+%		\includegraphics[width=1\textwidth]{pictures/use-cases.png}
+%		\caption{Use-Case-Diagramm (eigene Darstellung)}							
+%		\label{Use-Case-Diagramm}
+%	\end{figure}	
 		
+		%----------------------------------------------------------------------
 		\section{Systementwurf}
-		Die Abbildung 4.2 zeigt die Zustände, in denen sich der User während der Benutzung der Anwendung befinden kann. Im Zustand der Startseite kann durch ein klick auf die gewünschte Übersicht zum einen in den Zustand der Semester Übersicht und zum andern in die Übersicht der Professoren und Mitarbeiter gewechselt werden. Diesen Zustandswechsel der beiden Übersichten kann jederzeit durch die untere Navigation getätigt werden. Im Zustand der Semester Übersicht kann durch ein klick auf ein Semester in den Zustand der Modul Übersicht gewechselt werden. Wählt der User hier durch ein klick ein Modul aus, wird die entsprechende Detailseite aufgerufen. Im Zustand der Professoren und Mitarbeiter Übersicht kann durch einen klick auf eine Person die entsprechende Detailseite der Person aufgerufen werden.
-		
-		
+		Die Abbildung 4.1 zeigt die Zustände, in denen sich der User während der Benutzung der Anwendung befinden kann. Im Zustand der Startseite kann durch ein klick auf die gewünschte Übersicht zum einen in den Zustand der Semester Übersicht und zum andern in die Übersicht der Professoren und Mitarbeiter gewechselt werden. Diesen Zustandswechsel der beiden Übersichten kann jederzeit durch die untere Navigation getätigt werden. Im Zustand der Semester Übersicht kann durch ein klick auf ein Semester in den Zustand der Modul Übersicht gewechselt werden. Wählt der User hier durch ein klick ein Modul aus, wird die entsprechende Detailseite aufgerufen. Im Zustand der Professoren und Mitarbeiter Übersicht kann durch einen klick auf eine Person die entsprechende Detailseite der Person aufgerufen werden.
+				
 		\begin{figure}[h]
-						\centering
-						\includegraphics[width=0.7\textwidth]{pictures/zustandsdiagram.png}
-						\caption{Zustandsdiagramm (eigene Darstellung)}						
-						\label{Zustandsdiagramm}
-					\end{figure}
-		
+			\centering
+			\includegraphics[width=0.7\textwidth]{pictures/zustandsdiagram.png}
+			\caption{Zustandsdiagramm (eigene Darstellung)}						
+			\label{Zustandsdiagramm}
+		\end{figure}
+					
+		%----------------------------------------------------------------------
+		\section{Ansichten und Komponenten}	
+		 Die Webapplikation wurde in sechs Ansichten aufgeteilt: eine Startseite, die Semesterübersicht, die Modulübersicht, die Detailseite der Module, die Professorenübersicht und die Detailseite der Professoren. Aufgrund der verschiedenen Wahlpflichtmodule gibt es noch eine siebte Ansicht dieser Module.
+	
+Innerhalb dieser Ansichten gibt es drei Komponenten die in allen wieder verwendet werden: die Überschrifts-Komponente, die Returbutton-Komponente und die Navigations-Komponente. Der Hauptteil der Ansichten ist in weitere Komponenten gegliedert:
+	\begin{itemize}
+		\item Auflistung der Semester
+		\item Auflistung der Professoren und Mitarbeiter
+		\item Auflistung der Module
+		\item Semester-Wochen-Stundenübersicht
+		\item Prüfungsinformationen
+		\item Inhalt der Module
+		\item Bild des Professors bzw. des Mitarbeiters
+		\item Kontaktdaten des Professors bzw. des Mitarbeiters
+		\item Lehre des Professors bzw. des Mitarbeiters
+	\end{itemize}	
+Diese wiederverwendbaren Komponenten können mit dem speziellen Content des jeweilig ausgewählten Semesters, Moduls oder einer bestimmten Person gefüllt werden. Dieser Content wird in einer erweiterbaren JSON-Datei gebündelt (siehe Kapitel 5.2 Datenhandling).
+
+
+
+%___________________________________________________________________________________	
 \chapter{Implementierungen}  
 
-	\section{Components und Views}
-	Für die einfache und seperate Entwicklung der
-einzelnen Seiten und Webcomponents bestand eine Hauptaufgabe darin, die Webapp in
-gut abspaltbare und wiederverwendbare Teile zu gliedern. Die Aufteilung der Webapp
-erfolgte somit in sechs SPA's die Inhaltlich keinen zusammenhang besitzen:
-\begin{itemize}
-\item Startseite
-\item Semester Übersicht
-\item Modul Übersicht
-\item Modul Details
-\item Professoren Überischt
-\item Professoren Details
-\end{itemize}	
-Um diese mit Kontent zu füllen erfolgte die Aufteilung des Inhalts in überschaubare
-und mehrfach verwendbare Webcomponents. Components wie die Hauptnavigation erleichtern
-damit den Implementieraufwand und lassen sich schnell an allen benötigten stellen
-einbinden. Somit ergaben sich allgemeine Components für:
-\begin{itemize}
-\item Hauptnavigation
-\item Breadcrumb
-\item Zurückbutton
-\item Überschrift
-\end{itemize}	
-Und mehr spezifische Components für den Inhalt:
-\begin{itemize}
-\item Semester
-\item Professoren
-\item Module
-\item Stundenübersicht
-\item Prüfung
-\item Modul Inhalt
-\item Kontakt
-\item Professorenbild
-\item Lehre
-\item Thesen
-\end{itemize}	
-Alle Javascript Dateien der Views legen die Struktur der Webseite fest, indem sie
-die benötigten Components anhand ihres Tags einbinden.
-Das eigentliche Styling und anlegen der Elemente, die für die Seite benötigt werden, geschieht in den einzelnen Dateien der Components.
-In den Components sind einzelne Elemente festgelegt.
-Für die Modulübersicht, in welcher alle allgemeinen und die Modul spezifische Components eingebunden sind,
-sieht der Quellcode wie folgt aus:
-## Bild von Quellcode Module
-
-Der Components Code ist in mehrere Methoden gegliedert. Die Methode zum abfragen der benötigten Daten 'getModulesNames' und die render Funtkion für das HTML.
-Für die Module sind in der render Funktion gestylte Div Tags mit dem
-Modulnamen als Inhalt. Jedes Div enthält einen 'Clickhandler' welcher die Navigation zur nächsten Seite ermöglicht und über den Router gesteuert wird.
-Welche Daten benötigt sind kann über die URL herausgefunden werden und wird in
-'getModulesNames' abgefragt.
+	\section{Components}
+	Alle Ansichten legen die Struktur der Webseite fest, indem sie die jeweiligen Komponenten durch dessen Custom Element (definiertes HTML-Tag mit eigenem Verhalten) einbinden (siehe Abb. 5.1 Ansicht mit den jeweiligen Custom Elements). 
 	
-	\section{Router}
-In der Router Datei werden in der routes Methode alle benötigten Routen festgelegt.
-Sie erhalten einen namen, welcher verwendet werden kann, um herauszufinden wo man sich auf
-der Webseite befindet und ein Pattern. Welches fest legt, wie die zugehörige URL aussieht.
-Dieses kann mit Variablen versehen werden, um z.B.: verschiedene Semester auseinander zu halten.
-Es können auch Parameter mit angegeben werden, sollten diese benötigt sein.
-In der render Funktion werden alle Views über ihre Tags eingebunden und anhand der 'route' Variable,
-welche den Namen der aktuell aufgerufenen Seite enthält, ein und ausgeblendet.
-## Bild Routes Methode und render funktion?
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{pictures/custom-element.png}
+		\caption{Ansicht mit den jeweiligen  Custom Elements}						
+		\label{custom-element}
+	\end{figure}
+	
+	Das Verhalten des jeweiligen Custom Elements wird über ein HTML-Template innerhalb der Render-Funktion implementiert. Dieses besteht aus herkömmlichen HTML-Tags (siehe Abb. 5.2 HTML-Template eines Custom Elements).
 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{pictures/html-template.png}
+		\caption{HTML-Template eines Custom Elements}						
+		\label{html-template}
+	\end{figure}
+	
+	%----------------------------------------------------------------------
+	\section{Datenhandling}
+	Wie in Abbildung 5.3 zu sehen ist, besteht die Struktur der Daten aus JavaScript-Objekten. Das Objekt \textit{dataSem} enthält ein Array das wiederum Objekte der einzelnen Semester beinhaltet. Dieses besteht wieder aus einem Array mit Objekten der einzelnen Module.  Das Objekt \textit{dataProf} enthält ein Objekt Professoren und eine Objekt Mitarbeiter. Diese enhalten wieder ein Array aus Objekten mit den Daten der einzelnen Personen.
+	
+	\begin{figure}[h]
+   		\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+      		\includegraphics[width=\linewidth]{pictures/dataSem.png}
+   		\end{minipage}
+   		\hspace{.1\linewidth}% Abstand zwischen Bilder
+   		\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+      		\includegraphics[width=\linewidth]{pictures/dataProf.png}	
+   		\end{minipage}
+   		\caption{Objektstruktur der Semester und Module und der Professoren und Mitarbeiter}
+   		\label{datastructure}
+\end{figure}
+	
+	Durch spezielle Getter-Methode werden die jeweiligen Daten aus den Objekten in die Komponenten geschrieben. In der Abbildung 5.4 Methode für das Datenhandling wird am Beispiel \textit{getTeaching} gezeigt wie die Daten für die Komponente textit{Lehre} aus der textit{dataProf} gezogen werden. Hierzu wird die Professoren ID der angeklickten Person aus der Route mit der ID in der \textit{dataProf} verglichen und die benötigten Daten in ein Array geschrieben. Dieses Array wird dann, wie in Abbildung 5.2 HTML-Template eines Custom Elements gezeigt, mithilfe der Map-Funktion in das Template geschrieben.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{pictures/getTeaching.png}
+		\caption{Methode für das Datenhandling}						
+		\label{getTeaching}
+	\end{figure}
+	
+	%----------------------------------------------------------------------
+	\section{Navigation mithilfe des Routers}
+	Jedes anklickbare Element enthält einen Clickhandler, welcher die Navigation zur nächsten Seite ermöglicht und über den Router gesteuert wird. Welche Daten benötigt sind kann über die URL herausgefunden werden und wird in der speziellen Getter-Methode abgefragt.	
+	
+	In der Router-Datei werden in der routes Methode alle benötigten Routen festgelegt.
+Sie erhalten einen namen, welcher verwendet werden kann, um herauszufinden wo man sich auf der Webseite befindet und ein Pattern. Welches fest legt, wie die zugehörige URL aussieht. Dieses kann mit Variablen versehen werden, um z.B.: verschiedene Semester auseinander zu halten. Es können auch Parameter mit angegeben werden, sollten diese benötigt sein. In der Render-Funktion werden alle Views über ihre Tags eingebunden und anhand der 'route' Variable, welche den Namen der aktuell aufgerufenen Seite enthält, ein und ausgeblendet.
+% Bild Routes Methode und render funktion?
 
+%___________________________________________________________________________________
 \chapter{Zusammenfassung und Ausblick}     
 
 
