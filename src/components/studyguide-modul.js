@@ -18,8 +18,8 @@ class Modul extends navigator(LitElement) {
 
     getModules(semester) {
         if (semester) {
-            return semester.modules.map((module, idx) => {
-                return html`<div class="modul modul-style" @click=${() => this.clickHandler(semester.id, module.id)}>${module.name}</div>`
+            return semester.modules.map((module, idx) => {             
+                    return html`<div class="modul modul-style" @click=${() => this.clickHandler(semester.id, module.id)}>${module.name}</div>` 
             });
         } else {
             html``;
@@ -42,7 +42,7 @@ class Modul extends navigator(LitElement) {
     }
 
     clickHandler(semesterId, moduleId) {
-        this.navigate(`/semesteruebersicht/semester/${semesterId}/modul/${moduleId}`);
+            this.navigate(`/semesteruebersicht/semester/${semesterId}/modul/${moduleId}`); 
     }
 }
 

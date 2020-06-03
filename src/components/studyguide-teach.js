@@ -1,41 +1,43 @@
 import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
-import dataProf from '../data/prof.js'
+import prof from '../data/prof.js'
 
 class Teach extends navigator(LitElement) {
     
     static get properties() {
         return {
-            //id: { type: Integer },
-            profTeaching: { type: Array }
+            profId: { type: Number },
         };
     }
 
-    constructor() {
-        super();
-        //this.id = null;
-        this.profTeaching= [];
+    getTeaching() {
+        let teach = [];
+        if (this.profId) {
+            const professoren = prof.professoren;
+            const professor = professoren.find((prof) => prof.id === this.profId);
+            if (!professor) {
+                const dozenten = prof.dozenten;
+                const dozent = dozenten.find((doz) => doz.id === this.profId);
+                teach = dozent.infos.teaching;
+            } else {
+                teach = professor.infos.teaching;
+            }
+        }
+        return teach
     }
-
-     getProfTeaching() {
-         //var semester = 'semester' + this.id;
-         for (var prof in dataProf.professoren) {
-             if (prof === 'professor1') {
-                     this.profTeaching.push(dataProf.professoren[prof].teaching);
-             }
-         }
-     }
     
     render() {
+
+        const teach = this.getTeaching();
+
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">
         <link rel="stylesheet" href="../src/styles/details.css">
-        ${this.getProfTeaching()}
        
         <div class="teach detail detail-style detail-style-prof font-fam">
             <h4 class="font-weight-600 font-size-md">Lehre</h4>
             </br>
-            ${this.profTeaching.map((i) => html`<p class="font-weight-300 font-size-s">${i}<br></p>`)}
+            ${teach.map((i) => html`<p class="font-weight-300 font-size-s">${i}</p>`)}
         </div>
 
        `;

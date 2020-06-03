@@ -1,55 +1,51 @@
 import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
-import dataSem from '../data/sem.js'
+import data from '../data/sem.js'
 
 class Exam extends navigator(LitElement) {
     
     static get properties() {
         return {
-            //id: { type: Integer },
-            moduleExam: { type: Array },
-            moduleCredit: { type: Array }
+            semesterId: { type: Number },
+            courseId: { type: Number }
         };
     }
 
-    constructor() {
-        super();
-        //this.id = null;
-        this.moduleExam = [];
-        this.moduleCredit = [];
+    getModuleCredit() {
+        let moduleCredit = 0;
+        if (this.semesterId && this.courseId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            moduleCredit = course.credits;
+        }
+        return moduleCredit
     }
    
     getModuleExam() {
-        //var semester = 'semester' + this.id;
-        for (var sem in dataSem.semester) {
-            if (sem === 'semester1') {
-                for (var modul in dataSem.semester[sem]) {
-                    if (modul === 'modul1') {
-                        this.moduleExam.push(dataSem.semester[sem][modul].exam);
-                        this.moduleCredit.push(dataSem.semester[sem][modul].credits);
-                    }
-                }
-            }
+        let moduleExam = "";
+        if (this.semesterId && this.courseId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            moduleExam = course.exam;
         }
+        return moduleExam
     }
     
     render() {
+        const moduleExam = this.getModuleExam();
+        const moduleCredit = this.getModuleCredit();
+
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">
         <link rel="stylesheet" href="../src/styles/details.css">
-        ${this.getModuleExam()}
 
         <div class="exam detail detail-style detail-style-sem font-fam">
             <h4 class="font-weight-600 font-size-md">Prüfung</h4>
             </br>
-            ${this.moduleExam.map((i) => html`<p class="font-weight-300 font-size-s">${i}</p>`)} 
-            ${this.moduleCredit.map((i) => html`<p class="font-weight-300 font-size-s">${i} Credits</p>`)} 
+            <p class="font-weight-300 font-size-s">${moduleExam}</p>
+            <p class="font-weight-300 font-size-s">${moduleCredit} Credits</p>
         </div>
        `;
-    }
-
-    clickHandler(e) {
-        this.navigate('/semesterview');
     }
 }
 

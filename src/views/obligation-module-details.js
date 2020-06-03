@@ -15,7 +15,8 @@ class Semesterview extends navigator(LitElement) {
     static get properties() {
         return {
             semesterId: { type: Number },
-            courseId: { type: Number }
+            courseId: { type: Number },
+            obligationId: {type: Number}
         };
     }
 
@@ -30,13 +31,13 @@ class Semesterview extends navigator(LitElement) {
 
         <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
         <studyguide-headline></studyguide-headline>
-        <studyguide-professor semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-professor>
-        <studyguide-exam semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-exam>
-        <studyguide-modulContent semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-modulContent>
-        <studyguide-returnButton semesterId="${this.semesterId}"></studyguide-returnButton>
+        <studyguide-professor semesterId="${this.semesterId}" courseId="${this.courseId}" obligationId="${this.obligationId}"></studyguide-professor>
+        <studyguide-exam semesterId="${this.semesterId}" courseId="${this.courseId}" obligationId="${this.obligationId}"></studyguide-exam>
+        <studyguide-modulContent semesterId="${this.semesterId}" courseId="${this.courseId}" obligationId="${this.obligationId}"></studyguide-modulContent>
+        <studyguide-returnButton semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-returnButton>
         <studyguide-navigation></studyguide-navigation>
        `;
     }
 }
 
-customElements.define('studyguide-moduldetails', Semesterview);
+customElements.define('studyguide-obligation-moduldetails', Semesterview);

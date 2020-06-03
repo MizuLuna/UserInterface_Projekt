@@ -12,36 +12,23 @@ class Semesterview extends navigator(LitElement) {
 
     static get properties() {
         return {
-            semesterId: { type: Number }
+            semesterId: { type: Number },
+            courseId: {type: Number}
         };
     }
 
     render() {
-        //Lädt bei Sem5 die Styles nicht mehr (auch return und navigation styles)
-        if (this.semesterId === 5) {
-            return html`
-            <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
-            <studyguide-internship semesterId="${this.semesterId}"></studyguide-internship>
-            <studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
-            <studyguide-navigation></studyguide-navigation>
-           `;
-        } else {
-            return html`
+        return html`
             <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
             <studyguide-headline></studyguide-headline>
-            <studyguide-modul semesterId="${this.semesterId}"></studyguide-modul>
+            <studyguide-modul semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-modul>
             <studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
             <studyguide-navigation></studyguide-navigation>
            `;
-        }
-
-        
     }
-
 
     clickHandler(e) {
-        this.navigate('/semesteruebersicht');
+        this.navigate('/semesteruebersicht/semester/6/modul');
     }
 }
-
-customElements.define('studyguide-moduls', Semesterview);
+customElements.define('studyguide-obligation-modules', Semesterview);
