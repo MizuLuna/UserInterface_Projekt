@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  3 JUN 2020 21:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  4 JUN 2020 15:10
 entering extended mode
 **./UI_semesterarbeit.tex
 (UI_semesterarbeit.tex
@@ -1222,11 +1222,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--296
 
 [7 <./pictures/render-function.png>] [8]
 chapter 4.
-<pictures/zustandsdiagram.png, id=102, 491.9178pt x 548.7702pt>
+<pictures/zustandsdiagram.png, id=102, 585.1461pt x 473.6094pt>
 File: pictures/zustandsdiagram.png Graphic file (type png)
 <use pictures/zustandsdiagram.png>
 Package pdftex.def Info: pictures/zustandsdiagram.png  used on input line 322.
-(pdftex.def)             Requested size: 298.75264pt x 333.28397pt.
+(pdftex.def)             Requested size: 298.75264pt x 241.81221pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1237,9 +1237,9 @@ rtseite, die Semesterübersicht,
  []
 
 
-Overfull \hbox (27.23546pt too wide) in paragraph at lines 331--333
-\T1/lmr/m/n/12 werden: die Überschrifts-Komponente, die Returbutton-Komponente 
-und die Navigations-
+Overfull \hbox (69.5014pt too wide) in paragraph at lines 331--333
+\T1/lmr/m/n/12 werden: die Überschrifts-Komponente, die Return-Button-Komponent
+e und die Hauptnavigations-
  []
 
 [9
@@ -1376,7 +1376,7 @@ lmr10.pfb></Users/stefko/Library/Application Support/MiKTeX/texmfs/install/font
 s/type1/public/lm/lmr12.pfb></Users/stefko/Library/Application Support/MiKTeX/t
 exmfs/install/fonts/type1/public/lm/lmri12.pfb></Users/stefko/Library/Applicati
 on Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on UI_semesterarbeit.pdf (17 pages, 750010 bytes).
+Output written on UI_semesterarbeit.pdf (17 pages, 776271 bytes).
 PDF statistics:
  269 PDF objects out of 1000 (max. 8388607)
  51 named destinations out of 1000 (max. 500000)
