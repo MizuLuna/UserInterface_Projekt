@@ -240,7 +240,7 @@ Um dies zu vereinfachen wird im folgenden eine Applikation entwickelt die alle w
 Nach einer Analyse der Hochschulseite und der Beschreibung des IST-Zustandes folgt die Festlegung der Systemanforderungen an die Applikation. In den Grundlagen wird erläutern was Webcomponents, im speziellen die LitElements, sind und wie sie aufgebaut sind. Hier wird zudem auf den Shadow-Dom, die Templates und die Properties eingegangen. Außerdem wird die interne Navigation mittels eines Routers beschrieben. Im Abschnitt Konzept wird der Aufbau und die Funktionsweise der Applikation näher erläutert. Im Kapitel 5 Implementierungen werden wichtige Ausschnitte aus dem Programmcode gezeigt und näher erklärt.
 
 \chapter{Untersuchung der Hochschul-Website}	
-Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs Klicks um von der Startseite der HS Wismar zur Semsterübersicht (AIMMT) zu gelangen. Innerhalb dieser Seiten gibt es einige Unstimmigkeiten und fehlerhaftes Fehlerhaftes Verhalten, welches im folgendem näher erläutert wird.
+Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs Klicks um von der Startseite der HS Wismar zur Semsterübersicht (AIMMT) zu gelangen. Innerhalb dieser Seiten gibt es einige Unstimmigkeiten und fehlerhaftes Verhalten, welches im folgendem näher erläutert wird.
 
 		%----------------------------------------------------------------------		
 		\section{Analyse des Ist-Zustandes}
@@ -395,7 +395,7 @@ Diese wiederverwendbaren Komponenten können mit dem speziellen Content des jewe
 	Jedes anklickbare Element enthält einen Clickhandler, welcher die Navigation zur nächsten Seite ermöglicht und über den Router gesteuert wird. Welche Daten benötigt sind kann über die URL herausgefunden werden und wird in der speziellen Getter-Methode abgefragt.	
 	
 	In der Router-Datei werden in der routes Methode alle benötigten Routen festgelegt.
-Sie erhalten einen Namen, welcher verwendet werden kann, um herauszufinden wo man sich auf der Webseite befindet und ein Pattern. Welches fest legt, wie die zugehörige URL aussieht. Dieses kann mit Variablen versehen werden, um z.B.: verschiedene Semester auseinander zu halten. Es können auch Parameter mit angegeben werden, sollten diese benötigt sein. In der Render-Funktion werden alle Ansichten über ihre Tags eingebunden und anhand der 'route' Variable, welche den Namen der aktuell aufgerufenen Seite enthält, ein und ausgeblendet.
+Sie erhalten einen Namen, welcher verwendet werden kann, um herauszufinden wo man sich auf der Webseite befindet und ein Pattern. Welches fest legt, wie die zugehörige URL aussieht. Dieses kann mit Variablen versehen werden, um z.B.: verschiedene Semester auseinander zu halten. Es können auch Parameter mit angegeben werden. Solche werden in diesem Falle nicht in der URL angezeigt, sondern direkt an die einzelnen Views übergeben, um die Information weiter zu verarbeiten. In der Render-Funktion werden alle Ansichten über ihre Tags eingebunden und anhand der 'route' Variable, welche den Namen der aktuell aufgerufenen Seite enthält, ein und ausgeblendet.
 % Bild Routes Methode und render funktion?
 
 %___________________________________________________________________________________
