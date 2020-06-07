@@ -15,9 +15,9 @@
 \contentsline {section}{\numberline {4.2}Ansichten und Komponenten}{9}{section.17}%
 \contentsline {chapter}{\numberline {5}Implementierungen}{11}{chapter.18}%
 \contentsline {section}{\numberline {5.1}Components}{11}{section.19}%
-\contentsline {section}{\numberline {5.2}Datenhandling}{12}{section.22}%
-\contentsline {section}{\numberline {5.3}Navigation mithilfe des Routers}{12}{section.25}%
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{14}{chapter.26}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{15}{chapter*.27}%
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{16}{chapter*.28}%
-\contentsline {chapter}{Selbstständigkeitserklärung}{17}{chapter*.29}%
+\contentsline {section}{\numberline {5.2}Datenhandling}{11}{section.22}%
+\contentsline {section}{\numberline {5.3}Navigation mithilfe des Routers}{13}{section.25}%
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{15}{chapter.28}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{16}{chapter*.29}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{17}{chapter*.30}%
+\contentsline {chapter}{Selbstständigkeitserklärung}{18}{chapter*.31}%

@@ -253,7 +253,9 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 		Die Hochschulwebsite ist sowohl für Studieninterssierte, als auch für eingeschriebene Studierende konzipiert. Um schneller an die wichtigsten Informationen zu gelangen, soll die Anwendung nur für eingeschriebene Studierende des Studiengangs Angewandte Informatik und Multimediatechnik dienen. Weiterhin sollen nur die wichtigsten Information kurz und knapp dargestellt werden. Daher hat jede Seite ein klares Ziel.	So ergeben sich weniger Verlinkungen, sodass der User immer genau weiß wo er sich befindet. Die heutigen Studierenden gehören zur Generation Smartphone. Daher soll der Ansatz "mobile first" verfolgt werden.
 	
 %___________________________________________________________________________________
-\chapter{Grundlagen}				
+\chapter{Grundlagen}		
+Um die folgenden Kapitel besser einzuordnen, werden nun einige technische Grundlagen betrachten. Zuerst wird auf die Webcomponents und im speziellen auf die LitElemente und deren Prinzipien eingegangen. Dann wird auf die Navigation mittels eines Routers eingegangen.
+	
 		\section{Webcomponents}
 		Web Components stellen eine Reihe von Webplattform-APIs dar. Mit Ihnen kann wiederverwendbares gekapseltes HTML erstellt und erweitert werden. Das HTML wird in Komponenten gegliedert die in jedem modernen Browser und jeder JavaScript-Bibliothek und jedem Framework verwendet werden kann. Web Components basieren auf vier Anforderungen: 
 \begin{itemize}
@@ -269,7 +271,7 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 
 %----------------------------------------------------------------------					
 					\subsection{Shadow-Dom}
-					Der SHadow-Dom wird verwendet um den Template-Dom zu Kapseln. Er bietet drei wesentliche Vorteile: 
+					Der Shadow-Dom wird verwendet um den Template-Dom zu Kapseln. Er bietet drei wesentliche Vorteile: 
 					\begin{itemize}
 						\item \textit{Dom-Scoping:} DOM-APIs finden keine Element im Schatten-Dom sodass globale Scripte keinen Zugriff haben
 						\item \textit{Style-Scoping:} gekapselte Styles haben keine Auswirkung auf den Rest des DOM-Baumes
@@ -303,7 +305,9 @@ Wird ein Button mit einem Redirect auf eine neue Ansicht belegt, registriert auc
 				
 
 %___________________________________________________________________________________
-\chapter{Konzept}			
+\chapter{Konzept}	
+Anhand der in Kapitel 2 festgelegten Anforderungen	wird im folgenden ein Konzept in Form von einem Zustandsdiagramm und die Aufteilung in Komponenten entworfen.
+
 %		\section{Use-Cases der Anwendung}	
 %		Das in Abbilding 4.1 gezeigte Use-Case-Diagram beinhalten zu Beginn zwei mögliche Interaktionen. Der User kann zwischen der Übersicht der Semester oder der Übersicht der Professoren und Mitarbeiter wählen. Wählt der User die Semester Übersicht kann er nun ein Semester wählen und bekommt anschließend die Module des jeweiligen Semesters angezeigt. Entscheidet er sich hier für ein Modul werden ihm die Details des Moduls gezeigt. In der Professoren und Mitarbeiter Übersicht kann der User eine Person auswählen und bekommt dann ebenfalls die Details zu dieser Person gezeigt.
 %	\begin{figure}[h]
@@ -346,6 +350,7 @@ Diese wiederverwendbaren Komponenten können mit dem speziellen Content des jewe
 
 %___________________________________________________________________________________	
 \chapter{Implementierungen}  
+Im folgendem werden auf die für die Anwendung spezifischen Implementieren eingegangen, die auf Basis des im vorherigem Kapitels entworfenen Konzepte beruhen.
 
 	\section{Components}
 	Alle Ansichten legen die Struktur der Webseite fest, indem sie die jeweiligen Komponenten durch dessen Custom Element (definiertes HTML-Tag mit eigenem Verhalten) einbinden (siehe Abb. 5.1 Ansicht mit den jeweiligen Custom Elements). 
@@ -389,19 +394,34 @@ Diese wiederverwendbaren Komponenten können mit dem speziellen Content des jewe
 		\caption{Methode für das Datenhandling}						
 		\label{getTeaching}
 	\end{figure}
-	
+\newpage	
 	%----------------------------------------------------------------------
 	\section{Navigation mithilfe des Routers}
-	Jedes anklickbare Element enthält einen Clickhandler, welcher die Navigation zur nächsten Seite ermöglicht und über den Router gesteuert wird. Welche Daten benötigt sind kann über die URL herausgefunden werden und wird in der speziellen Getter-Methode abgefragt.	
-	
-	In der Router-Datei werden in der routes Methode alle benötigten Routen festgelegt.
-Sie erhalten einen Namen, welcher verwendet werden kann, um herauszufinden wo man sich auf der Webseite befindet und ein Pattern. Welches fest legt, wie die zugehörige URL aussieht. Dieses kann mit Variablen versehen werden, um z.B.: verschiedene Semester auseinander zu halten. Es können auch Parameter mit angegeben werden. Solche werden in diesem Falle nicht in der URL angezeigt, sondern direkt an die einzelnen Views übergeben, um die Information weiter zu verarbeiten. In der Render-Funktion werden alle Ansichten über ihre Tags eingebunden und anhand der 'route' Variable, welche den Namen der aktuell aufgerufenen Seite enthält, ein und ausgeblendet.
-% Bild Routes Methode und render funktion?
+	Jedes anklickbare Element enthält einen Clickhandler, welcher die Navigation zur nächsten Seite ermöglicht und über den Router gesteuert wird. Welche Daten benötigt sind kann über die URL herausgefunden werden und wird in der speziellen Getter-Methode abgefragt.	\\
+\\	
+	Wie in Abbildung 5.5 zu sehen, werden in der \textit{routes( )}-Methode alle benötigten Routen festgelegt.
+Der Name gibt an welches Ziel die die Route hat. Während das Pattern festlegt wie die zugehörige URL aussieht. Diese wird mit Variablen versehen (\textit{semesterID}), um beispielsweise die verschiedenen Semester auseinander zu halten. Parameter werden nicht in der URL angezeigt, sondern direkt an die einzelnen Ansichten übergeben, um die Information weiter zu verarbeiten. \\	
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{pictures/routes-methode.png}
+		\caption{routes( )-Methode}						
+		\label{routes}
+	\end{figure}
+	In der Render-Funktion (siehe Abb. 5.6) werden alle Ansichten über ihre Tags eingebunden und anhand der 'route' Variable, welche den Namen der aktuell aufgerufenen Seite enthält, ein und ausgeblendet.\\	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{pictures/router-render.png}
+		\caption{Render-Methode des Routers}						
+		\label{routes}
+	\end{figure}
 
 %___________________________________________________________________________________
 \chapter{Zusammenfassung und Ausblick}     
-
-
+Innerhalb dieses Projektes wurde eine Anwendung entwickelt die es Studenten erleichtert an wichtige Informationen,   während ihres Studiums der Angewandten Informatik an der Hochschule Wismar, zu gelangen. Dazu wurde als Erstes eine Analyse der Hochschul-Website vorgenommen und anhand der Ergebnisse Anforderungen an die Webapplikation festgelegt. Weiterhin wurden Webcomponents allgemein und im speziellen die LitElemente erläutert. Im Kapitel 4 Konzepte wurde der Systementwurf und die Aufteilung der Anwendung in die einzelnen Komponenten und Ansichten vorgestellt. \\
+\\
+Ergebnis\\
+\\
+Ausblick
 		
 	
  	%-----------------------------------------------------------------------------
