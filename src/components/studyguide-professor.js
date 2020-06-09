@@ -10,6 +10,7 @@ class Professor extends navigator(LitElement) {
         return {
             semesterId: { type: Number },
             courseId: { type: Number },
+            obligationId: { type: Number },
             moduleSWSv: { type: Number },
             moduleSWSue: { type: Number },
             moduleSWSp: { type: Number }
@@ -25,7 +26,12 @@ class Professor extends navigator(LitElement) {
 
     getProfName() {
         let profName = "";
-        if (this.semesterId && this.courseId) {
+        if (this.semesterId && (this.semesterId === 6) && this.courseId && (this.courseId === 6) && this.obligationId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            const modul = course.modules.find((module) => module.id === this.obligationId);
+            profName = modul.profname;
+        } else if (this.semesterId && this.courseId) {
             const semester = data.find((semester) => semester.id === this.semesterId);
             const course = semester.modules.find((module) => module.id === this.courseId);
             profName = course.profname;
@@ -35,7 +41,9 @@ class Professor extends navigator(LitElement) {
 
     getProfTitle(profName) {
         let profTitle = "";
-        if (profName) {
+        if (this.semesterId && (this.semesterId === 6) && this.courseId && (this.courseId === 6) && this.obligationId) {
+            profTitle = "";
+        } else if (profName) {
             const professoren = prof.professoren;
             const professor = professoren.find((prof) => prof.infos.name === profName);
             if (!professor) {
@@ -55,9 +63,19 @@ class Professor extends navigator(LitElement) {
     }
 
     getSWS() {
-        if (this.semesterId && this.courseId) {
+        //console.log("test SWS");
+        if (this.semesterId && (this.semesterId === 6) && this.courseId && (this.courseId === 6) && this.obligationId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            const modul = course.modules.find((module) => module.id === this.obligationId);
+            //console.log("Write SWS for obligation");
+            this.moduleSWSv = modul.hour.vorlesung;
+            this.moduleSWSue = modul.hour.uebung;
+            this.moduleSWSp = modul.hour.praktikum;
+        } else if (this.semesterId && this.courseId) {
             const semester = data.find((semester) => semester.id === this.semesterId);
             const course = semester.modules.find((module) => module.id === this.courseId);
+            //console.log("Write SWS for normal modul");
             this.moduleSWSv = course.hour.vorlesung;
             this.moduleSWSue = course.hour.uebung;
             this.moduleSWSp = course.hour.praktikum;

@@ -7,13 +7,19 @@ class Exam extends navigator(LitElement) {
     static get properties() {
         return {
             semesterId: { type: Number },
-            courseId: { type: Number }
+            courseId: { type: Number },
+            obligationId: { type: Number }
         };
     }
 
     getModuleCredit() {
         let moduleCredit = 0;
-        if (this.semesterId && this.courseId) {
+        if (this.semesterId && (this.semesterId === 6) && this.courseId && (this.courseId === 6) && this.obligationId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            const modul = course.modules.find((module) => module.id === this.obligationId);
+            moduleCredit = modul.credits;
+        } else if (this.semesterId && this.courseId) {
             const semester = data.find((semester) => semester.id === this.semesterId)
             const course = semester.modules.find((module) => module.id === this.courseId);
             moduleCredit = course.credits;
@@ -23,7 +29,12 @@ class Exam extends navigator(LitElement) {
    
     getModuleExam() {
         let moduleExam = "";
-        if (this.semesterId && this.courseId) {
+        if (this.semesterId && (this.semesterId === 6) && this.courseId && (this.courseId === 6) && this.obligationId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            const modul = course.modules.find((module) => module.id === this.obligationId);
+            moduleExam = modul.exam;
+        } else if (this.semesterId && this.courseId) {
             const semester = data.find((semester) => semester.id === this.semesterId)
             const course = semester.modules.find((module) => module.id === this.courseId);
             moduleExam = course.exam;

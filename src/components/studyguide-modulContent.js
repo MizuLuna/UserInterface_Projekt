@@ -7,13 +7,19 @@ class Modulcontent extends navigator(LitElement) {
     static get properties() {
         return {
             semesterId: { type: Number },
-            courseId: { type: Number }
+            courseId: { type: Number },
+            obligationId: {type: Number}
         };
     }
    
     getModuleContent() {
         let moduleContent = [];
-        if(this.semesterId && this.courseId) {
+        if (this.semesterId && this.courseId && this.obligationId && (this.semesterId === 6) && (this.courseId === 6)) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            const modul = course.modules.find((module) => module.id === this.obligationId);
+            moduleContent = modul.content;
+        } else if (this.semesterId && this.courseId && !this.obligationId) {
             const semester = data.find((semester) => semester.id === this.semesterId)
             const course = semester.modules.find((module) => module.id === this.courseId);
             moduleContent = course.content;

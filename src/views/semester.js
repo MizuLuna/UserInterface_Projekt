@@ -15,13 +15,6 @@ class Semesterview extends navigator(LitElement) {
         <studyguide-navigation></studyguide-navigation>
        `;
     }
-
-    clickHandler(e) {
-        this.navigate('/semesteruebersicht/semester/1/modul');
-    }
-    //clickHandlerzwei(e) {
-    //    this.navigate('/semesteruebersicht/semester/2/module');
-    //}
 }
 
 customElements.define('studyguide-semester', Semesterview);

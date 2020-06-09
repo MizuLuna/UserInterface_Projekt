@@ -27,7 +27,6 @@ class Modul extends navigator(LitElement) {
     }
 
     render() {
-
         const semester = data.find((semester) => {
             return semester.id === this.semesterId;
         });
@@ -42,7 +41,11 @@ class Modul extends navigator(LitElement) {
     }
 
     clickHandler(semesterId, moduleId) {
-            this.navigate(`/semesteruebersicht/semester/${semesterId}/modul/${moduleId}`); 
+        if ((semesterId === 6) && (moduleId === 6)) {
+            this.navigate(`/semesteruebersicht/semester/${semesterId}/modul/${moduleId}/obligation_modules`);
+        } else {
+            this.navigate(`/semesteruebersicht/semester/${semesterId}/modul/${moduleId}`);
+        }
     }
 }
 

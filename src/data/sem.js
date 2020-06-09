@@ -682,7 +682,7 @@ let dataSem =
                             id: 1,
                             "name": "Medienrecht",
                             "modulID": "MeRe",
-                            "profName": "Prof. Dr. jur. T. Möller",
+                            "profname": "Prof. Dr. jur. T. Möller",
                             "hour": {
                                 "vorlesung": 2,
                                 "uebung": 2,
@@ -701,7 +701,7 @@ let dataSem =
                             id: 2,
                             "name": "Existenzgründung",
                             "modulID": "EG",
-                            "profName": null,
+                            "profname": null,
                             "hour": {
                                 "vorlesung": 2,
                                 "uebung": 2,
@@ -727,7 +727,7 @@ let dataSem =
                             id: 3,
                             "name": "Statistik",
                             "modulID": "Stat",
-                            "profName": "Prof. Dr. rer. pol. Gerhard Müller",
+                            "profname": "Prof. Dr. rer. pol. Gerhard Müller",
                             "hour": {
                                 "vorlesung": 1,
                                 "uebung": 3,
@@ -746,7 +746,7 @@ let dataSem =
                             id: 4,
                             "name": "Systemanalyse und Softwaretechnik",
                             "modulID": "SySo",
-                            "profName": "Prof. Dr. oec. E. Alde",
+                            "profname": "Prof. Dr. oec. E. Alde",
                             "hour": {
                                 "vorlesung": 1,
                                 "uebung": 1,
@@ -768,7 +768,7 @@ let dataSem =
                             id: 5,
                             "name": "Künstliche Intelligenz",
                             "modulID": "KI",
-                            "profName": "Prof. Dr. rer. nat. J. Cleve",
+                            "profname": "Prof. Dr. rer. nat. J. Cleve",
                             "hour": {
                                 "vorlesung": 2,
                                 "uebung": 2,
