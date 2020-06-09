@@ -801,7 +801,7 @@ let dataSem =
                     id: 1,
                     "name": "Datenschutz/ Datensicherheit",
                     "modulID": "DD",
-                    "dozID": 3,
+                    "profname": "Anke Carstensen",
                     "hour": {
                         "vorlesung": 2,
                         "uebung": 2,
@@ -820,7 +820,7 @@ let dataSem =
                     id: 2,
                     "name": "Projekt Angewandte Informatik 2",
                     "modulID": "PAI2",
-                    "profID": 2,
+                    "profname": "Matthias Kreuseler",
                     "hour": {
                         "uebung": 2,
                         "praktikum": 2
@@ -839,7 +839,7 @@ let dataSem =
                     id: 3,
                     "name": "Soft Skills 2: Kommunikation",
                     "modulID": "SS2",
-                    "profID": 3,
+                    "profname": "Antje Raab Düsterhöft",
                     "hour": {
                         "uebung": 2
                     },
@@ -859,7 +859,7 @@ let dataSem =
                     id: 4,
                     "name": "Bachelor-Seminar",
                     "modulID": "BS",
-                    "profID": 2,
+                    "profname": "Matthias Kreuseler",
                     "hour": {
                         "uebung": 2,
                         "praktikum": 2

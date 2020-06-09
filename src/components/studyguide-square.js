@@ -15,7 +15,7 @@ class Square extends navigator(LitElement) {
             <div class="square square-style square-style-sem" @click=${() => this.clickHandler(5)}>Semester 5</div>
             <div class="square square-style square-style-sem" @click=${() => this.clickHandler(6)}>Semester 6</div>
             <div class="square square-style square-style-sem" @click=${() => this.clickHandler(7)}>Semester 7</div> 
-            <div class="square square-style square-style-sem" @click=${() => this.clickHandler(1)}>Master</div>
+            <div class="square square-style square-style-sem" @click=${() => this.clickHandler()}>Master</div>
         </div>
        `;
     }

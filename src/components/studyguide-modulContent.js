@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, css, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 import data from '../data/sem.js'
 
@@ -11,6 +11,16 @@ class Modulcontent extends navigator(LitElement) {
             obligationId: {type: Number}
         };
     }
+
+    static get styles() {
+        return css`
+          li { 
+              color: #666666; 
+            
+        }
+        
+        `;
+      }
    
     getModuleContent() {
         let moduleContent = [];
@@ -36,8 +46,12 @@ class Modulcontent extends navigator(LitElement) {
             <link rel="stylesheet" href="../src/styles/details.css">
             <div class="modulContent detail detail-style detail-style-sem font-fam">
                 <h4 class="font-weight-600 font-size-md">Inhalte</h4>
-                </br>
-                ${moduleContent.map((i) => html`<p class="font-weight-300 font-size-s">${i}</p>`)}   
+                
+                ${moduleContent.map((i) => html`
+                <ul>
+                    <li class="font-weight-300 font-size-s">${i}</li>
+                </ul>
+                `)}   
             </div>
        `;
     }

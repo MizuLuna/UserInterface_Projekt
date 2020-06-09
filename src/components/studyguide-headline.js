@@ -3,6 +3,8 @@ import { navigator } from 'lit-element-router';
 
 
 class Headline extends navigator(LitElement) {
+
+
     render() {
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">

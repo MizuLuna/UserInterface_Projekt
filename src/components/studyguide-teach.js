@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, css, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 import prof from '../data/prof.js'
 
@@ -9,6 +9,16 @@ class Teach extends navigator(LitElement) {
             profId: { type: Number },
         };
     }
+
+    static get styles() {
+        return css`
+          li { 
+              color: #666666; 
+            
+        }
+        
+        `;
+      }
 
     getTeaching() {
         let teach = [];
@@ -36,8 +46,11 @@ class Teach extends navigator(LitElement) {
        
         <div class="teach detail detail-style detail-style-prof font-fam">
             <h4 class="font-weight-600 font-size-md">Lehre</h4>
-            </br>
-            ${teach.map((i) => html`<p class="font-weight-300 font-size-s">${i}</p>`)}
+            ${teach.map((i) => html`
+            <ul>
+                <li class="font-weight-300 font-size-s">${i}</li>
+            </ul>
+            `)}
         </div>
 
        `;
