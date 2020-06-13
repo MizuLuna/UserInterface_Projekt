@@ -26,7 +26,7 @@ class Semesterview extends navigator(LitElement) {
     }
 
     clickHandler(e) {
-        this.navigate('/semesteruebersicht/semester/6/modul');
+        this.navigate('/semesteruebersicht/semester/6/modul/obligation_modules');
     }
 }
-customElements.define('studyguide-obligation-moduls', Semesterview);
+customElements.define('studyguide-obligation-moduls', Semesterview); 

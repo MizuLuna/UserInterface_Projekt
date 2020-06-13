@@ -33,12 +33,28 @@ class Teach extends navigator(LitElement) {
                 teach = professor.infos.teaching;
             }
         }
-        return teach
+        return teach 
     }
+
+    // getCoaching() {
+    //     let coach = [];
+    //     if (this.profId) {
+    //         const dozenten = prof.dozenten;
+    //         const dozent = dozenten.find((doz) => doz.id === this.profId);
+    //         // teach = dozent.infos.teaching;
+    //         coach = dozent.infos.praktikumsbetreuung;
+    //     } else {
+    //         html``;
+    //     }
+    //     return coach    
+    // }
     
     render() {
 
         const teach = this.getTeaching();
+        // const coach = this.getCoaching();
+
+
 
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">
@@ -50,9 +66,9 @@ class Teach extends navigator(LitElement) {
             <ul>
                 <li class="font-weight-300 font-size-s">${i}</li>
             </ul>
-            `)}
+            `)}   
         </div>
-
+       
        `;
     }
 
@@ -62,3 +78,12 @@ class Teach extends navigator(LitElement) {
 }
 
 customElements.define('studyguide-teach', Teach);
+
+{/* <div class="teach detail detail-style detail-style-prof font-fam">
+<h4 class="font-weight-600 font-size-md">Praktikumsbetreuung</h4>
+    ${coach.map((i) => html`
+        <ul>
+            <li class="font-weight-300 font-size-s">${i}</li>
+        </ul>
+    `)}
+</div> */}

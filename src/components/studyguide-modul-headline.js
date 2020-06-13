@@ -13,13 +13,10 @@ class Headline extends navigator(LitElement) {
 
     getModulName() {
         let modulName = "";
-        // console.log("Semester ID: ", semesterId);
-        // console.log("Kurs ID: ", courseId);
         if (this.semesterId && this.courseId) {
             const semester = data.find((semester) => semester.id === this.semesterId);
             const course = semester.modules.find((module) => module.id === this.courseId);
             modulName = course.infos.name;
-            console.log("Ho");
         }
         return modulName;
     }

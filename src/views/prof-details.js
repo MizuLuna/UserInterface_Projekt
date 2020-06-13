@@ -6,7 +6,6 @@ import '../components/studyguide-headline-prof';
 import '../components/studyguide-picture';
 import '../components/studyguide-contact';
 import '../components/studyguide-teach';
-//import '../components/studyguide-thesis';
 import '../components/studyguide-returnButton-prof';
 import '../components/studyguide-navigation';
 

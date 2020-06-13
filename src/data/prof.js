@@ -214,7 +214,7 @@ let dataProf =
                     "teaching": [
                         "Fachenglisch"
                     ],
-                    "Praktikumsbetreuung": [
+                    "praktikumsbetreuung": [
                         null
                     ]
                 }
@@ -230,7 +230,7 @@ let dataProf =
                     "teaching": [
                         "Betriebswirtschaftslehre"
                     ],
-                    "Praktikumsbetreuung": [
+                    "praktikumsbetreuung": [
                         null
                     ]
                 }
@@ -251,7 +251,7 @@ let dataProf =
                         "WEB - Technologien",
                         "Datenschutz/ Datensicherheit"
                     ],
-                    "Praktikumsbetreuung": [
+                    "praktikumsbetreuung": [
                         "Algorithmen und Datenstrukturen, BAI 2.Semester",
                         "Angewandte Softwareentwicklung, BAI 3.Semester",
                         "Computergraphik, BAI 4.Semester",
@@ -277,7 +277,7 @@ let dataProf =
                     "teaching": [
                         null
                     ],
-                    "Praktikumsbetreuung": [
+                    "praktikumsbetreuung": [
                         "Betriebssysteme",
                         "Systemnahe Programmierung",
                         "Multimediadatenbanken"
@@ -300,7 +300,7 @@ let dataProf =
                     "teaching": [
                         null
                     ],
-                    "Praktikumsbetreuung": [
+                    "praktikumsbetreuung": [
                         "Grundlagen Sprachtechnologien"
                     ]
                 }
@@ -320,7 +320,7 @@ let dataProf =
                     "teaching": [
                         null
                     ],
-                    "Praktikumsbetreuung": [
+                    "praktikumsbetreuung": [
                         null
                     ]
                 }
