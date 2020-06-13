@@ -11,10 +11,6 @@ class Returnbutton extends navigator(LitElement) {
        <button class="return-Btn return-Btn-style return-Btn-prof font-fam font-size-md font-weight-600" @click=${this.clickHandler}>Zurück zur Übersicht</button>
        `;
     }
-
-    //clickHandler(e) {
-    //    this.navigate('/');
-    //}
 }
 
 customElements.define('studyguide-returnbutton-prof', Returnbutton);

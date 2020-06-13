@@ -12,8 +12,7 @@ class Contact extends navigator(LitElement) {
 
     getContact() {
         let contact = {};
-        if (this.profId) {
-            
+        if (this.profId) {            
             const professoren = prof.professoren;
             const professor = professoren.find((prof) => prof.id === this.profId);
             if (!professor) {
@@ -29,7 +28,6 @@ class Contact extends navigator(LitElement) {
    
     render() {
         const contact = this.getContact();
-        // contact.office.house/room undefined
 
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">

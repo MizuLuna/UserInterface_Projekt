@@ -13,7 +13,8 @@ class Professor extends navigator(LitElement) {
             obligationId: { type: Number },
             moduleSWSv: { type: Number },
             moduleSWSue: { type: Number },
-            moduleSWSp: { type: Number }
+            moduleSWSp: { type: Number },
+            moduleName: { type: String }
         };
     }
 
@@ -22,6 +23,7 @@ class Professor extends navigator(LitElement) {
         this.moduleSWSv = 0;
         this.moduleSWSue = 0;
         this.moduleSWSp = 0;
+        this.moduleName = "";
     }
 
     getProfName() {
@@ -56,29 +58,39 @@ class Professor extends navigator(LitElement) {
                 }
             } else {
                 profTitle = professor.infos.title;
-            }
-            
+            }            
         }
         return profTitle
     }
 
     getSWS() {
-        //console.log("test SWS");
         if (this.semesterId && (this.semesterId === 6) && this.courseId && (this.courseId === 6) && this.obligationId) {
             const semester = data.find((semester) => semester.id === this.semesterId)
             const course = semester.modules.find((module) => module.id === this.courseId);
             const modul = course.modules.find((module) => module.id === this.obligationId);
-            //console.log("Write SWS for obligation");
             this.moduleSWSv = modul.hour.vorlesung;
             this.moduleSWSue = modul.hour.uebung;
             this.moduleSWSp = modul.hour.praktikum;
         } else if (this.semesterId && this.courseId) {
             const semester = data.find((semester) => semester.id === this.semesterId);
             const course = semester.modules.find((module) => module.id === this.courseId);
-            //console.log("Write SWS for normal modul");
             this.moduleSWSv = course.hour.vorlesung;
             this.moduleSWSue = course.hour.uebung;
             this.moduleSWSp = course.hour.praktikum;
+        }
+    }
+
+    getModulName() {
+        if (this.semesterId && (this.semesterId === 6) && this.courseId && (this.courseId === 6) && this.obligationId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            const modul = course.modules.find((module) => module.id === this.obligationId);
+           
+            this.moduleName = modul.name;
+        } else if (this.semesterId && this.courseId) {
+            const semester = data.find((semester) => semester.id === this.semesterId);
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            this.moduleName = course.name;
         }
     }
     
@@ -87,11 +99,14 @@ class Professor extends navigator(LitElement) {
         const profName = this.getProfName();
         const profTitle = this.getProfTitle(profName);
         this.getSWS();
+        this.getModulName();
 
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">
         <link rel="stylesheet" href="../src/styles/details.css">
+        <link rel="stylesheet" href="../src/styles/headline.css">
 
+        <h1 class="headline headline-sem font-fam font-size-lg font-weight-600">${this.moduleName}</h1>
         <div class="professor detail detail-style detail-style-sem font-fam">
             <h4 class="font-weight-600 font-size-md">${profTitle}</h4>
             <h4 class="font-weight-600 font-size-md">${profName}</h4> 

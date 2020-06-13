@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 
 import '../components/studyguide-breadcrumb';
-import '../components/studyguide-headline';
+import '../components/studyguide-modul-headline';
 import '../components/studyguide-modul';
 import '../components/studyguide-internship';
 import '../components/studyguide-returnButton';
@@ -17,18 +17,15 @@ class Semesterview extends navigator(LitElement) {
     }
 
     render() {
-        //Lädt bei Sem5 die Styles nicht mehr (auch return und navigation styles)
+        //Lï¿½dt bei Sem5 die Styles nicht mehr (auch return und navigation styles)
         if (this.semesterId === 5) {
             return html`
-            <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
             <studyguide-internship semesterId="${this.semesterId}"></studyguide-internship>
             <studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
             <studyguide-navigation></studyguide-navigation>
            `;
         } else {
             return html`
-            <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
-            <studyguide-headline></studyguide-headline>
             <studyguide-modul semesterId="${this.semesterId}"></studyguide-modul>
             <studyguide-returnButton @click=${this.clickHandler}></studyguide-returnButton>
             <studyguide-navigation></studyguide-navigation>

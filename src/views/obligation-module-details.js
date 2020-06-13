@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 
 import '../components/studyguide-breadcrumb';
-import '../components/studyguide-headline';
+import '../components/studyguide-modul-headline';
 import '../components/studyguide-professor';
 import '../components/studyguide-exam';
 import '../components/studyguide-modulContent';
@@ -28,9 +28,6 @@ class Semesterview extends navigator(LitElement) {
     render() {
 
         return html`
-
-        <!--<studyguide-breadcrumb></studyguide-breadcrumb>-->
-        <studyguide-headline></studyguide-headline>
         <studyguide-professor semesterId="${this.semesterId}" courseId="${this.courseId}" obligationId="${this.obligationId}"></studyguide-professor>
         <studyguide-exam semesterId="${this.semesterId}" courseId="${this.courseId}" obligationId="${this.obligationId}"></studyguide-exam>
         <studyguide-modulContent semesterId="${this.semesterId}" courseId="${this.courseId}" obligationId="${this.obligationId}"></studyguide-modulContent>

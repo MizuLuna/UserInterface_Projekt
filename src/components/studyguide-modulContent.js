@@ -14,11 +14,9 @@ class Modulcontent extends navigator(LitElement) {
 
     static get styles() {
         return css`
-          li { 
-              color: #666666; 
-            
-        }
-        
+            li { 
+                color: #666666;     
+            }       
         `;
       }
    

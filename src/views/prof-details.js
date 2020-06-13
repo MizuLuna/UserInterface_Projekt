@@ -24,13 +24,10 @@ class Semesterview extends navigator(LitElement) {
 
     render() {
         return html`
-   
-        <!--<studyguide-breadcrumb-prof></studyguide-breadcrumb-prof>-->
         <studyguide-headline-prof profId="${this.profId}"></studyguide-headline-prof>
         <studyguide-picture profId="${this.profId}"></studyguide-picture>
         <studyguide-contact profId="${this.profId}"></studyguide-contact>
         <studyguide-teach profId="${this.profId}"></studyguide-teach>
-            <!--<studyguide-thesis profId="${this.profId}"></studyguide-thesis>-->
         <studyguide-returnButton-prof @click=${this.clickHandler}></studyguide-returnButton-prof>
         <studyguide-navigation></studyguide-navigation>
        `;

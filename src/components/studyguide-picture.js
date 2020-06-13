@@ -3,7 +3,7 @@ import { navigator } from 'lit-element-router';
 import dataSem from '../data/prof.js'
 
 /*
- * Nur Platzhalter Bild, könnte auf Data angepasst werden
+ * placeholder picture
  */
 
 class Picture extends navigator(LitElement) {

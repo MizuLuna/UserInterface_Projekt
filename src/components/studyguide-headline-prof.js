@@ -53,6 +53,7 @@ class Headline extends navigator(LitElement) {
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">
         <link rel="stylesheet" href="../src/styles/headline.css"> 
+        
         <h1 class="headline headline-prof font-fam font-size-md font-weight-600"> ${profTitle}</h1>
         <h1 class="headline headline-prof font-fam font-size-md font-weight-600"> ${profName}</h1>
        `;

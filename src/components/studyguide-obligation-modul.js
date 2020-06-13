@@ -46,12 +46,15 @@ class Modul extends navigator(LitElement) {
             background-color: #f2f2f2;
             color: #666666; 
         }
+
         .font-fam{
             font-family: 'Fira Sans', sans-serif;
         }
+
         .font-size-md{
             font-size: 1.6rem;
         }
+        
         .font-weight-600{
             font-weight: 600;
         }
@@ -61,7 +64,7 @@ class Modul extends navigator(LitElement) {
     getModules(modul) {
         if (modul) {
             return modul.modules.map((module, idx) => {             
-                    return html`<div class="modul modul-style" @click=${() => this.clickHandler(this.semesterId, this.courseId, module.id)}>${module.name}</div>` 
+                return html`<div class="modul modul-style" @click=${() => this.clickHandler(this.semesterId, this.courseId, module.id)}>${module.name}</div>` 
             });
         } else {
             html``;
@@ -84,7 +87,7 @@ class Modul extends navigator(LitElement) {
     }
 
     clickHandler(semesterId, moduleId, obligationId) {
-            this.navigate(`/semesteruebersicht/semester/${semesterId}/modul/${moduleId}/obligation_modules/${obligationId}`); 
+        this.navigate(`/semesteruebersicht/semester/${semesterId}/modul/${moduleId}/obligation_modules/${obligationId}`); 
     }
 }
 

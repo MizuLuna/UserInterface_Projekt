@@ -41,6 +41,7 @@ class Navigation extends navigator(LitElement) {
         .font-fam{
             font-family: 'Fira Sans', sans-serif;
         }
+        
         .font-size-xs{
             font-size: 1rem;
         }

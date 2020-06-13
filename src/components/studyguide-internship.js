@@ -25,17 +25,11 @@ class Internship extends navigator(LitElement) {
     static get styles() {
         return css`
         
-        *{
-            box-sizing: border-box;
-        }
+        *{box-sizing: border-box;}
 
-        body{
-            margin: 0;
-        }
+        body{margin: 0;}
 
-        a {
-            text-decoration: none;
-        }
+        a {text-decoration: none;}
 
         h4 {
             color: #666666;
@@ -48,12 +42,8 @@ class Internship extends navigator(LitElement) {
             margin-block-start: 0em;
             margin-block-end: 0em;
         }
-        .font-weight-300 { 
-            font-weight: 300;    
-        }
-        .font-weight-600 {
-            font-weight: 600; 
-        }
+        .font-weight-300 {font-weight: 300;}
+        .font-weight-600 {font-weight: 600;}
         .detail { 
             margin-top: 1.5rem; 
             width: 80%;
@@ -71,7 +61,8 @@ class Internship extends navigator(LitElement) {
         .font-fam {font-family: 'Fira Sans', sans-serif;} 
         .font-size-md {font-size: 1.6rem;}
         .font-size-lg{font-size: 3rem;}
-         .headline{
+        
+        .headline{
             margin-left: 10vw;
             margin-top: 5%;
             margin-block-end: 0em;
@@ -86,7 +77,7 @@ class Internship extends navigator(LitElement) {
     getContact() {
         let contact = {};
         if (this.semesterId && this.courseId) {
-            const semester = data.find((semester) => semester.id === this.semesterId)
+            const semester = data.find((semester) => semester.id === this.semesterId);
             const course = semester.modules.find((module) => module.id === this.courseId);
             contact = course.contactPerson;
         }
