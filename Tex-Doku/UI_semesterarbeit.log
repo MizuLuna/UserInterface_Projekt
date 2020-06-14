@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  14 JUN 2020 20:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  14 JUN 2020 20:32
 entering extended mode
 **./UI_semesterarbeit.tex
 (UI_semesterarbeit.tex
@@ -1337,16 +1337,16 @@ Package pdftex.def Info: pictures/getTeaching.png  used on input line 382.
 (pdftex.def)             Requested size: 426.79135pt x 175.33539pt.
 [13 <./pictures/html-template.png> <./pictures/dataSem.png> <./pictures/dataPro
 f.png>] [14 <./pictures/getTeaching.png>]
-<pictures/routes-methode.png, id=143, 849.1725pt x 492.84125pt>
+<pictures/routes-methode.png, id=143, 718.685pt x 409.53pt>
 File: pictures/routes-methode.png Graphic file (type png)
 <use pictures/routes-methode.png>
 Package pdftex.def Info: pictures/routes-methode.png  used on input line 395.
-(pdftex.def)             Requested size: 426.79135pt x 247.69843pt.
-<pictures/router-render.png, id=144, 1389.19pt x 204.765pt>
+(pdftex.def)             Requested size: 426.79135pt x 243.20782pt.
+<pictures/router-render.png, id=144, 1273.75874pt x 273.02pt>
 File: pictures/router-render.png Graphic file (type png)
 <use pictures/router-render.png>
 Package pdftex.def Info: pictures/router-render.png  used on input line 403.
-(pdftex.def)             Requested size: 426.79135pt x 62.90784pt.
+(pdftex.def)             Requested size: 426.79135pt x 91.4758pt.
 
 Overfull \hbox (4.17053pt too wide) in paragraph at lines 389--410
 \T1/lmr/m/n/12 nächsten Seite ermöglicht und über den Router gesteuert wird. We
@@ -1464,7 +1464,7 @@ lmr10.pfb></Users/stefko/Library/Application Support/MiKTeX/texmfs/install/font
 s/type1/public/lm/lmr12.pfb></Users/stefko/Library/Application Support/MiKTeX/t
 exmfs/install/fonts/type1/public/lm/lmri12.pfb></Users/stefko/Library/Applicati
 on Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on UI_semesterarbeit.pdf (20 pages, 935976 bytes).
+Output written on UI_semesterarbeit.pdf (20 pages, 938688 bytes).
 PDF statistics:
  291 PDF objects out of 1000 (max. 8388607)
  56 named destinations out of 1000 (max. 500000)
