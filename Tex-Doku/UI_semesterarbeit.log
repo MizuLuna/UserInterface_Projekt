@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  14 JUN 2020 20:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  14 JUN 2020 20:29
 entering extended mode
 **./UI_semesterarbeit.tex
 (UI_semesterarbeit.tex
@@ -1293,16 +1293,16 @@ Overfull \hbox (18.32082pt too wide) in paragraph at lines 345--346
 rhalten) einbinden
  []
 
-<pictures/custom-element.png, id=116, 914.41624pt x 257.96375pt>
+<pictures/custom-element.png, id=116, 766.865pt x 167.62625pt>
 File: pictures/custom-element.png Graphic file (type png)
 <use pictures/custom-element.png>
 Package pdftex.def Info: pictures/custom-element.png  used on input line 349.
-(pdftex.def)             Requested size: 426.79135pt x 120.40062pt.
-<pictures/html-template.png, id=117, 1007.765pt x 291.0875pt>
+(pdftex.def)             Requested size: 426.79135pt x 93.29199pt.
+<pictures/html-template.png, id=117, 647.41875pt x 272.01625pt>
 File: pictures/html-template.png Graphic file (type png)
 <use pictures/html-template.png>
 Package pdftex.def Info: pictures/html-template.png  used on input line 358.
-(pdftex.def)             Requested size: 426.79135pt x 123.27748pt.
+(pdftex.def)             Requested size: 426.79135pt x 179.3196pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1320,21 +1320,21 @@ Overfull \hbox (10.40657pt too wide) in paragraph at lines 365--366
 bjekten der einzelnen
  []
 
-<pictures/dataSem.png, id=124, 534.99875pt x 567.11874pt>
+<pictures/dataSem.png, id=124, 519.9425pt x 472.76625pt>
 File: pictures/dataSem.png Graphic file (type png)
 <use pictures/dataSem.png>
 Package pdftex.def Info: pictures/dataSem.png  used on input line 369.
-(pdftex.def)             Requested size: 170.71393pt x 180.9625pt.
-<pictures/dataProf.png, id=125, 476.78125pt x 474.77374pt>
+(pdftex.def)             Requested size: 170.71393pt x 155.21982pt.
+<pictures/dataProf.png, id=125, 515.9275pt x 391.4625pt>
 File: pictures/dataProf.png Graphic file (type png)
 <use pictures/dataProf.png>
 Package pdftex.def Info: pictures/dataProf.png  used on input line 373.
-(pdftex.def)             Requested size: 170.71393pt x 169.99837pt.
-<pictures/getTeaching.png, id=126, 913.4125pt x 276.03125pt>
+(pdftex.def)             Requested size: 170.71393pt x 129.52946pt.
+<pictures/getTeaching.png, id=126, 557.08125pt x 228.855pt>
 File: pictures/getTeaching.png Graphic file (type png)
 <use pictures/getTeaching.png>
 Package pdftex.def Info: pictures/getTeaching.png  used on input line 382.
-(pdftex.def)             Requested size: 426.79135pt x 128.97234pt.
+(pdftex.def)             Requested size: 426.79135pt x 175.33539pt.
 [13 <./pictures/html-template.png> <./pictures/dataSem.png> <./pictures/dataPro
 f.png>] [14 <./pictures/getTeaching.png>]
 <pictures/routes-methode.png, id=143, 849.1725pt x 492.84125pt>
@@ -1464,7 +1464,7 @@ lmr10.pfb></Users/stefko/Library/Application Support/MiKTeX/texmfs/install/font
 s/type1/public/lm/lmr12.pfb></Users/stefko/Library/Application Support/MiKTeX/t
 exmfs/install/fonts/type1/public/lm/lmri12.pfb></Users/stefko/Library/Applicati
 on Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on UI_semesterarbeit.pdf (20 pages, 1027511 bytes).
+Output written on UI_semesterarbeit.pdf (20 pages, 935976 bytes).
 PDF statistics:
  291 PDF objects out of 1000 (max. 8388607)
  56 named destinations out of 1000 (max. 500000)
