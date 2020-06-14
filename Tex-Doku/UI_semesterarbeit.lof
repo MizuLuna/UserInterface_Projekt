@@ -6,11 +6,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Zustandsdiagramm (eigene Darstellung)}}{10}{figure.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Ansicht mit den jeweiligen Custom Elements}}{11}{figure.20}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces HTML-Template eines Custom Elements}}{12}{figure.21}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Objektstruktur der Semester und Module und der Professoren und Mitarbeiter}}{12}{figure.23}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Methode für das Datenhandling}}{13}{figure.24}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces routes( )-Methode}}{14}{figure.26}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Render-Methode des Routers}}{14}{figure.27}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Ansicht der Details eines Semesters}}{12}{figure.20}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces HTML-Template eines Custom Elements}}{13}{figure.21}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Objektstruktur der Semester und Module und der Professoren und Mitarbeiter}}{13}{figure.23}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Methode für das Datenhandling}}{14}{figure.24}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces routes()-Methode}}{15}{figure.26}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Render-Methode des Routers}}{16}{figure.27}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
