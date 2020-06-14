@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  14 JUN 2020 20:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  14 JUN 2020 20:50
 entering extended mode
 **./UI_semesterarbeit.tex
 (UI_semesterarbeit.tex
@@ -1425,32 +1425,38 @@ chapter without number
  [19
 
 ]
-Overfull \hbox (14.15338pt too wide) in paragraph at lines 460--463
+<pictures/anhang.png, id=182, 605.3817pt x 586.5915pt>
+File: pictures/anhang.png Graphic file (type png)
+<use pictures/anhang.png>
+Package pdftex.def Info: pictures/anhang.png  used on input line 458.
+(pdftex.def)             Requested size: 426.79135pt x 413.54707pt.
+ [20 <./pictures/anhang.png (PNG copy)>]
+Overfull \hbox (14.15338pt too wide) in paragraph at lines 470--473
 \T1/lmr/m/n/12 Hiermit erklären wir, dass wir die hier vorliegende Arbeit selbs
 tständig, ohne unerlaubte
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 474.
-[20
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
+[21
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 474.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
  (UI_semesterarbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 474.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 474.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
 Package rerunfilecheck Info: File `UI_semesterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 474.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
  ) 
 Here is how much of TeX's memory you used:
- 16276 strings out of 482860
- 311832 string characters out of 2950833
+ 16290 strings out of 482860
+ 312107 string characters out of 2950833
  851606 words of memory out of 3000000
- 31521 multiletter control sequences out of 15000+200000
+ 31531 multiletter control sequences out of 15000+200000
  588935 words of font info for 60 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  45i,11n,72p,10114b,851s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1464,9 +1470,9 @@ lmr10.pfb></Users/stefko/Library/Application Support/MiKTeX/texmfs/install/font
 s/type1/public/lm/lmr12.pfb></Users/stefko/Library/Application Support/MiKTeX/t
 exmfs/install/fonts/type1/public/lm/lmri12.pfb></Users/stefko/Library/Applicati
 on Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on UI_semesterarbeit.pdf (20 pages, 938688 bytes).
+Output written on UI_semesterarbeit.pdf (21 pages, 1659783 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
