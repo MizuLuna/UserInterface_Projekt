@@ -20,7 +20,7 @@
 \newcommand{\VerfasserB}{Stefanie Weidemann}
 \newcommand{\GeburtstagB}{25. August 1995}
 \newcommand{\GeburtsortB}{Anklam}
-\newcommand{\Titel}{Webapp für Studiende des Studienganges AIMMT}
+\newcommand{\Titel}{Webapp für Studierende des Studienganges AIMMT}
 \newcommand{\Betreuer}{Prof. Dr.-Ing. Herbert Litschke}
 \newcommand{\blankpage}{
 	\newpage
@@ -235,7 +235,7 @@
 \chapter{Einleitung}
 Möchten Studierende wissen welche Module sie nächstes Semester belegen oder in welchem Haus sie einen bestimmten Professor finden können, müssen sie sich durch endlos viele Seiten der Hochschul-Website klicken, um an das Ziel zu gelangen. Die Website ist sowohl für zukünftige Studierende und Interessierte, als auch für eingeschriebene Studierende konzipiert. Daher gibt es eine Fülle von Informationen und Querverweise, sodass es schwer ist die wichtigen Aspekte herauszufiltern.
 
-Um dies zu vereinfachen wird im folgenden eine Applikation entwickelt die alle wichtigen Informationen zum Studiengang Angewandte Informatik - Multimendiatechnik zusammenfasst und gebündelt darstellt. Diese kann kann von allen Studierenden des Studienganges bequem auf dem Smartphone ausgeführt werden.
+Um dies zu vereinfachen wird im folgenden eine Applikation entwickelt die alle wichtigen Informationen zum Studiengang Angewandte Informatik - Multimendiatechnik zusammenfasst und gebündelt darstellt. Diese kann von allen Studierenden des Studienganges bequem auf dem Smartphone ausgeführt werden.
 
 Nach einer Analyse der Hochschulseite und der Beschreibung des IST-Zustandes folgt die Festlegung der Systemanforderungen an die Applikation. In den Grundlagen wird erläutern was Webcomponents, im speziellen die LitElements, sind und wie sie aufgebaut sind. Hier wird zudem auf den Shadow-Dom, die Templates und die Properties eingegangen. Außerdem wird die interne Navigation mittels eines Routers beschrieben. Im Abschnitt Konzept wird der Aufbau und die Funktionsweise der Applikation näher erläutert. Im Kapitel 5 Implementierungen werden wichtige Ausschnitte aus dem Programmcode gezeigt und näher erklärt.
 
@@ -254,7 +254,7 @@ Studenten die Informationen zu ihrem Studiengang suchen brauchen teilweise sechs
 	
 %___________________________________________________________________________________
 \chapter{Grundlagen}		
-Um die folgenden Kapitel besser einzuordnen, werden nun einige technische Grundlagen betrachten. Zuerst wird auf die Webcomponents und im speziellen auf die LitElemente und deren Prinzipien eingegangen, danach wird auf die Navigation mittels eines Routers.
+Um die folgenden Kapitel besser einzuordnen, werden nun einige technische Grundlagen betrachten. Zuerst wird auf die Webcomponents und im speziellen auf die LitElemente und deren Prinzipien, danach auf die Navigation mittels eines Routers eingegangen.
 	
 		\section{Web Components}
 		Web Components stellen eine Reihe von Webplattform-APIs dar. Mit Ihnen kann wiederverwendbares gekapseltes HTML erstellt und erweitert werden. Das HTML wird in Komponenten gegliedert, die in jedem modernen Browser, jeder JavaScript-Bibliothek und jedem Framework verwendet werden kann. Web Components basieren auf vier Anforderungen: 
@@ -362,7 +362,7 @@ Im folgendem werden auf die für die Anwendung spezifischen Implementieren einge
 \newpage	
 	%----------------------------------------------------------------------
 	\section{Datenhandling}
-	Wie in Abbildung 5.3 zu sehen ist, besteht die Struktur der Daten aus JavaScript-Objekten. Das Objekt \textit{dataSem} enthält ein Array das wiederum Objekte der einzelnen Semester beinhaltet. Dieses besteht wieder aus einem Array mit Objekten der einzelnen Module.  Das Objekt \textit{dataProf} enthält ein Objekt Professoren und eine Objekt Mitarbeiter. Diese enthalten wieder ein Array aus Objekten mit den Daten der einzelnen Personen.
+	Wie in Abbildung 5.3 zu sehen ist, besteht die Struktur der Daten aus JavaScript-Objekten. Das Objekt \textit{dataSem} enthält ein Array das wiederum Objekte der einzelnen Semester beinhaltet. Dieses besteht wieder aus einem Array mit Objekten der einzelnen Module.  Das Objekt \textit{dataProf} enthält ein Objekt Professoren und ein Objekt Mitarbeiter. Diese enthalten wieder ein Array aus Objekten mit den Daten der einzelnen Personen.
 	
 	\begin{figure}[h]
    		\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
