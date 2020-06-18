@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  14 JUN 2020 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.3.30)  18 JUN 2020 21:10
 entering extended mode
 **./UI_semesterarbeit.tex
 (UI_semesterarbeit.tex
@@ -873,7 +873,22 @@ tings/lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (UI_semesterarbeit.aux
 
-LaTeX Warning: Label `routes' multiply defined.
+LaTeX Warning: Label `foot:1' multiply defined.
+
+
+LaTeX Warning: Label `foot:1' multiply defined.
+
+
+LaTeX Warning: Label `foot:1' multiply defined.
+
+
+LaTeX Warning: Label `foot:1' multiply defined.
+
+
+LaTeX Warning: Label `foot:1' multiply defined.
+
+
+LaTeX Warning: Label `foot:1' multiply defined.
 
 )
 \openout1 = `UI_semesterarbeit.aux'.
@@ -1121,9 +1136,9 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface .
 
 
-Overfull \hbox (21.65295pt too wide) in paragraph at lines 238--239
+Overfull \hbox (15.12497pt too wide) in paragraph at lines 241--242
 \T1/lmr/m/n/12 wichtigen Informationen zum Studiengang Angewandte Informatik - 
-Multimendiatechnik
+Multimediatechnik
  []
 
 [3
@@ -1131,31 +1146,31 @@ Multimendiatechnik
 ]
 chapter 2.
 
-Overfull \hbox (5.79224pt too wide) in paragraph at lines 247--248
+Overfull \hbox (5.79224pt too wide) in paragraph at lines 250--251
 \T1/lmr/m/n/12 entwickelte Webanwendung für Studierende des Studiengangs Angewa
 ndte Informatik
  []
 
 
-Overfull \hbox (2.70566pt too wide) in paragraph at lines 249--250
-\T1/lmr/m/n/12 Professor|in unterrichtet, die Forschungsthemen, Thesenthemen, u
-nd Jobs die der/die
- []
-
-
-Overfull \hbox (3.22719pt too wide) in paragraph at lines 249--250
+Overfull \hbox (3.22719pt too wide) in paragraph at lines 252--253
 \T1/lmr/m/n/12 Wahlpflichtmodule. Diese müssen umständlich im Modulhandbuch ges
 ucht werden. 
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 256.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 256.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 256.
 
-Overfull \hbox (24.29993pt too wide) in paragraph at lines 253--254
-\T1/lmr/m/n/12 Die Website der Hochschule ist sowohl für Studieninterssierte, a
-ls auch für eingeschriebene
+Overfull \hbox (29.52191pt too wide) in paragraph at lines 256--257
+\T1/lmr/m/n/12 Die Website der Hochschule ist sowohl für Studieninteressierte, 
+als auch für eingeschriebene
  []
 
 
-Overfull \hbox (8.53807pt too wide) in paragraph at lines 253--254
+Overfull \hbox (8.53807pt too wide) in paragraph at lines 256--257
 \T1/lmr/m/n/12 soll die Anwendung nur für eingeschriebene Studierende des Studi
 engangs Angewandte
  []
@@ -1165,37 +1180,43 @@ engangs Angewandte
 ] [5]
 chapter 3.
 
-Overfull \hbox (13.12386pt too wide) in paragraph at lines 257--258
+Overfull \hbox (13.12386pt too wide) in paragraph at lines 260--261
 \T1/lmr/m/n/12 Um die folgenden Kapitel besser einzuordnen, werden nun einige t
 echnische Grundlagen
  []
 
 
-Overfull \hbox (5.21632pt too wide) in paragraph at lines 257--258
-\T1/lmr/m/n/12 betrachten. Zuerst wird auf die Webcomponents und im speziellen 
-auf die LitElemente
+Overfull \hbox (12.00526pt too wide) in paragraph at lines 260--261
+\T1/lmr/m/n/12 betrachtet. Zuerst wird auf die Web-Components und im Speziellen
+ auf die LitElemente
  []
 
 
-Overfull \hbox (1.88776pt too wide) in paragraph at lines 260--262
-\T1/lmr/m/n/12 Bibliothek und jedem Framework verwendet werden kann. Web Compon
-ents basieren
+Overfull \hbox (2.92555pt too wide) in paragraph at lines 260--261
+\T1/lmr/m/n/12 und deren Prinzipien, danach auf die Navigation mittels eines Ro
+uters eingegangen. 
+ []
+
+
+Overfull \hbox (7.94336pt too wide) in paragraph at lines 263--265
+\T1/lmr/m/n/12 Bibliothek und jedem Framework[][][][][] verwendet werden kann. 
+Web-Components basieren
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-62.
+65.
 
 ("/Users/stefko/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/
 ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (2.00916pt too wide) in paragraph at lines 265--266
-[]\T1/lmr/m/it/12 HTML Templates: \T1/lmr/m/n/12 Definiert HTML-Fragmente die e
-rst zur Laufzeit instanziiert
+Overfull \hbox (5.27446pt too wide) in paragraph at lines 268--269
+[]\T1/lmr/m/it/12 HTML Templates: \T1/lmr/m/n/12 Definiert HTML-Fragmente, die 
+erst zur Laufzeit instanziiert
  []
 
 
-Overfull \hbox (0.99156pt too wide) in paragraph at lines 270--271
+Overfull \hbox (0.99156pt too wide) in paragraph at lines 273--274
 \T1/lmr/m/n/12 lit-html um Templates zu definieren und zu rendern und fügt eine
  API zum Verwalten
  []
@@ -1203,105 +1224,128 @@ Overfull \hbox (0.99156pt too wide) in paragraph at lines 270--271
 [6
 
 ]
-<pictures/render-function.png, id=84, 723.70375pt x 122.4575pt>
+Overfull \hbox (11.20532pt too wide) in paragraph at lines 279--280
+[]\T1/lmr/m/it/12 Dom-Scoping: \T1/lmr/m/n/12 DOM-APIs finden keine Elemente im
+ Shadow-Dom, sodass globale
+ []
+
+
+Overfull \hbox (27.32925pt too wide) in paragraph at lines 281--282
+[]\T1/lmr/m/it/12 Composition: \T1/lmr/m/n/12 Der Shadow-Dom der Komponente ist
+ von untergeordneten Elementen
+ []
+
+
+Overfull \hbox (12.23259pt too wide) in paragraph at lines 281--282
+\T1/lmr/m/n/12 getrennt, so kann gesteuert werden, wie untergeordnete Elemente 
+in das Template
+ []
+
+<pictures/render-function.png, id=94, 723.70375pt x 122.4575pt>
 File: pictures/render-function.png Graphic file (type png)
 <use pictures/render-function.png>
-Package pdftex.def Info: pictures/render-function.png  used on input line 285.
+Package pdftex.def Info: pictures/render-function.png  used on input line 288.
 (pdftex.def)             Requested size: 426.79135pt x 72.21751pt.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-86.
+89.
 
 ("/Users/stefko/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/
 t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (0.69907pt too wide) in paragraph at lines 295--298
-\T1/lmr/m/n/12 URL fest und verwaltet welche Ansicht gezeigt werden soll. Die v
-erschiedenen Routen
+Overfull \hbox (6.13504pt too wide) in paragraph at lines 285--292
+\T1/lmr/m/n/12 literal innerhalb von back-ticks geschrieben (vgl. Abbildung [][
+]3.1[][]). Die Render-Methode
+ []
+
+[7 <./pictures/render-function.png>]
+Overfull \hbox (16.55875pt too wide) in paragraph at lines 298--301
+\T1/lmr/m/n/12 Routen werden mit Namen und einem URL-Pattern angelegt und könne
+n so auseinander
  []
 
 
-Overfull \hbox (4.26839pt too wide) in paragraph at lines 295--298
+Overfull \hbox (4.26839pt too wide) in paragraph at lines 298--301
 \T1/lmr/m/n/12 gehalten werden. Über Parameter und Querys können dann Informati
 onen übertragen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 298--301
 
  []
 
-[7 <./pictures/render-function.png>] [8]
+[8]
 chapter 4.
 
-Overfull \hbox (16.73111pt too wide) in paragraph at lines 301--302
+Overfull \hbox (16.73111pt too wide) in paragraph at lines 304--305
 \T1/lmr/m/n/12 in Form von einem Zustandsdiagramm und die Aufteilung in Kompone
 nten entworfen. 
  []
 
-<pictures/zustandsdiagram.png, id=102, 585.1461pt x 473.6094pt>
+<pictures/zustandsdiagram.png, id=114, 585.1461pt x 455.301pt>
 File: pictures/zustandsdiagram.png Graphic file (type png)
 <use pictures/zustandsdiagram.png>
-Package pdftex.def Info: pictures/zustandsdiagram.png  used on input line 317.
-(pdftex.def)             Requested size: 298.75264pt x 241.81221pt.
-
-Overfull \hbox (1.5111pt too wide) in paragraph at lines 314--321
-\T1/lmr/m/n/12 Wählt der User hier durch ein Klick ein Modul aus, wird die ents
-prechende Detailseite
- []
-
+Package pdftex.def Info: pictures/zustandsdiagram.png  used on input line 320.
+(pdftex.def)             Requested size: 298.75264pt x 232.46443pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9
 
 ]
-Overfull \hbox (49.63214pt too wide) in paragraph at lines 324--326
+Overfull \hbox (49.63214pt too wide) in paragraph at lines 327--329
 \T1/lmr/m/n/12 Die Webapplikation wurde in sechs Ansichten aufgeteilt: eine Sta
 rtseite, die Semesterübersicht,
  []
 
 
-Overfull \hbox (13.72284pt too wide) in paragraph at lines 324--326
+Overfull \hbox (13.72284pt too wide) in paragraph at lines 327--329
 \T1/lmr/m/n/12 die Return-Button-Komponente und die Hauptnavigations-Komponente
 . Der Hauptteil
  []
 
-[10 <./pictures/zustandsdiagram.png (PNG copy)>]
-Overfull \hbox (8.18141pt too wide) in paragraph at lines 336--337
+
+Overfull \hbox (8.18141pt too wide) in paragraph at lines 339--340
 \T1/lmr/m/n/12 jeweilig ausgewählten Semesters, Moduls oder einer bestimmten Pe
 rson gefüllt werden.
  []
 
-[11]
+[10 <./pictures/zustandsdiagram.png (PNG copy)>] [11]
 chapter 5.
 
-Overfull \hbox (27.00827pt too wide) in paragraph at lines 342--343
-\T1/lmr/m/n/12 Im folgendem werden auf die für die Anwendung spezifischen Imple
-mentieren eingegangen,
+Overfull \hbox (7.06813pt too wide) in paragraph at lines 345--346
+\T1/lmr/m/n/12 eingegangen, die auf Basis des im vorherigen Kapitels entworfene
+ Konzepte beruhen. 
  []
 
 
-Overfull \hbox (24.84898pt too wide) in paragraph at lines 345--346
+Overfull \hbox (24.84898pt too wide) in paragraph at lines 348--349
 \T1/lmr/m/n/12 Alle Ansichten legen die Struktur der Webseite fest, indem sie d
 ie jeweiligen Komponenten
  []
 
 
-Overfull \hbox (18.32082pt too wide) in paragraph at lines 345--346
-\T1/lmr/m/n/12 durch dessen Custom Element (definiertes HTML-Tag mit eigenem Ve
+Overfull \hbox (19.62642pt too wide) in paragraph at lines 348--349
+\T1/lmr/m/n/12 durch dessen Custom-Element (definiertes HTML-Tag mit eigenem Ve
 rhalten) einbinden
  []
 
-<pictures/custom-element.png, id=116, 766.865pt x 167.62625pt>
+<pictures/custom-element.png, id=131, 766.865pt x 167.62625pt>
 File: pictures/custom-element.png Graphic file (type png)
 <use pictures/custom-element.png>
-Package pdftex.def Info: pictures/custom-element.png  used on input line 349.
+Package pdftex.def Info: pictures/custom-element.png  used on input line 352.
 (pdftex.def)             Requested size: 426.79135pt x 93.29199pt.
-<pictures/html-template.png, id=117, 647.41875pt x 272.01625pt>
+
+Overfull \hbox (19.13483pt too wide) in paragraph at lines 357--358
+[]\T1/lmr/m/n/12 Das Verhalten des jeweiligen Custom-Elements wird über ein HTM
+L-Template innerhalb
+ []
+
+<pictures/html-template.png, id=133, 647.41875pt x 272.01625pt>
 File: pictures/html-template.png Graphic file (type png)
 <use pictures/html-template.png>
-Package pdftex.def Info: pictures/html-template.png  used on input line 358.
+Package pdftex.def Info: pictures/html-template.png  used on input line 361.
 (pdftex.def)             Requested size: 426.79135pt x 179.3196pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1309,73 +1353,85 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [12
 
  <./pictures/custom-element.png>]
-Overfull \hbox (3.39845pt too wide) in paragraph at lines 365--366
+Overfull \hbox (5.6846pt too wide) in paragraph at lines 368--369
 \T1/lmr/m/n/12 Objekten. Das Objekt \T1/lmr/m/it/12 dataSem \T1/lmr/m/n/12 enth
-ält ein Array das wiederum Objekte der einzelnen
+ält ein Array, das wiederum Objekte der einzelnen
  []
 
 
-Overfull \hbox (10.40657pt too wide) in paragraph at lines 365--366
+Overfull \hbox (10.40657pt too wide) in paragraph at lines 368--369
 \T1/lmr/m/n/12 Semester beinhaltet. Dieses besteht wieder aus einem Array mit O
 bjekten der einzelnen
  []
 
-<pictures/dataSem.png, id=124, 519.9425pt x 472.76625pt>
+
+Overfull \hbox (22.38228pt too wide) in paragraph at lines 368--369
+\T1/lmr/m/n/12 Module. Das Objekt \T1/lmr/m/it/12 dataProf \T1/lmr/m/n/12 enthä
+lt ein Objekt Professoren und ein Objekt Mitarbeiter.
+ []
+
+
+Overfull \hbox (13.85495pt too wide) in paragraph at lines 368--369
+\T1/lmr/m/n/12 Diese enthalten wieder ein Array aus Objekten mit den Daten der 
+einzelnen Personen. 
+ []
+
+<pictures/dataSem.png, id=142, 519.9425pt x 472.76625pt>
 File: pictures/dataSem.png Graphic file (type png)
 <use pictures/dataSem.png>
-Package pdftex.def Info: pictures/dataSem.png  used on input line 369.
+Package pdftex.def Info: pictures/dataSem.png  used on input line 372.
 (pdftex.def)             Requested size: 170.71393pt x 155.21982pt.
-<pictures/dataProf.png, id=125, 515.9275pt x 391.4625pt>
+<pictures/dataProf.png, id=143, 515.9275pt x 391.4625pt>
 File: pictures/dataProf.png Graphic file (type png)
 <use pictures/dataProf.png>
-Package pdftex.def Info: pictures/dataProf.png  used on input line 373.
+Package pdftex.def Info: pictures/dataProf.png  used on input line 376.
 (pdftex.def)             Requested size: 170.71393pt x 129.52946pt.
-<pictures/getTeaching.png, id=126, 557.08125pt x 228.855pt>
+<pictures/getTeaching.png, id=146, 557.08125pt x 228.855pt>
 File: pictures/getTeaching.png Graphic file (type png)
 <use pictures/getTeaching.png>
-Package pdftex.def Info: pictures/getTeaching.png  used on input line 382.
+Package pdftex.def Info: pictures/getTeaching.png  used on input line 385.
 (pdftex.def)             Requested size: 426.79135pt x 175.33539pt.
 [13 <./pictures/html-template.png> <./pictures/dataSem.png> <./pictures/dataPro
 f.png>] [14 <./pictures/getTeaching.png>]
-<pictures/routes-methode.png, id=143, 718.685pt x 409.53pt>
+<pictures/routes-methode.png, id=165, 718.685pt x 409.53pt>
 File: pictures/routes-methode.png Graphic file (type png)
 <use pictures/routes-methode.png>
-Package pdftex.def Info: pictures/routes-methode.png  used on input line 395.
+Package pdftex.def Info: pictures/routes-methode.png  used on input line 397.
 (pdftex.def)             Requested size: 426.79135pt x 243.20782pt.
-<pictures/router-render.png, id=144, 1273.75874pt x 273.02pt>
+<pictures/router-render.png, id=167, 1273.75874pt x 273.02pt>
 File: pictures/router-render.png Graphic file (type png)
 <use pictures/router-render.png>
-Package pdftex.def Info: pictures/router-render.png  used on input line 403.
+Package pdftex.def Info: pictures/router-render.png  used on input line 405.
 (pdftex.def)             Requested size: 426.79135pt x 91.4758pt.
 
-Overfull \hbox (4.17053pt too wide) in paragraph at lines 389--410
+Overfull \hbox (4.17053pt too wide) in paragraph at lines 392--412
 \T1/lmr/m/n/12 nächsten Seite ermöglicht und über den Router gesteuert wird. We
 lche Daten benötigt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--410
+Underfull \hbox (badness 10000) in paragraph at lines 392--412
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--410
+Underfull \hbox (badness 10000) in paragraph at lines 392--412
 
  []
 
 
-Overfull \hbox (22.96622pt too wide) in paragraph at lines 389--410
+Overfull \hbox (22.96622pt too wide) in paragraph at lines 392--412
 \T1/lmr/m/n/12 eingebunden und anhand der 'route' Variable, welche den Namen de
 r aktuell aufgerufenen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--410
+Underfull \hbox (badness 10000) in paragraph at lines 392--412
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--410
+Underfull \hbox (badness 10000) in paragraph at lines 392--412
 
  []
 
@@ -1385,29 +1441,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [15 <./pictures/routes-methode.png>] [16 <./pictures/router-render.png>]
 chapter 6.
 
-Overfull \hbox (17.83578pt too wide) in paragraph at lines 411--416
-\T1/lmr/m/n/12 Innerhalb dieses Projektes wurde eine Anwendung entwickelt die e
-s Studenten erleichtert
+Overfull \hbox (28.33925pt too wide) in paragraph at lines 413--418
+\T1/lmr/m/n/12 Analyse der Hochschul-Webseite vorgenommen und anhand der Ergebn
+isse Anforderungen
  []
 
 
-Overfull \hbox (2.53072pt too wide) in paragraph at lines 411--416
-\T1/lmr/m/n/12 speziellen die LitElemente erläutert. Im Kapitel 4 Konzepte wurd
-e der Systementwurf
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--416
+Underfull \hbox (badness 10000) in paragraph at lines 413--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--416
+Underfull \hbox (badness 10000) in paragraph at lines 413--418
 
  []
 
 
-Overfull \hbox (18.59467pt too wide) in paragraph at lines 411--416
+Overfull \hbox (18.59467pt too wide) in paragraph at lines 413--418
 \T1/lmr/m/n/12 nur die Bachelor-Semester dargestellt sind. Weiterhin wird die B
 readcrump-Komponente
  []
@@ -1425,41 +1475,41 @@ chapter without number
  [19
 
 ]
-<pictures/anhang.png, id=182, 605.3817pt x 586.5915pt>
+<pictures/anhang.png, id=206, 605.3817pt x 586.5915pt>
 File: pictures/anhang.png Graphic file (type png)
 <use pictures/anhang.png>
-Package pdftex.def Info: pictures/anhang.png  used on input line 458.
+Package pdftex.def Info: pictures/anhang.png  used on input line 460.
 (pdftex.def)             Requested size: 426.79135pt x 413.54707pt.
  [20 <./pictures/anhang.png (PNG copy)>]
-Overfull \hbox (14.15338pt too wide) in paragraph at lines 470--473
+Overfull \hbox (14.15338pt too wide) in paragraph at lines 472--475
 \T1/lmr/m/n/12 Hiermit erklären wir, dass wir die hier vorliegende Arbeit selbs
 tständig, ohne unerlaubte
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
 [21
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
  (UI_semesterarbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 486.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 486.
 Package rerunfilecheck Info: File `UI_semesterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 486.
  ) 
 Here is how much of TeX's memory you used:
- 16290 strings out of 482860
- 312107 string characters out of 2950833
- 851606 words of memory out of 3000000
- 31531 multiletter control sequences out of 15000+200000
- 588935 words of font info for 60 fonts, out of 3000000 for 9000
+ 16333 strings out of 482860
+ 312572 string characters out of 2950833
+ 851616 words of memory out of 3000000
+ 31553 multiletter control sequences out of 15000+200000
+ 619037 words of font info for 84 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 45i,11n,72p,10114b,851s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,11n,72p,10114b,818s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/stefko/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
 ips/lm/lm-ec.enc}{/Users/stefko/Library/Application Support/MiKTeX/texmfs/insta
 ll/fonts/enc/dvips/lm/lm-ts1.enc}</Users/stefko/Library/Application Support/MiK
@@ -1468,11 +1518,14 @@ ication Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx12.pfb></Users/
 stefko/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/
 lmr10.pfb></Users/stefko/Library/Application Support/MiKTeX/texmfs/install/font
 s/type1/public/lm/lmr12.pfb></Users/stefko/Library/Application Support/MiKTeX/t
-exmfs/install/fonts/type1/public/lm/lmri12.pfb></Users/stefko/Library/Applicati
-on Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on UI_semesterarbeit.pdf (21 pages, 1659783 bytes).
+exmfs/install/fonts/type1/public/lm/lmr7.pfb></Users/stefko/Library/Application
+ Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr8.pfb></Users/stefko/Li
+brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmri12.pf
+b></Users/stefko/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/
+public/lm/lmssbx10.pfb>
+Output written on UI_semesterarbeit.pdf (21 pages, 1712294 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
  240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
