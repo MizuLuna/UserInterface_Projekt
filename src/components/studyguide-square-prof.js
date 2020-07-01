@@ -6,7 +6,6 @@ class Square extends navigator(LitElement) {
     
     static get properties() {
         return {
-            //id: { type: Integer },
             profName: { type: Array },
             dozName: { type: Array }
         };
@@ -14,18 +13,16 @@ class Square extends navigator(LitElement) {
 
     constructor() {
         super();
-        //this.id = null;
-        this.profName= [];
-        this.dozName= [];
+        this.profs= [];
+        this.dozenten= [];
     }
 
-     getProfName() {
-         //var semester = 'semester' + this.id;
+     getInfos() {
          for (var prof in dataProf.professoren) {     
-                     this.profName.push(dataProf.professoren[prof].name);            
+                     this.profs.push(dataProf.professoren[prof]);            
          }
          for (var doz in dataProf.dozenten) {     
-            this.dozName.push(dataProf.dozenten[doz].name);            
+            this.dozenten.push(dataProf.dozenten[doz]);            
 }
      }
     
@@ -35,23 +32,23 @@ class Square extends navigator(LitElement) {
             <link rel="stylesheet" href="../src/styles/squares.css">
             <link rel="stylesheet" href="../src/styles/headline.css">
        
-            ${this.getProfName()}
+            ${this.getInfos()}
        
             <h1 class="headline headline-prof font-fam font-size-lg font-weight-600">Professoren</h1><br>  
             <div class="square-view">   
-                ${this.profName.map((i) => html`<div class="square square-style square-style-prof font-fam font-size-md font-weight-600" @click=${this.clickHandler}>${i} </div><br>`)}
+                ${this.profs.map((prof) => html`<div class="square square-style square-style-prof font-fam font-size-md font-weight-600" @click=${() => this.clickHandler(prof.id)}>${prof.infos.name} </div><br>`)}
             </div>
             </br>
             </br>
             <h1 class="headline headline-prof font-fam font-size-lg font-weight-600">Mitarbeiter</h1><br> 
             <div class="square-view font-fam font-size-md font-weight-600">
-                ${this.dozName.map((i) => html`<div class="square square-style square-style-prof" @click=${this.clickHandler}>${i} </div>`)}
+                ${this.dozenten.map((dozent) => html`<div class="square square-style square-style-prof" @click=${() => this.clickHandler(dozent.id)}>${dozent.infos.name} </div>`)}
             </div>
        `;
     }
 
-    clickHandler(e) {
-        this.navigate('/professor_und_mitarbeiter/1');
+    clickHandler(profId) {
+        this.navigate(`/professor_und_mitarbeiter/${profId}`);
     }
 }
 

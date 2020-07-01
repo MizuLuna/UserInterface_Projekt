@@ -2,6 +2,10 @@ import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 import dataSem from '../data/prof.js'
 
+/*
+ * placeholder picture
+ */
+
 class Picture extends navigator(LitElement) {
     render() {
         return html`
