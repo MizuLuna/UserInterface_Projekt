@@ -297,7 +297,7 @@ Um die folgenden Kapitel besser einzuordnen, werden nun einige technische Grundl
 		\section{Router}
 		Der Router übernimmt das Navigieren auf der gesamten Seite. Er legt die angezeigte URL fest und verwaltet, welche Ansicht gezeigt werden soll. Die verschiedenen Routen werden mit Namen und einem URL-Pattern angelegt und können so auseinander gehalten werden. Über Parameter und Querys können dann Informationen übertragen werden, die für die neu aufgerufene Seite relevant sind.\\
 \\
-Wird ein Button mit einem Redirect\footnote{\label{foot:1}Weiterleitung oder Umleitung im auf eine andere URL} auf eine neue Ansicht belegt, registriert auch der Router den Klick und wechselt die Path Variable auf den entsprechenden Namen, welcher zu der neuen URL zugehörig ist. Anhand dieser Variable können alle nicht benötigten Ansichten ausgeblendet und die neuen angezeigt werden.				
+Wird ein Button mit einem Redirect\footnote{\label{foot:1}Weiterleitung oder Umleitung auf eine andere URL} auf eine neue Ansicht belegt, registriert auch der Router den Klick und wechselt die Path-Variable auf den entsprechenden Namen, welcher zu der neuen URL zugehörig ist. Anhand dieser Variable können alle nicht benötigten Ansichten ausgeblendet und die neuen angezeigt werden.				
 
 %___________________________________________________________________________________
 \chapter{Konzept}	
@@ -399,7 +399,7 @@ Im Folgendem werden auf die für die Anwendung spezifischen Implementierungen ei
 		\label{routes}
 	\end{figure} \\
 	\\
-	In der Render-Funktion  (vgl. Abbildung \ref{render-methode}) werden alle Ansichten über ihre Tags eingebunden und anhand der 'route' Variable, welche den Namen der aktuell aufgerufenen Seite enthält, ein- und ausgeblendet.\\	
+	In der Render-Funktion  (vgl. Abbildung \ref{render-methode}) werden alle Ansichten über ihre Custom-Elements eingebunden und anhand der 'route' Variable, welche den Namen der aktuell aufgerufenen Seite enthält, ein- und ausgeblendet.\\	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{pictures/router-render.png}
