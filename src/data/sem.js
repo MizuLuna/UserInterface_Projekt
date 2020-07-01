@@ -676,7 +676,7 @@ let dataSem =
                 },
                 {
                     id: 6,
-                    "name": "Wahlpflichtmodul",
+                    "name": "Wahlpflichtmodule",
                     modules: 
                     [
                         {

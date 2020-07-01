@@ -106,7 +106,6 @@ class Professor extends navigator(LitElement) {
         <link rel="stylesheet" href="../src/styles/details.css">
         <link rel="stylesheet" href="../src/styles/headline.css">
 
-        <h1 class="headline headline-sem font-fam font-size-lg font-weight-600">${this.moduleName}</h1>
         <div class="professor detail detail-style detail-style-sem font-fam">
             <h4 class="font-weight-600 font-size-md">${profTitle}</h4>
             <h4 class="font-weight-600 font-size-md">${profName}</h4> 

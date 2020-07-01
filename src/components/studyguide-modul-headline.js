@@ -8,15 +8,21 @@ class Headline extends navigator(LitElement) {
         return {
             semesterId: {type: Number},
             courseId: { type: Number },
+            obligationId: {type: Number}
         };
     }
 
     getModulName() {
         let modulName = "";
-        if (this.semesterId && this.courseId) {
+        if (this.semesterId && (this.semesterId === 6) && this.courseId && (this.courseId === 6) && this.obligationId) {
+            const semester = data.find((semester) => semester.id === this.semesterId)
+            const course = semester.modules.find((module) => module.id === this.courseId);
+            const modul = course.modules.find((module) => module.id === this.obligationId);
+            modulName = modul.name;
+        } else if (this.semesterId && this.courseId) {
             const semester = data.find((semester) => semester.id === this.semesterId);
             const course = semester.modules.find((module) => module.id === this.courseId);
-            modulName = course.infos.name;
+            modulName = course.name;
         }
         return modulName;
     }

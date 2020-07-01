@@ -27,6 +27,7 @@ class Semesterview extends navigator(LitElement) {
     render() {
 
         return html`
+        <studyguide-modul-headline semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-modul-headline>
         <studyguide-professor semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-professor>
         <studyguide-exam semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-exam>
         <studyguide-modulContent semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-modulContent>
