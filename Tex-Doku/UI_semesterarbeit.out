@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{toc.1}{Inhaltsverzeichnis}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Einleitung}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Untersuchung der Hochschul-Website}{}% 3
+\BOOKMARK [1][-]{section.4}{Analyse des IST-Zustandes}{chapter.3}% 4
+\BOOKMARK [1][-]{section.5}{Festlegung Systemanforderung}{chapter.3}% 5
+\BOOKMARK [0][-]{chapter.7}{Grundlagen}{}% 6
+\BOOKMARK [1][-]{section.8}{Web Components}{chapter.7}% 7
+\BOOKMARK [2][-]{subsection.11}{LitElement}{section.8}% 8
+\BOOKMARK [2][-]{subsection.12}{Shadow-Dom}{section.8}% 9
+\BOOKMARK [2][-]{subsection.13}{Templates}{section.8}% 10
+\BOOKMARK [2][-]{subsection.15}{Properties}{section.8}% 11
+\BOOKMARK [1][-]{section.16}{Router}{chapter.7}% 12
+\BOOKMARK [0][-]{chapter.18}{Konzept}{}% 13
+\BOOKMARK [1][-]{section.19}{Systementwurf}{chapter.18}% 14
+\BOOKMARK [1][-]{section.21}{Ansichten und Komponenten}{chapter.18}% 15
+\BOOKMARK [0][-]{chapter.23}{Implementierungen}{}% 16
+\BOOKMARK [1][-]{section.24}{Komponenten}{chapter.23}% 17
+\BOOKMARK [1][-]{section.27}{Datenhandling}{chapter.23}% 18
+\BOOKMARK [1][-]{section.31}{Navigation mithilfe des Routers}{chapter.23}% 19
+\BOOKMARK [0][-]{chapter.35}{Zusammenfassung und Ausblick}{}% 20
+\BOOKMARK [0][-]{chapter*.36}{Literaturverzeichnis}{}% 21
+\BOOKMARK [0][-]{chapter*.37}{Abbildungsverzeichnis}{}% 22
+\BOOKMARK [0][-]{chapter*.40}{Selbstst\344ndigkeitserkl\344rung}{}% 23
