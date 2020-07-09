@@ -32,7 +32,6 @@ class Semesterview extends navigator(LitElement) {
        `;
     }
 
-
     clickHandler(e) {
         this.navigate('/professor_und_mitarbeiter');
     }

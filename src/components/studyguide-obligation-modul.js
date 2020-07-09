@@ -80,9 +80,9 @@ class Modul extends navigator(LitElement) {
         });
         
         return html`
-        <div class="modul-view font-fam font-size-md font-weight-600">
-            ${this.getModules(module)}
-        </div>
+            <div class="modul-view font-fam font-size-md font-weight-600">
+                ${this.getModules(module)}
+            </div>
        `;
     }
 

@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, css, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
 import data from '../data/sem.js'
 
@@ -9,6 +9,40 @@ class Headline extends navigator(LitElement) {
             semesterId: {type: Number},
             courseId: { type: Number }
         };
+    }
+
+    static get styles() {
+        return css `
+            .font-fam{
+                font-family: 'Fira Sans', sans-serif;
+            } 
+            
+            .font-size-lg{
+                font-size: 3rem;
+            }
+
+            .font-weight-600{
+                font-weight: 600;
+            }
+
+            .headline{
+                margin-left: 10vw;
+                margin-top: 5%;
+                margin-block-end: 0em;
+            }
+
+            .headline-sem{
+                color: #00b1db;
+            }
+
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                margin: 0;
+            }
+        `;
     }
 
     getSemesterName() {
@@ -28,10 +62,7 @@ class Headline extends navigator(LitElement) {
         const semesterName = this.getSemesterName();
 
         return html`
-        <link rel="stylesheet" href="../src/styles/font-style.css">
-        <link rel="stylesheet" href="../src/styles/headline.css">
-
-        <h1 class="headline headline-sem font-fam font-size-lg font-weight-600">${semesterName}</h1>
+            <h1 class="headline headline-sem font-fam font-size-lg font-weight-600">${semesterName}</h1>
        `;
     }
 }

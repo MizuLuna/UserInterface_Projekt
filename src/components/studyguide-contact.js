@@ -36,7 +36,7 @@ class Contact extends navigator(LitElement) {
        
         <div class="professor detail detail-style detail-style-prof font-fam">
             <h4 class="font-weight-600 font-size-md" >Kontakt</h4> 
-            </br>
+            <br>
             <p class="font-weight-300 font-size-s"><i class="fas fa-map-marker-alt"></i>Haus ${contact.office.house}</p>
             <p class="font-weight-300 font-size-s">Raum ${contact.office.room}</p>
             <p class="font-weight-300 font-size-s"><i class="fas fa-mobile-alt"></i>Telefonnummer:<br> ${contact.telNumber}</p>

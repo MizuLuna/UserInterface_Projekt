@@ -17,7 +17,7 @@ class Semesterview extends navigator(LitElement) {
     }
 
     render() {
-        //L�dt bei Sem5 die Styles nicht mehr (auch return und navigation styles)
+
         if (this.semesterId === 5) {
             return html`
             <studyguide-internship semesterId="${this.semesterId}"></studyguide-internship>

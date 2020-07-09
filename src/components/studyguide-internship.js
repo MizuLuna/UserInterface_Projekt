@@ -100,27 +100,25 @@ class Internship extends navigator(LitElement) {
         this.getInfo();
 
         return html`       
-       <h1 class="headline headline-sem font-weight-600 font-size-lg font-sem font-fam">Praxissemester</h1>
-          <div class="detail detail-style detail-style-sem font-fam font-size-md">
-            <h4 class="font-weight-600 font-fam">Ansprechpartner</h4> 
-            </br> 
-            <p class="font-weight-300">${contact.name}</p>
-            <p class="font-weight-300">Haus: ${contact.office.house}</p>
-            <p class="font-weight-300">Raum: ${contact.office.room}</p> 
-            <p class="font-weight-300">Telefonnummer: ${contact.telNumber}</p> 
-            <p class="font-weight-300">EMail: ${contact.email}</p> 
-          </div>
-          <div class="detail detail-style detail-style-sem font-fam font-size-md">
-            <h4 class="font-weight-600">Hinweise</h4> 
-            </br>
-            <p class="font-weight-300">Dauer: mind. ${this.duration} Tage</p>
-            <p class="font-weight-300"><a href="${this.hints}">Hier geht es zu den Hinweisen</a> </p>
-            <p class="font-weight-300"><a href="${this.motion}">Hier geht es zum Antrag</a> </p>
-          </div> 
-        
+            <h1 class="headline headline-sem font-weight-600 font-size-lg font-sem font-fam">Praxissemester</h1>
+            <div class="detail detail-style detail-style-sem font-fam font-size-md">
+                <h4 class="font-weight-600 font-fam">Ansprechpartner</h4> 
+                <br> 
+                <p class="font-weight-300">${contact.name}</p>
+                <p class="font-weight-300">Haus: ${contact.office.house}</p>
+                <p class="font-weight-300">Raum: ${contact.office.room}</p> 
+                <p class="font-weight-300">Telefonnummer: ${contact.telNumber}</p> 
+                <p class="font-weight-300">EMail: ${contact.email}</p> 
+            </div>
+            <div class="detail detail-style detail-style-sem font-fam font-size-md">
+                <h4 class="font-weight-600">Hinweise</h4> 
+                <br>
+                <p class="font-weight-300">Dauer: mind. ${this.duration} Tage</p>
+                <p class="font-weight-300"><a href="${this.hints}">Hier geht es zu den Hinweisen</a> </p>
+                <p class="font-weight-300"><a href="${this.motion}">Hier geht es zum Antrag</a> </p>
+            </div>        
        `;
     }
-
 }
 
 customElements.define('studyguide-internship', Internship);

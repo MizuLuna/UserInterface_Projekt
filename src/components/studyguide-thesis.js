@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { navigator } from 'lit-element-router';
-import dataSem from '../data/prof.js'
+//import dataSem from '../data/prof.js'
 
 class Thesis extends navigator(LitElement) {
     render() {
@@ -10,7 +10,7 @@ class Thesis extends navigator(LitElement) {
 
         <div class="thesis detail detail-style detail-style-prof font-fam">
             <h4 class="font-weight-600 font-size-md">Thesenthemen</h4>
-            </br>
+            <br>
             <p class="font-weight-300 font-size-s">a</p>
             <p class="font-weight-300 font-size-s">b</p>
             <p class="font-weight-300 font-size-s">c</p>  

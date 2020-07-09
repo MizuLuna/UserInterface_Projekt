@@ -42,13 +42,13 @@ class Modulcontent extends navigator(LitElement) {
         return html`
             <link rel="stylesheet" href="../src/styles/font-style.css">
             <link rel="stylesheet" href="../src/styles/details.css">
+            
             <div class="modulContent detail detail-style detail-style-sem font-fam">
                 <h4 class="font-weight-600 font-size-md">Inhalte</h4>
-                
                 ${moduleContent.map((i) => html`
-                <ul>
-                    <li class="font-weight-300 font-size-s">${i}</li>
-                </ul>
+                    <ul>
+                        <li class="font-weight-300 font-size-s">${i}</li>
+                    </ul>
                 `)}   
             </div>
        `;

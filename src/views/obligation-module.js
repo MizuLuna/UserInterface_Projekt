@@ -16,7 +16,6 @@ class Semesterview extends navigator(LitElement) {
         };
     }
 
-    //semesterId und courseId scheinen probleme zu geben (feste 6 geht) -> dann probleme bei der Map in der n�chsten view mit content/SWS etc
     render() {
         return html`
             <studyguide-semester-headline semesterId="${this.semesterId}" courseId="${this.courseId}"></studyguide-semester-headline>

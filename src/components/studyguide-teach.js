@@ -54,8 +54,6 @@ class Teach extends navigator(LitElement) {
         const teach = this.getTeaching();
         // const coach = this.getCoaching();
 
-
-
         return html`
         <link rel="stylesheet" href="../src/styles/font-style.css">
         <link rel="stylesheet" href="../src/styles/details.css">
@@ -79,11 +77,11 @@ class Teach extends navigator(LitElement) {
 
 customElements.define('studyguide-teach', Teach);
 
-{/* <div class="teach detail detail-style detail-style-prof font-fam">
+/* <div class="teach detail detail-style detail-style-prof font-fam">
 <h4 class="font-weight-600 font-size-md">Praktikumsbetreuung</h4>
     ${coach.map((i) => html`
         <ul>
             <li class="font-weight-300 font-size-s">${i}</li>
         </ul>
     `)}
-</div> */}
+</div> */

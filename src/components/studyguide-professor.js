@@ -109,7 +109,7 @@ class Professor extends navigator(LitElement) {
         <div class="professor detail detail-style detail-style-sem font-fam">
             <h4 class="font-weight-600 font-size-md">${profTitle}</h4>
             <h4 class="font-weight-600 font-size-md">${profName}</h4> 
-            </br>
+            <br>
             <p class="font-weight-300 font-size-s">${this.moduleSWSv} SWS Vorlesung</p>
             <p class="font-weight-300 font-size-s">${this.moduleSWSue}  SWS Übung</p>
             <p class="font-weight-300 font-size-s">${this.moduleSWSp} SWS Praktikum</p> 

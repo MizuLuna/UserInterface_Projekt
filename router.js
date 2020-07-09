@@ -60,10 +60,9 @@ class Router extends router(LitElement) {
         this.route = route;
         this.params = params;
         this.query = query;
-        console.log(route, params, query, data);
     }
 
-    //obligation views auskommentieren für working state
+    //obligation views auskommentieren fï¿½r working state
     render() {
         return html` 
       <app-main active-route=${this.route}>

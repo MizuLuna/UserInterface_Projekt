@@ -78,9 +78,6 @@ class Modul extends navigator(LitElement) {
         });
 
         return html`
-        <link rel="stylesheet" href="../src/styles/font-style.css">
-        <link rel="stylesheet" href="../src/styles/modul.css">
-
         <div class="modul-view font-fam font-size-md font-weight-600">
             ${this.getModules(semester)}
         </div>

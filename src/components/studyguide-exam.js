@@ -52,7 +52,7 @@ class Exam extends navigator(LitElement) {
 
         <div class="exam detail detail-style detail-style-sem font-fam">
             <h4 class="font-weight-600 font-size-md">Prüfung</h4>
-            </br>
+            <br>
             <p class="font-weight-300 font-size-s">${moduleExam}</p>
             <p class="font-weight-300 font-size-s">${moduleCredit} Credits</p>
         </div>

@@ -55,10 +55,9 @@ class Returnbutton extends navigator(LitElement) {
         `;
     }
 
-
     render() {
         return html`
-       <button class="return-Btn return-Btn-style return-Btn-sem font-fam font-size-md font-weight-600" @click=${this.clickHandler}>Zurück zur Übersicht</button>
+            <button class="return-Btn return-Btn-style return-Btn-sem font-fam font-size-md font-weight-600" @click=${this.clickHandler}>Zurück zur Übersicht</button>
        `;
     }
 
