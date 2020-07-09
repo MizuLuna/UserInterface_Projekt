@@ -1,6 +1,6 @@
 # ui_projekt
 
-npm pachage manager: https://docs.npmjs.com/
+npm package manager: https://docs.npmjs.com/
 
 ## quick start:
 
@@ -15,5 +15,6 @@ build the site:
 ` `  ` bash
  polymer serve
  ` ` ` 
+
 URL: 
 http://127.0.0.1:8081
